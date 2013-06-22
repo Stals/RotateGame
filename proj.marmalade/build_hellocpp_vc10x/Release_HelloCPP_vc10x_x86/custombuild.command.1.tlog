@@ -1,0 +1,2 @@
+^D:\TOOLS\COCOS2DX\SAMPLES\CPP\HELLOCPP-BOX2D-COLLISIONTEST-2.1.2\PROJ.MARMALADE\HELLOCPP.MKB
+"D:\tools\Marmalade\6.3\s3e\python\python.exe" "D:\tools\Marmalade\6.3\s3e\makefile_builder\mkb.py" "d:/tools/cocos2dx/samples/Cpp/HelloCpp-Box2D-CollisionTest-2.1.2/proj.marmalade/HelloCPP.mkb" "--default-buildenv=vc10x" --msvc-project

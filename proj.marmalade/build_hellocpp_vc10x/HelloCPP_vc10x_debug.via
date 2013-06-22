@@ -1,0 +1,9 @@
+--dll="d:\tools\cocos2dx\samples\Cpp\HelloCpp-Box2D-CollisionTest-2.1.2\proj.marmalade\build_hellocpp_vc10x\Debug_HelloCPP_VC10X_x86\HelloCPP.s86"
+--data="d:\tools\cocos2dx\samples\Cpp\HelloCpp-Box2D-CollisionTest-2.1.2\Resources"
+--checks3edir="1"
+--app-icf1="d:/tools/cocos2dx/samples/Cpp/HelloCpp-Box2D-CollisionTest-2.1.2/Resources/app.icf"
+--config-txt1="d:/tools/marmalade/6.3/modules/iwgl/docs/iwgl.config.txt"
+--config-txt2="d:/tools/marmalade/6.3/modules/iwutil/docs/iwutil.config.txt"
+--config-txt3="d:/tools/marmalade/6.3/s3e/s3e.config.txt"
+--config-txt4="d:/tools/marmalade/6.3/s3e\s3e.config.txt"
+--s3e-dir=d:/tools/marmalade/6.3/s3e

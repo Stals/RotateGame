@@ -1,0 +1,1525 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="x86 Debug|Win32">
+      <Configuration>x86 Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="x86 Release|Win32">
+      <Configuration>x86 Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="GCC X86 ANDROID Debug|Win32">
+      <Configuration>GCC X86 ANDROID Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="GCC X86 ANDROID Release|Win32">
+      <Configuration>GCC X86 ANDROID Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RVCT ARM Debug|Win32">
+      <Configuration>RVCT ARM Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RVCT ARM Release|Win32">
+      <Configuration>RVCT ARM Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="GCC ARM Debug|Win32">
+      <Configuration>GCC ARM Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="GCC ARM Release|Win32">
+      <Configuration>GCC ARM Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="GCC MIPS Debug|Win32">
+      <Configuration>GCC MIPS Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="GCC MIPS Release|Win32">
+      <Configuration>GCC MIPS Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    </ItemGroup>
+
+    <PropertyGroup Label="Globals">
+      <ProjectGuid>{52F04D33-EED5-4EA7-8123-B57083AB4532}</ProjectGuid>
+      <Keyword>Win32Proj</Keyword>
+      <RootNamespace>RealProj</RootNamespace>
+    </PropertyGroup>
+    <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='x86 Debug|Win32'" Label="Configuration">
+      <ConfigurationType>DynamicLibrary</ConfigurationType>
+      <UseDebugLibraries>true</UseDebugLibraries>
+      <CharacterSet>Unicode</CharacterSet>
+      <PlatformToolset>v100</PlatformToolset>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='x86 Release|Win32'" Label="Configuration">
+      <ConfigurationType>DynamicLibrary</ConfigurationType>
+      <UseDebugLibraries>true</UseDebugLibraries>
+      <CharacterSet>Unicode</CharacterSet>
+      <PlatformToolset>v100</PlatformToolset>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='GCC X86 ANDROID Debug|Win32'" Label="Configuration">
+      <ConfigurationType>DynamicLibrary</ConfigurationType>
+      <UseDebugLibraries>true</UseDebugLibraries>
+      <CharacterSet>Unicode</CharacterSet>
+      <PlatformToolset>v100</PlatformToolset>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='GCC X86 ANDROID Release|Win32'" Label="Configuration">
+      <ConfigurationType>DynamicLibrary</ConfigurationType>
+      <UseDebugLibraries>true</UseDebugLibraries>
+      <CharacterSet>Unicode</CharacterSet>
+      <PlatformToolset>v100</PlatformToolset>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RVCT ARM Debug|Win32'" Label="Configuration">
+      <ConfigurationType>DynamicLibrary</ConfigurationType>
+      <UseDebugLibraries>true</UseDebugLibraries>
+      <CharacterSet>Unicode</CharacterSet>
+      <PlatformToolset>v100</PlatformToolset>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RVCT ARM Release|Win32'" Label="Configuration">
+      <ConfigurationType>DynamicLibrary</ConfigurationType>
+      <UseDebugLibraries>true</UseDebugLibraries>
+      <CharacterSet>Unicode</CharacterSet>
+      <PlatformToolset>v100</PlatformToolset>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='GCC ARM Debug|Win32'" Label="Configuration">
+      <ConfigurationType>DynamicLibrary</ConfigurationType>
+      <UseDebugLibraries>true</UseDebugLibraries>
+      <CharacterSet>Unicode</CharacterSet>
+      <PlatformToolset>v100</PlatformToolset>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='GCC ARM Release|Win32'" Label="Configuration">
+      <ConfigurationType>DynamicLibrary</ConfigurationType>
+      <UseDebugLibraries>true</UseDebugLibraries>
+      <CharacterSet>Unicode</CharacterSet>
+      <PlatformToolset>v100</PlatformToolset>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='GCC MIPS Debug|Win32'" Label="Configuration">
+      <ConfigurationType>DynamicLibrary</ConfigurationType>
+      <UseDebugLibraries>true</UseDebugLibraries>
+      <CharacterSet>Unicode</CharacterSet>
+      <PlatformToolset>v100</PlatformToolset>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='GCC MIPS Release|Win32'" Label="Configuration">
+      <ConfigurationType>DynamicLibrary</ConfigurationType>
+      <UseDebugLibraries>true</UseDebugLibraries>
+      <CharacterSet>Unicode</CharacterSet>
+      <PlatformToolset>v100</PlatformToolset>
+    </PropertyGroup>
+    <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+    <ImportGroup Label="ExtensionSettings">
+    </ImportGroup>
+    <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='x86 Debug|Win32'">
+      <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    </ImportGroup>
+    <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='x86 Release|Win32'">
+      <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    </ImportGroup>
+    <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='GCC X86 ANDROID Debug|Win32'">
+      <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    </ImportGroup>
+    <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='GCC X86 ANDROID Release|Win32'">
+      <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    </ImportGroup>
+    <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='RVCT ARM Debug|Win32'">
+      <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    </ImportGroup>
+    <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='RVCT ARM Release|Win32'">
+      <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    </ImportGroup>
+    <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='GCC ARM Debug|Win32'">
+      <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    </ImportGroup>
+    <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='GCC ARM Release|Win32'">
+      <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    </ImportGroup>
+    <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='GCC MIPS Debug|Win32'">
+      <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    </ImportGroup>
+    <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='GCC MIPS Release|Win32'">
+      <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    </ImportGroup>
+    <PropertyGroup Label="UserMacros" />
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='x86 Debug|Win32'">
+      <LinkIncremental>true</LinkIncremental>
+      <ExecutablePath>$(S3E_DIR)\bin;$(VCInstallDir)bin;$(WindowsSdkDir)bin\NETFX 4.0 Tools;$(WindowsSdkDir)bin;$(VSInstallDir)Common7\Tools\bin;$(VSInstallDir)Common7\tools;$(VSInstallDir)Common7\ide;$(ProgramFiles)\HTML Help Workshop;$(FrameworkSDKDir)\bin;$(MSBuildToolsPath32);$(VSInstallDir);$(SystemRoot)\SysWow64;$(FxCopDir);$(PATH);</ExecutablePath>
+      <IntDir>Debug_HelloCPP_vc10x_x86\</IntDir>
+      <OutDir>Debug_HelloCPP_vc10x_x86\</OutDir>
+      <TargetName>HelloCPP</TargetName>
+      <TargetExt>.s86</TargetExt>
+      <GenerateManifest>false</GenerateManifest>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='x86 Release|Win32'">
+      <LinkIncremental>false</LinkIncremental>
+      <ExecutablePath>$(S3E_DIR)\bin;$(VCInstallDir)bin;$(WindowsSdkDir)bin\NETFX 4.0 Tools;$(WindowsSdkDir)bin;$(VSInstallDir)Common7\Tools\bin;$(VSInstallDir)Common7\tools;$(VSInstallDir)Common7\ide;$(ProgramFiles)\HTML Help Workshop;$(FrameworkSDKDir)\bin;$(MSBuildToolsPath32);$(VSInstallDir);$(SystemRoot)\SysWow64;$(FxCopDir);$(PATH);</ExecutablePath>
+      <IntDir>Release_HelloCPP_vc10x_x86\</IntDir>
+      <OutDir>Release_HelloCPP_vc10x_x86\</OutDir>
+      <TargetName>HelloCPP</TargetName>
+      <TargetExt>.s86</TargetExt>
+      <GenerateManifest>false</GenerateManifest>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='GCC X86 ANDROID Debug|Win32'">
+      <LinkIncremental>true</LinkIncremental>
+      <ExecutablePath>$(S3E_DIR)\bin;$(VCInstallDir)bin;$(WindowsSdkDir)bin\NETFX 4.0 Tools;$(WindowsSdkDir)bin;$(VSInstallDir)Common7\Tools\bin;$(VSInstallDir)Common7\tools;$(VSInstallDir)Common7\ide;$(ProgramFiles)\HTML Help Workshop;$(FrameworkSDKDir)\bin;$(MSBuildToolsPath32);$(VSInstallDir);$(SystemRoot)\SysWow64;$(FxCopDir);$(PATH);</ExecutablePath>
+      <IntDir>Debug_HelloCPP_vc10x_gcc_x86_android\</IntDir>
+      <OutDir>Debug_HelloCPP_vc10x_gcc_x86_android\</OutDir>
+      <TargetName>HelloCPP</TargetName>
+      <TargetExt>.so</TargetExt>
+      <GenerateManifest>false</GenerateManifest>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='GCC X86 ANDROID Release|Win32'">
+      <LinkIncremental>false</LinkIncremental>
+      <ExecutablePath>$(S3E_DIR)\bin;$(VCInstallDir)bin;$(WindowsSdkDir)bin\NETFX 4.0 Tools;$(WindowsSdkDir)bin;$(VSInstallDir)Common7\Tools\bin;$(VSInstallDir)Common7\tools;$(VSInstallDir)Common7\ide;$(ProgramFiles)\HTML Help Workshop;$(FrameworkSDKDir)\bin;$(MSBuildToolsPath32);$(VSInstallDir);$(SystemRoot)\SysWow64;$(FxCopDir);$(PATH);</ExecutablePath>
+      <IntDir>Release_HelloCPP_vc10x_gcc_x86_android\</IntDir>
+      <OutDir>Release_HelloCPP_vc10x_gcc_x86_android\</OutDir>
+      <TargetName>HelloCPP</TargetName>
+      <TargetExt>.so</TargetExt>
+      <GenerateManifest>false</GenerateManifest>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RVCT ARM Debug|Win32'">
+      <LinkIncremental>true</LinkIncremental>
+      <ExecutablePath>$(S3E_DIR)\bin;$(VCInstallDir)bin;$(WindowsSdkDir)bin\NETFX 4.0 Tools;$(WindowsSdkDir)bin;$(VSInstallDir)Common7\Tools\bin;$(VSInstallDir)Common7\tools;$(VSInstallDir)Common7\ide;$(ProgramFiles)\HTML Help Workshop;$(FrameworkSDKDir)\bin;$(MSBuildToolsPath32);$(VSInstallDir);$(SystemRoot)\SysWow64;$(FxCopDir);$(PATH);</ExecutablePath>
+      <IntDir>Debug_HelloCPP_vc10x_arm\</IntDir>
+      <OutDir>Debug_HelloCPP_vc10x_arm\</OutDir>
+      <TargetName>HelloCPP</TargetName>
+      <TargetExt>.s3e</TargetExt>
+      <GenerateManifest>false</GenerateManifest>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RVCT ARM Release|Win32'">
+      <LinkIncremental>false</LinkIncremental>
+      <ExecutablePath>$(S3E_DIR)\bin;$(VCInstallDir)bin;$(WindowsSdkDir)bin\NETFX 4.0 Tools;$(WindowsSdkDir)bin;$(VSInstallDir)Common7\Tools\bin;$(VSInstallDir)Common7\tools;$(VSInstallDir)Common7\ide;$(ProgramFiles)\HTML Help Workshop;$(FrameworkSDKDir)\bin;$(MSBuildToolsPath32);$(VSInstallDir);$(SystemRoot)\SysWow64;$(FxCopDir);$(PATH);</ExecutablePath>
+      <IntDir>Release_HelloCPP_vc10x_arm\</IntDir>
+      <OutDir>Release_HelloCPP_vc10x_arm\</OutDir>
+      <TargetName>HelloCPP</TargetName>
+      <TargetExt>.s3e</TargetExt>
+      <GenerateManifest>false</GenerateManifest>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='GCC ARM Debug|Win32'">
+      <LinkIncremental>true</LinkIncremental>
+      <ExecutablePath>$(S3E_DIR)\bin;$(VCInstallDir)bin;$(WindowsSdkDir)bin\NETFX 4.0 Tools;$(WindowsSdkDir)bin;$(VSInstallDir)Common7\Tools\bin;$(VSInstallDir)Common7\tools;$(VSInstallDir)Common7\ide;$(ProgramFiles)\HTML Help Workshop;$(FrameworkSDKDir)\bin;$(MSBuildToolsPath32);$(VSInstallDir);$(SystemRoot)\SysWow64;$(FxCopDir);$(PATH);</ExecutablePath>
+      <IntDir>Debug_HelloCPP_vc10x_gcc_arm\</IntDir>
+      <OutDir>Debug_HelloCPP_vc10x_gcc_arm\</OutDir>
+      <TargetName>HelloCPP</TargetName>
+      <TargetExt>.s3e</TargetExt>
+      <GenerateManifest>false</GenerateManifest>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='GCC ARM Release|Win32'">
+      <LinkIncremental>false</LinkIncremental>
+      <ExecutablePath>$(S3E_DIR)\bin;$(VCInstallDir)bin;$(WindowsSdkDir)bin\NETFX 4.0 Tools;$(WindowsSdkDir)bin;$(VSInstallDir)Common7\Tools\bin;$(VSInstallDir)Common7\tools;$(VSInstallDir)Common7\ide;$(ProgramFiles)\HTML Help Workshop;$(FrameworkSDKDir)\bin;$(MSBuildToolsPath32);$(VSInstallDir);$(SystemRoot)\SysWow64;$(FxCopDir);$(PATH);</ExecutablePath>
+      <IntDir>Release_HelloCPP_vc10x_gcc_arm\</IntDir>
+      <OutDir>Release_HelloCPP_vc10x_gcc_arm\</OutDir>
+      <TargetName>HelloCPP</TargetName>
+      <TargetExt>.s3e</TargetExt>
+      <GenerateManifest>false</GenerateManifest>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='GCC MIPS Debug|Win32'">
+      <LinkIncremental>true</LinkIncremental>
+      <ExecutablePath>$(S3E_DIR)\bin;$(VCInstallDir)bin;$(WindowsSdkDir)bin\NETFX 4.0 Tools;$(WindowsSdkDir)bin;$(VSInstallDir)Common7\Tools\bin;$(VSInstallDir)Common7\tools;$(VSInstallDir)Common7\ide;$(ProgramFiles)\HTML Help Workshop;$(FrameworkSDKDir)\bin;$(MSBuildToolsPath32);$(VSInstallDir);$(SystemRoot)\SysWow64;$(FxCopDir);$(PATH);</ExecutablePath>
+      <IntDir>Debug_HelloCPP_vc10x_gcc_mips\</IntDir>
+      <OutDir>Debug_HelloCPP_vc10x_gcc_mips\</OutDir>
+      <TargetName>HelloCPP</TargetName>
+      <TargetExt>.so</TargetExt>
+      <GenerateManifest>false</GenerateManifest>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='GCC MIPS Release|Win32'">
+      <LinkIncremental>false</LinkIncremental>
+      <ExecutablePath>$(S3E_DIR)\bin;$(VCInstallDir)bin;$(WindowsSdkDir)bin\NETFX 4.0 Tools;$(WindowsSdkDir)bin;$(VSInstallDir)Common7\Tools\bin;$(VSInstallDir)Common7\tools;$(VSInstallDir)Common7\ide;$(ProgramFiles)\HTML Help Workshop;$(FrameworkSDKDir)\bin;$(MSBuildToolsPath32);$(VSInstallDir);$(SystemRoot)\SysWow64;$(FxCopDir);$(PATH);</ExecutablePath>
+      <IntDir>Release_HelloCPP_vc10x_gcc_mips\</IntDir>
+      <OutDir>Release_HelloCPP_vc10x_gcc_mips\</OutDir>
+      <TargetName>HelloCPP</TargetName>
+      <TargetExt>.so</TargetExt>
+      <GenerateManifest>false</GenerateManifest>
+    </PropertyGroup>
+    <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='x86 Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PreprocessorDefinitions></PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <AdditionalOptions>/S3Eproject /J /FI"d:\tools\cocos2dx\samples\Cpp\HelloCpp-Box2D-CollisionTest-2.1.2\proj.marmalade\build_hellocpp_vc10x\temp_defines_debug.h"</AdditionalOptions>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
+      <AdditionalIncludeDirectories>d:/tools/cocos2dx/samples/Cpp/HelloCpp-Box2D-CollisionTest-2.1.2/Classes;d:/tools/marmalade/6.3/modules/third_party/libjpeg/h;d:/tools/marmalade/6.3/modules/third_party/zlib/h;d:/tools/marmalade/6.3/modules/third_party/libpng/h;d:/tools/marmalade/6.3/modules/iwutil/h;d:/tools/marmalade/6.3/modules/iwgl/h;d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/h;d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/include;d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libtiff/headers;d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/webp;d:/tools/cocos2dx/cocos2dx/proj.marmalade;d:/tools/cocos2dx/cocos2dx;d:/tools/cocos2dx/cocos2dx/include;d:/tools/cocos2dx/cocos2dx/platform;d:/tools/cocos2dx/cocos2dx/platform/marmalade;d:/tools/cocos2dx/cocos2dx/actions;d:/tools/cocos2dx/cocos2dx/base_nodes;d:/tools/cocos2dx/cocos2dx/cocoa;d:/tools/cocos2dx/cocos2dx/draw_nodes;d:/tools/cocos2dx/cocos2dx/effects;d:/tools/cocos2dx/cocos2dx/kazmath/include;d:/tools/cocos2dx/cocos2dx/keypad_dispatcher;d:/tools/cocos2dx/cocos2dx/label_nodes;d:/tools/cocos2dx/cocos2dx/layers_scenes_transitions_nodes;d:/tools/cocos2dx/cocos2dx/menu_nodes;d:/tools/cocos2dx/cocos2dx/misc_nodes;d:/tools/cocos2dx/cocos2dx/particle_nodes;d:/tools/cocos2dx/cocos2dx/physics_nodes;d:/tools/cocos2dx/cocos2dx/shaders;d:/tools/cocos2dx/cocos2dx/script_support;d:/tools/cocos2dx/cocos2dx/sprite_nodes;d:/tools/cocos2dx/cocos2dx/support;d:/tools/cocos2dx/cocos2dx/support/tinyxml2;d:/tools/cocos2dx/cocos2dx/support/user_default;d:/tools/cocos2dx/cocos2dx/text_input_node;d:/tools/cocos2dx/cocos2dx/textures;d:/tools/cocos2dx/cocos2dx/tileMap_parallax_nodes;d:/tools/cocos2dx/cocos2dx/touch_dispatcher;d:/tools/cocos2dx/external;d:/tools/marmalade/6.3/s3e/h;d:/tools/marmalade/6.3/s3e/h/ext;d:/tools/marmalade/6.3/s3e/h/std;d:/tools/marmalade/6.3/s3e/h/std/c++;d:/tools/marmalade/6.3/s3e/h/ext_legacy;d:/tools/marmalade/6.3/s3e/h/legacy;.</AdditionalIncludeDirectories>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalOptions> /include:_IwMain /include:_raise /include:_DllEntryPoint@12</AdditionalOptions>
+      <AdditionalDependencies>vc6_compat.lib;jpeg_d.lib;z_d.lib;png_d.lib;iwutil_d.lib;iwgl_d.lib;s3e_cpp_vc8_d.lib;s3e_d.lib;s3e_api.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>d:/tools/marmalade/6.3/modules/third_party/libjpeg/lib/x86;d:/tools/marmalade/6.3/modules/third_party/zlib/lib/x86;d:/tools/marmalade/6.3/modules/third_party/libpng/lib/x86;d:/tools/marmalade/6.3/modules/iwutil/lib/x86;d:/tools/marmalade/6.3/modules/iwgl/lib/x86;d:/tools/marmalade/6.3/s3e/lib/x86</AdditionalLibraryDirectories>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <OptimizeReferences>false</OptimizeReferences>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <EntryPointSymbol>DllEntryPoint</EntryPointSymbol>
+      <IgnoreSpecificDefaultLibraries>libcmt</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <Lib>
+      <AdditionalOptions> %(AdditionalOptions) </AdditionalOptions>
+    </Lib>
+      <PostBuildEvent>
+        <Command>echo D:\tools\Marmalade\6.3\s3e\python\python.exe .\process_map.py &quot;$(TargetPath)&quot;&#x0D;&#x0A;chdir /d &quot;d:\tools\marmalade\6.3\s3e\tools&quot;&#x0D;&#x0A;D:\tools\Marmalade\6.3\s3e\python\python.exe .\process_map.py &quot;$(TargetPath)&quot;&#x0D;&#x0A;echo &quot;d:\tools\marmalade\6.3\s3e\bin\s3e_plink&quot; -l &quot;$(TargetPath)&quot; &#x0D;&#x0A;chdir /d &quot;d:\tools\marmalade\6.3\s3e&quot;&#x0D;&#x0A;&quot;d:\tools\marmalade\6.3\s3e\bin\s3e_plink&quot; -l &quot;$(TargetPath)&quot; &#x0D;&#x0A;</Command>
+      </PostBuildEvent>
+    </ItemDefinitionGroup>
+    <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='x86 Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PreprocessorDefinitions></PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <AdditionalOptions>/S3Eproject /J /FI"d:\tools\cocos2dx\samples\Cpp\HelloCpp-Box2D-CollisionTest-2.1.2\proj.marmalade\build_hellocpp_vc10x\temp_defines_release.h"</AdditionalOptions>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
+      <AdditionalIncludeDirectories>d:/tools/cocos2dx/samples/Cpp/HelloCpp-Box2D-CollisionTest-2.1.2/Classes;d:/tools/marmalade/6.3/modules/third_party/libjpeg/h;d:/tools/marmalade/6.3/modules/third_party/zlib/h;d:/tools/marmalade/6.3/modules/third_party/libpng/h;d:/tools/marmalade/6.3/modules/iwutil/h;d:/tools/marmalade/6.3/modules/iwgl/h;d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/h;d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/include;d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libtiff/headers;d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/webp;d:/tools/cocos2dx/cocos2dx/proj.marmalade;d:/tools/cocos2dx/cocos2dx;d:/tools/cocos2dx/cocos2dx/include;d:/tools/cocos2dx/cocos2dx/platform;d:/tools/cocos2dx/cocos2dx/platform/marmalade;d:/tools/cocos2dx/cocos2dx/actions;d:/tools/cocos2dx/cocos2dx/base_nodes;d:/tools/cocos2dx/cocos2dx/cocoa;d:/tools/cocos2dx/cocos2dx/draw_nodes;d:/tools/cocos2dx/cocos2dx/effects;d:/tools/cocos2dx/cocos2dx/kazmath/include;d:/tools/cocos2dx/cocos2dx/keypad_dispatcher;d:/tools/cocos2dx/cocos2dx/label_nodes;d:/tools/cocos2dx/cocos2dx/layers_scenes_transitions_nodes;d:/tools/cocos2dx/cocos2dx/menu_nodes;d:/tools/cocos2dx/cocos2dx/misc_nodes;d:/tools/cocos2dx/cocos2dx/particle_nodes;d:/tools/cocos2dx/cocos2dx/physics_nodes;d:/tools/cocos2dx/cocos2dx/shaders;d:/tools/cocos2dx/cocos2dx/script_support;d:/tools/cocos2dx/cocos2dx/sprite_nodes;d:/tools/cocos2dx/cocos2dx/support;d:/tools/cocos2dx/cocos2dx/support/tinyxml2;d:/tools/cocos2dx/cocos2dx/support/user_default;d:/tools/cocos2dx/cocos2dx/text_input_node;d:/tools/cocos2dx/cocos2dx/textures;d:/tools/cocos2dx/cocos2dx/tileMap_parallax_nodes;d:/tools/cocos2dx/cocos2dx/touch_dispatcher;d:/tools/cocos2dx/external;d:/tools/marmalade/6.3/s3e/h;d:/tools/marmalade/6.3/s3e/h/ext;d:/tools/marmalade/6.3/s3e/h/std;d:/tools/marmalade/6.3/s3e/h/std/c++;d:/tools/marmalade/6.3/s3e/h/ext_legacy;d:/tools/marmalade/6.3/s3e/h/legacy;.</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalOptions> /include:_IwMain /include:_raise /include:_DllEntryPoint@12</AdditionalOptions>
+      <AdditionalDependencies>vc6_compat.lib;jpeg.lib;z.lib;png.lib;iwutil.lib;iwgl.lib;s3e_cpp_vc8.lib;s3e.lib;s3e_api.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>d:/tools/marmalade/6.3/modules/third_party/libjpeg/lib/x86;d:/tools/marmalade/6.3/modules/third_party/zlib/lib/x86;d:/tools/marmalade/6.3/modules/third_party/libpng/lib/x86;d:/tools/marmalade/6.3/modules/iwutil/lib/x86;d:/tools/marmalade/6.3/modules/iwgl/lib/x86;d:/tools/marmalade/6.3/s3e/lib/x86</AdditionalLibraryDirectories>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <EntryPointSymbol>DllEntryPoint</EntryPointSymbol>
+      <IgnoreSpecificDefaultLibraries>libcmt</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <Lib>
+      <AdditionalOptions> %(AdditionalOptions) </AdditionalOptions>
+    </Lib>
+      <PostBuildEvent>
+        <Command>echo D:\tools\Marmalade\6.3\s3e\python\python.exe .\process_map.py &quot;$(TargetPath)&quot;&#x0D;&#x0A;chdir /d &quot;d:\tools\marmalade\6.3\s3e\tools&quot;&#x0D;&#x0A;D:\tools\Marmalade\6.3\s3e\python\python.exe .\process_map.py &quot;$(TargetPath)&quot;&#x0D;&#x0A;echo &quot;d:\tools\marmalade\6.3\s3e\bin\s3e_plink&quot; -l &quot;$(TargetPath)&quot; &#x0D;&#x0A;chdir /d &quot;d:\tools\marmalade\6.3\s3e&quot;&#x0D;&#x0A;&quot;d:\tools\marmalade\6.3\s3e\bin\s3e_plink&quot; -l &quot;$(TargetPath)&quot; &#x0D;&#x0A;</Command>
+      </PostBuildEvent>
+    </ItemDefinitionGroup>
+    <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='GCC X86 ANDROID Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PreprocessorDefinitions></PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <AdditionalOptions>/S3Eproject /J /Fe"s3e-custom-tool='d:/tools/marmalade/6.3/tools/gcc/x86/android_windows/bin/i686-linux-android-gcc.exe' tooltype=gcc_x86_android_compiler -funsigned-char -fno-strict-aliasing -fno-stack-protector -fno-short-enums -fshort-wchar -Wall -fmessage-length=0 -Wno-unused -Wno-parentheses -save-temps -m32 -fasynchronous-unwind-tables -fPIC -Wno-switch -fvisibility=hidden -nostdinc --cppflag=-Wno-reorder --cppflag=-fvisibility-inlines-hidden --cppflag=-fno-exceptions --cppflag=-frtti --cppflag=-nostdinc++ -g -O0" /FD  /FI"d:\tools\cocos2dx\samples\Cpp\HelloCpp-Box2D-CollisionTest-2.1.2\proj.marmalade\build_hellocpp_vc10x\temp_defines_debug.h"</AdditionalOptions>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
+      <AdditionalIncludeDirectories>d:/tools/cocos2dx/samples/Cpp/HelloCpp-Box2D-CollisionTest-2.1.2/Classes;d:/tools/marmalade/6.3/modules/third_party/libjpeg/h;d:/tools/marmalade/6.3/modules/third_party/zlib/h;d:/tools/marmalade/6.3/modules/third_party/libpng/h;d:/tools/marmalade/6.3/modules/iwutil/h;d:/tools/marmalade/6.3/modules/iwgl/h;d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/h;d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/include;d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libtiff/headers;d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/webp;d:/tools/cocos2dx/cocos2dx/proj.marmalade;d:/tools/cocos2dx/cocos2dx;d:/tools/cocos2dx/cocos2dx/include;d:/tools/cocos2dx/cocos2dx/platform;d:/tools/cocos2dx/cocos2dx/platform/marmalade;d:/tools/cocos2dx/cocos2dx/actions;d:/tools/cocos2dx/cocos2dx/base_nodes;d:/tools/cocos2dx/cocos2dx/cocoa;d:/tools/cocos2dx/cocos2dx/draw_nodes;d:/tools/cocos2dx/cocos2dx/effects;d:/tools/cocos2dx/cocos2dx/kazmath/include;d:/tools/cocos2dx/cocos2dx/keypad_dispatcher;d:/tools/cocos2dx/cocos2dx/label_nodes;d:/tools/cocos2dx/cocos2dx/layers_scenes_transitions_nodes;d:/tools/cocos2dx/cocos2dx/menu_nodes;d:/tools/cocos2dx/cocos2dx/misc_nodes;d:/tools/cocos2dx/cocos2dx/particle_nodes;d:/tools/cocos2dx/cocos2dx/physics_nodes;d:/tools/cocos2dx/cocos2dx/shaders;d:/tools/cocos2dx/cocos2dx/script_support;d:/tools/cocos2dx/cocos2dx/sprite_nodes;d:/tools/cocos2dx/cocos2dx/support;d:/tools/cocos2dx/cocos2dx/support/tinyxml2;d:/tools/cocos2dx/cocos2dx/support/user_default;d:/tools/cocos2dx/cocos2dx/text_input_node;d:/tools/cocos2dx/cocos2dx/textures;d:/tools/cocos2dx/cocos2dx/tileMap_parallax_nodes;d:/tools/cocos2dx/cocos2dx/touch_dispatcher;d:/tools/cocos2dx/external;d:/tools/marmalade/6.3/s3e/h;d:/tools/marmalade/6.3/s3e/h/ext;d:/tools/marmalade/6.3/s3e/h/std;d:/tools/marmalade/6.3/s3e/h/std/c++;d:/tools/marmalade/6.3/s3e/h/ext_legacy;d:/tools/marmalade/6.3/s3e/h/legacy;.</AdditionalIncludeDirectories>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalOptions> /include:_IwMain /include:_raise /include:_DllEntryPoint@12/COMMENT:"s3e-custom-tool='d:/tools/marmalade/6.3/tools/gcc/x86/android_windows/bin/i686-linux-android-g++.exe' tooltype=gcc_x86_android_linker -Wl,--as-needed -m32 --sysroot=d:/tools/marmalade/6.3/s3e\..\tools\gcc\x86\android_windows/android-14/arch-x86 -Wl,--no-undefined -shared -static-libgcc -nodefaultlibs -Wl,--entry=_IwMain -Wl,-Tandroid_x86_linker_script -Wl,-init -Wl,iwcrt_android_x86_init -Wl,-fini -Wl,iwcrt_android_x86_fini -frtti -Wl,-u_IwAppEntry -Wl,-u_IwAppVersionMajor -Wl,-u_IwAppVersionMinor -Wl,--entry=_IwAppEntry -Wl,-Map='$(OutDir)/HelloCPP.map' -Wl,--start-group -ljpeg_d -lz_d -lpng_d -liwutil_d -liwgl_d -ls3e_cpp_d -ls3e_d -ls3e_api -lstdc++ -lc -lm -lgcc -Wl,--end-group --plink:-l"</AdditionalOptions>
+      <AdditionalDependencies></AdditionalDependencies>
+      <AdditionalLibraryDirectories>d:/tools/marmalade/6.3/modules/third_party/libjpeg/lib/x86/android;d:/tools/marmalade/6.3/modules/third_party/zlib/lib/x86/android;d:/tools/marmalade/6.3/modules/third_party/libpng/lib/x86/android;d:/tools/marmalade/6.3/modules/iwutil/lib/x86/android;d:/tools/marmalade/6.3/modules/iwgl/lib/x86/android;d:/tools/marmalade/6.3/s3e/lib/x86/android</AdditionalLibraryDirectories>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <OptimizeReferences>false</OptimizeReferences>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <EntryPointSymbol></EntryPointSymbol>
+      <IgnoreSpecificDefaultLibraries>libcmt</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <Lib>
+      <AdditionalOptions> %(AdditionalOptions) </AdditionalOptions>
+    </Lib>
+      <PostBuildEvent>
+        <Command>echo D:\tools\Marmalade\6.3\s3e\python\python.exe .\process_map.py &quot;$(TargetPath)&quot;&#x0D;&#x0A;chdir /d &quot;d:\tools\marmalade\6.3\s3e\tools&quot;&#x0D;&#x0A;D:\tools\Marmalade\6.3\s3e\python\python.exe .\process_map.py &quot;$(TargetPath)&quot;&#x0D;&#x0A;echo &quot;d:\tools\marmalade\6.3\s3e\bin\s3e_plink&quot; -l &quot;$(TargetPath)&quot; &#x0D;&#x0A;chdir /d &quot;d:\tools\marmalade\6.3\s3e&quot;&#x0D;&#x0A;&quot;d:\tools\marmalade\6.3\s3e\bin\s3e_plink&quot; -l &quot;$(TargetPath)&quot; &#x0D;&#x0A;</Command>
+      </PostBuildEvent>
+    </ItemDefinitionGroup>
+    <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='GCC X86 ANDROID Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PreprocessorDefinitions></PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <AdditionalOptions>/S3Eproject /J /Fe"s3e-custom-tool='d:/tools/marmalade/6.3/tools/gcc/x86/android_windows/bin/i686-linux-android-gcc.exe' tooltype=gcc_x86_android_compiler -funsigned-char -fno-strict-aliasing -fno-stack-protector -fno-short-enums -fshort-wchar -Wall -fmessage-length=0 -Wno-unused -Wno-parentheses -save-temps -m32 -fasynchronous-unwind-tables -fPIC -Wno-switch -fvisibility=hidden -nostdinc --cppflag=-Wno-reorder --cppflag=-fvisibility-inlines-hidden --cppflag=-fno-exceptions --cppflag=-frtti --cppflag=-nostdinc++ -O3" /FD  /FI"d:\tools\cocos2dx\samples\Cpp\HelloCpp-Box2D-CollisionTest-2.1.2\proj.marmalade\build_hellocpp_vc10x\temp_defines_release.h"</AdditionalOptions>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
+      <AdditionalIncludeDirectories>d:/tools/cocos2dx/samples/Cpp/HelloCpp-Box2D-CollisionTest-2.1.2/Classes;d:/tools/marmalade/6.3/modules/third_party/libjpeg/h;d:/tools/marmalade/6.3/modules/third_party/zlib/h;d:/tools/marmalade/6.3/modules/third_party/libpng/h;d:/tools/marmalade/6.3/modules/iwutil/h;d:/tools/marmalade/6.3/modules/iwgl/h;d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/h;d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/include;d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libtiff/headers;d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/webp;d:/tools/cocos2dx/cocos2dx/proj.marmalade;d:/tools/cocos2dx/cocos2dx;d:/tools/cocos2dx/cocos2dx/include;d:/tools/cocos2dx/cocos2dx/platform;d:/tools/cocos2dx/cocos2dx/platform/marmalade;d:/tools/cocos2dx/cocos2dx/actions;d:/tools/cocos2dx/cocos2dx/base_nodes;d:/tools/cocos2dx/cocos2dx/cocoa;d:/tools/cocos2dx/cocos2dx/draw_nodes;d:/tools/cocos2dx/cocos2dx/effects;d:/tools/cocos2dx/cocos2dx/kazmath/include;d:/tools/cocos2dx/cocos2dx/keypad_dispatcher;d:/tools/cocos2dx/cocos2dx/label_nodes;d:/tools/cocos2dx/cocos2dx/layers_scenes_transitions_nodes;d:/tools/cocos2dx/cocos2dx/menu_nodes;d:/tools/cocos2dx/cocos2dx/misc_nodes;d:/tools/cocos2dx/cocos2dx/particle_nodes;d:/tools/cocos2dx/cocos2dx/physics_nodes;d:/tools/cocos2dx/cocos2dx/shaders;d:/tools/cocos2dx/cocos2dx/script_support;d:/tools/cocos2dx/cocos2dx/sprite_nodes;d:/tools/cocos2dx/cocos2dx/support;d:/tools/cocos2dx/cocos2dx/support/tinyxml2;d:/tools/cocos2dx/cocos2dx/support/user_default;d:/tools/cocos2dx/cocos2dx/text_input_node;d:/tools/cocos2dx/cocos2dx/textures;d:/tools/cocos2dx/cocos2dx/tileMap_parallax_nodes;d:/tools/cocos2dx/cocos2dx/touch_dispatcher;d:/tools/cocos2dx/external;d:/tools/marmalade/6.3/s3e/h;d:/tools/marmalade/6.3/s3e/h/ext;d:/tools/marmalade/6.3/s3e/h/std;d:/tools/marmalade/6.3/s3e/h/std/c++;d:/tools/marmalade/6.3/s3e/h/ext_legacy;d:/tools/marmalade/6.3/s3e/h/legacy;.</AdditionalIncludeDirectories>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalOptions> /include:_IwMain /include:_raise /include:_DllEntryPoint@12/COMMENT:"s3e-custom-tool='d:/tools/marmalade/6.3/tools/gcc/x86/android_windows/bin/i686-linux-android-g++.exe' tooltype=gcc_x86_android_linker -Wl,--as-needed -m32 --sysroot=d:/tools/marmalade/6.3/s3e\..\tools\gcc\x86\android_windows/android-14/arch-x86 -Wl,--no-undefined -shared -static-libgcc -nodefaultlibs -Wl,--entry=_IwMain -Wl,-Tandroid_x86_linker_script -Wl,-init -Wl,iwcrt_android_x86_init -Wl,-fini -Wl,iwcrt_android_x86_fini -frtti -Wl,-u_IwAppEntry -Wl,-u_IwAppVersionMajor -Wl,-u_IwAppVersionMinor -Wl,--entry=_IwAppEntry -Wl,-Map='$(OutDir)/HelloCPP.map' -Wl,--start-group -ljpeg -lz -lpng -liwutil -liwgl -ls3e_cpp -ls3e -ls3e_api -lstdc++ -lc -lm -lgcc -Wl,--end-group --plink:-l"</AdditionalOptions>
+      <AdditionalDependencies></AdditionalDependencies>
+      <AdditionalLibraryDirectories>d:/tools/marmalade/6.3/modules/third_party/libjpeg/lib/x86/android;d:/tools/marmalade/6.3/modules/third_party/zlib/lib/x86/android;d:/tools/marmalade/6.3/modules/third_party/libpng/lib/x86/android;d:/tools/marmalade/6.3/modules/iwutil/lib/x86/android;d:/tools/marmalade/6.3/modules/iwgl/lib/x86/android;d:/tools/marmalade/6.3/s3e/lib/x86/android</AdditionalLibraryDirectories>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <EntryPointSymbol></EntryPointSymbol>
+      <IgnoreSpecificDefaultLibraries>libcmt</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <Lib>
+      <AdditionalOptions> %(AdditionalOptions) </AdditionalOptions>
+    </Lib>
+      <PostBuildEvent>
+        <Command>echo D:\tools\Marmalade\6.3\s3e\python\python.exe .\process_map.py &quot;$(TargetPath)&quot;&#x0D;&#x0A;chdir /d &quot;d:\tools\marmalade\6.3\s3e\tools&quot;&#x0D;&#x0A;D:\tools\Marmalade\6.3\s3e\python\python.exe .\process_map.py &quot;$(TargetPath)&quot;&#x0D;&#x0A;echo &quot;d:\tools\marmalade\6.3\s3e\bin\s3e_plink&quot; -l &quot;$(TargetPath)&quot; &#x0D;&#x0A;chdir /d &quot;d:\tools\marmalade\6.3\s3e&quot;&#x0D;&#x0A;&quot;d:\tools\marmalade\6.3\s3e\bin\s3e_plink&quot; -l &quot;$(TargetPath)&quot; &#x0D;&#x0A;</Command>
+      </PostBuildEvent>
+    </ItemDefinitionGroup>
+    <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RVCT ARM Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PreprocessorDefinitions></PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <AdditionalOptions>/S3Eproject /J /Fe"s3e-custom-tool='__invalid__rvct' tooltype=rvct_compiler --enum_is_int --unsigned_chars --interleave --diag_remark=1,9,111,174,128,177,196,381,550,611,815,1293,1295,1299,1300,1304,3017,3052,390 --apcs=/noropi --library_interface=aeabi_glibc --no-hide-all --no_unaligned_access --no_exceptions --fpu=softvfp+vfpv2 --apcs=/interwork --cpu=5TE --no-rvct -Jd:/tools/MARMAL~1/6.3/s3e/h/std --asm --cppflag=--cpp -g -O0 --no_inline --diag_style=ide --default_extension=obj " /FD  /FI"d:\tools\cocos2dx\samples\Cpp\HelloCpp-Box2D-CollisionTest-2.1.2\proj.marmalade\build_hellocpp_vc10x\temp_defines_debug.h"</AdditionalOptions>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
+      <AdditionalIncludeDirectories>d:/tools/cocos2dx/samples/Cpp/HelloCpp-Box2D-CollisionTest-2.1.2/Classes;d:/tools/marmalade/6.3/modules/third_party/libjpeg/h;d:/tools/marmalade/6.3/modules/third_party/zlib/h;d:/tools/marmalade/6.3/modules/third_party/libpng/h;d:/tools/marmalade/6.3/modules/iwutil/h;d:/tools/marmalade/6.3/modules/iwgl/h;d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/h;d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/include;d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libtiff/headers;d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/webp;d:/tools/cocos2dx/cocos2dx/proj.marmalade;d:/tools/cocos2dx/cocos2dx;d:/tools/cocos2dx/cocos2dx/include;d:/tools/cocos2dx/cocos2dx/platform;d:/tools/cocos2dx/cocos2dx/platform/marmalade;d:/tools/cocos2dx/cocos2dx/actions;d:/tools/cocos2dx/cocos2dx/base_nodes;d:/tools/cocos2dx/cocos2dx/cocoa;d:/tools/cocos2dx/cocos2dx/draw_nodes;d:/tools/cocos2dx/cocos2dx/effects;d:/tools/cocos2dx/cocos2dx/kazmath/include;d:/tools/cocos2dx/cocos2dx/keypad_dispatcher;d:/tools/cocos2dx/cocos2dx/label_nodes;d:/tools/cocos2dx/cocos2dx/layers_scenes_transitions_nodes;d:/tools/cocos2dx/cocos2dx/menu_nodes;d:/tools/cocos2dx/cocos2dx/misc_nodes;d:/tools/cocos2dx/cocos2dx/particle_nodes;d:/tools/cocos2dx/cocos2dx/physics_nodes;d:/tools/cocos2dx/cocos2dx/shaders;d:/tools/cocos2dx/cocos2dx/script_support;d:/tools/cocos2dx/cocos2dx/sprite_nodes;d:/tools/cocos2dx/cocos2dx/support;d:/tools/cocos2dx/cocos2dx/support/tinyxml2;d:/tools/cocos2dx/cocos2dx/support/user_default;d:/tools/cocos2dx/cocos2dx/text_input_node;d:/tools/cocos2dx/cocos2dx/textures;d:/tools/cocos2dx/cocos2dx/tileMap_parallax_nodes;d:/tools/cocos2dx/cocos2dx/touch_dispatcher;d:/tools/cocos2dx/external;d:/tools/marmalade/6.3/s3e/h;d:/tools/marmalade/6.3/s3e/h/ext;d:/tools/marmalade/6.3/s3e/h/std;d:/tools/marmalade/6.3/s3e/h/std/c++;d:/tools/marmalade/6.3/s3e/h/ext_legacy;d:/tools/marmalade/6.3/s3e/h/legacy;.</AdditionalIncludeDirectories>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalOptions> /include:_IwMain /include:_raise /include:_DllEntryPoint@12/COMMENT:"s3e-custom-tool='__invalid__rvct' tooltype=rvct_linker --diag_suppress=6331,6780,6340 --no_locals --datacompressor=off --remove --symbols --unmangled --callgraph --map --info=sizes,totals,inline,tailreorder,veneers --no-rvct --scatter='d:/tools/marmalade/6.3/s3e/makefile_builder/templates/rvct_linker_script' --list='$(OutDir)/HelloCPP.map' jpeg_d.a z_d.a png_d.a libiwutil_d.a iwgl_d.a s3e_cpp_d.a s3e_d.a s3e_d.a(iwcrt.o) s3e_api.a --plink:--arch=armv5TE --plink:--vfp"</AdditionalOptions>
+      <AdditionalDependencies></AdditionalDependencies>
+      <AdditionalLibraryDirectories>d:/tools/marmalade/6.3/modules/third_party/libjpeg/lib/arm;d:/tools/marmalade/6.3/modules/third_party/zlib/lib/arm;d:/tools/marmalade/6.3/modules/third_party/libpng/lib/arm;d:/tools/marmalade/6.3/modules/iwutil/lib/arm;d:/tools/marmalade/6.3/modules/iwgl/lib/arm;d:/tools/marmalade/6.3/s3e/lib/arm</AdditionalLibraryDirectories>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <OptimizeReferences>false</OptimizeReferences>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <EntryPointSymbol></EntryPointSymbol>
+      <IgnoreSpecificDefaultLibraries>libcmt</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <Lib>
+      <AdditionalOptions> %(AdditionalOptions) </AdditionalOptions>
+    </Lib>
+      <PostBuildEvent>
+        <Command>echo D:\tools\Marmalade\6.3\s3e\python\python.exe .\process_map.py &quot;$(TargetPath)&quot;&#x0D;&#x0A;chdir /d &quot;d:\tools\marmalade\6.3\s3e\tools&quot;&#x0D;&#x0A;D:\tools\Marmalade\6.3\s3e\python\python.exe .\process_map.py &quot;$(TargetPath)&quot;&#x0D;&#x0A;</Command>
+      </PostBuildEvent>
+    </ItemDefinitionGroup>
+    <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RVCT ARM Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PreprocessorDefinitions></PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <AdditionalOptions>/S3Eproject /J /Fe"s3e-custom-tool='__invalid__rvct' tooltype=rvct_compiler --enum_is_int --unsigned_chars --interleave --diag_remark=1,9,111,174,128,177,196,381,550,611,815,1293,1295,1299,1300,1304,3017,3052,390 --apcs=/noropi --library_interface=aeabi_glibc --no-hide-all --no_unaligned_access --no_exceptions --fpu=softvfp+vfpv2 --apcs=/interwork --cpu=5TE --no-rvct -Jd:/tools/MARMAL~1/6.3/s3e/h/std --asm --cppflag=--cpp --split_sections -Otime -O3 --diag_style=ide --default_extension=obj " /FD  /FI"d:\tools\cocos2dx\samples\Cpp\HelloCpp-Box2D-CollisionTest-2.1.2\proj.marmalade\build_hellocpp_vc10x\temp_defines_release.h"</AdditionalOptions>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
+      <AdditionalIncludeDirectories>d:/tools/cocos2dx/samples/Cpp/HelloCpp-Box2D-CollisionTest-2.1.2/Classes;d:/tools/marmalade/6.3/modules/third_party/libjpeg/h;d:/tools/marmalade/6.3/modules/third_party/zlib/h;d:/tools/marmalade/6.3/modules/third_party/libpng/h;d:/tools/marmalade/6.3/modules/iwutil/h;d:/tools/marmalade/6.3/modules/iwgl/h;d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/h;d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/include;d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libtiff/headers;d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/webp;d:/tools/cocos2dx/cocos2dx/proj.marmalade;d:/tools/cocos2dx/cocos2dx;d:/tools/cocos2dx/cocos2dx/include;d:/tools/cocos2dx/cocos2dx/platform;d:/tools/cocos2dx/cocos2dx/platform/marmalade;d:/tools/cocos2dx/cocos2dx/actions;d:/tools/cocos2dx/cocos2dx/base_nodes;d:/tools/cocos2dx/cocos2dx/cocoa;d:/tools/cocos2dx/cocos2dx/draw_nodes;d:/tools/cocos2dx/cocos2dx/effects;d:/tools/cocos2dx/cocos2dx/kazmath/include;d:/tools/cocos2dx/cocos2dx/keypad_dispatcher;d:/tools/cocos2dx/cocos2dx/label_nodes;d:/tools/cocos2dx/cocos2dx/layers_scenes_transitions_nodes;d:/tools/cocos2dx/cocos2dx/menu_nodes;d:/tools/cocos2dx/cocos2dx/misc_nodes;d:/tools/cocos2dx/cocos2dx/particle_nodes;d:/tools/cocos2dx/cocos2dx/physics_nodes;d:/tools/cocos2dx/cocos2dx/shaders;d:/tools/cocos2dx/cocos2dx/script_support;d:/tools/cocos2dx/cocos2dx/sprite_nodes;d:/tools/cocos2dx/cocos2dx/support;d:/tools/cocos2dx/cocos2dx/support/tinyxml2;d:/tools/cocos2dx/cocos2dx/support/user_default;d:/tools/cocos2dx/cocos2dx/text_input_node;d:/tools/cocos2dx/cocos2dx/textures;d:/tools/cocos2dx/cocos2dx/tileMap_parallax_nodes;d:/tools/cocos2dx/cocos2dx/touch_dispatcher;d:/tools/cocos2dx/external;d:/tools/marmalade/6.3/s3e/h;d:/tools/marmalade/6.3/s3e/h/ext;d:/tools/marmalade/6.3/s3e/h/std;d:/tools/marmalade/6.3/s3e/h/std/c++;d:/tools/marmalade/6.3/s3e/h/ext_legacy;d:/tools/marmalade/6.3/s3e/h/legacy;.</AdditionalIncludeDirectories>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalOptions> /include:_IwMain /include:_raise /include:_DllEntryPoint@12/COMMENT:"s3e-custom-tool='__invalid__rvct' tooltype=rvct_linker --diag_suppress=6331,6780,6340 --no_locals --datacompressor=off --remove --symbols --unmangled --callgraph --map --info=sizes,totals,inline,tailreorder,veneers --no-rvct --scatter='d:/tools/marmalade/6.3/s3e/makefile_builder/templates/rvct_linker_script' --list='$(OutDir)/HelloCPP.map' jpeg.a z.a png.a libiwutil.a iwgl.a s3e_cpp.a s3e.a s3e.a(iwcrt.o) s3e_api.a --plink:--arch=armv5TE --plink:--vfp"</AdditionalOptions>
+      <AdditionalDependencies></AdditionalDependencies>
+      <AdditionalLibraryDirectories>d:/tools/marmalade/6.3/modules/third_party/libjpeg/lib/arm;d:/tools/marmalade/6.3/modules/third_party/zlib/lib/arm;d:/tools/marmalade/6.3/modules/third_party/libpng/lib/arm;d:/tools/marmalade/6.3/modules/iwutil/lib/arm;d:/tools/marmalade/6.3/modules/iwgl/lib/arm;d:/tools/marmalade/6.3/s3e/lib/arm</AdditionalLibraryDirectories>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <EntryPointSymbol></EntryPointSymbol>
+      <IgnoreSpecificDefaultLibraries>libcmt</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <Lib>
+      <AdditionalOptions> %(AdditionalOptions) </AdditionalOptions>
+    </Lib>
+      <PostBuildEvent>
+        <Command>echo D:\tools\Marmalade\6.3\s3e\python\python.exe .\process_map.py &quot;$(TargetPath)&quot;&#x0D;&#x0A;chdir /d &quot;d:\tools\marmalade\6.3\s3e\tools&quot;&#x0D;&#x0A;D:\tools\Marmalade\6.3\s3e\python\python.exe .\process_map.py &quot;$(TargetPath)&quot;&#x0D;&#x0A;</Command>
+      </PostBuildEvent>
+    </ItemDefinitionGroup>
+    <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='GCC ARM Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PreprocessorDefinitions></PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <AdditionalOptions>/S3Eproject /J /Fe"s3e-custom-tool='d:/tools/marmalade/6.3/s3e/gcc/bin/arm-none-eabi-gcc.exe' tooltype=gcc_compiler -funsigned-char -fno-strict-aliasing -fno-stack-protector -fno-short-enums -fshort-wchar -Wall -fomit-frame-pointer -fmessage-length=0 -Wno-unused -Wno-parentheses -save-temps -ffunction-sections -mstructure-size-boundary=8 -mfpu=vfp -mfloat-abi=softfp -mthumb-interwork -march=armv5te -mword-relocations -Wno-switch -Wno-psabi -fvisibility=hidden -nostdinc --cppflag=-Wno-reorder --cppflag=-fvisibility-inlines-hidden --cppflag=-fno-exceptions --cppflag=-nostdinc++ -g -O0" /FD  /FI"d:\tools\cocos2dx\samples\Cpp\HelloCpp-Box2D-CollisionTest-2.1.2\proj.marmalade\build_hellocpp_vc10x\temp_defines_debug.h"</AdditionalOptions>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
+      <AdditionalIncludeDirectories>d:/tools/cocos2dx/samples/Cpp/HelloCpp-Box2D-CollisionTest-2.1.2/Classes;d:/tools/marmalade/6.3/modules/third_party/libjpeg/h;d:/tools/marmalade/6.3/modules/third_party/zlib/h;d:/tools/marmalade/6.3/modules/third_party/libpng/h;d:/tools/marmalade/6.3/modules/iwutil/h;d:/tools/marmalade/6.3/modules/iwgl/h;d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/h;d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/include;d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libtiff/headers;d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/webp;d:/tools/cocos2dx/cocos2dx/proj.marmalade;d:/tools/cocos2dx/cocos2dx;d:/tools/cocos2dx/cocos2dx/include;d:/tools/cocos2dx/cocos2dx/platform;d:/tools/cocos2dx/cocos2dx/platform/marmalade;d:/tools/cocos2dx/cocos2dx/actions;d:/tools/cocos2dx/cocos2dx/base_nodes;d:/tools/cocos2dx/cocos2dx/cocoa;d:/tools/cocos2dx/cocos2dx/draw_nodes;d:/tools/cocos2dx/cocos2dx/effects;d:/tools/cocos2dx/cocos2dx/kazmath/include;d:/tools/cocos2dx/cocos2dx/keypad_dispatcher;d:/tools/cocos2dx/cocos2dx/label_nodes;d:/tools/cocos2dx/cocos2dx/layers_scenes_transitions_nodes;d:/tools/cocos2dx/cocos2dx/menu_nodes;d:/tools/cocos2dx/cocos2dx/misc_nodes;d:/tools/cocos2dx/cocos2dx/particle_nodes;d:/tools/cocos2dx/cocos2dx/physics_nodes;d:/tools/cocos2dx/cocos2dx/shaders;d:/tools/cocos2dx/cocos2dx/script_support;d:/tools/cocos2dx/cocos2dx/sprite_nodes;d:/tools/cocos2dx/cocos2dx/support;d:/tools/cocos2dx/cocos2dx/support/tinyxml2;d:/tools/cocos2dx/cocos2dx/support/user_default;d:/tools/cocos2dx/cocos2dx/text_input_node;d:/tools/cocos2dx/cocos2dx/textures;d:/tools/cocos2dx/cocos2dx/tileMap_parallax_nodes;d:/tools/cocos2dx/cocos2dx/touch_dispatcher;d:/tools/cocos2dx/external;d:/tools/marmalade/6.3/s3e/h;d:/tools/marmalade/6.3/s3e/h/ext;d:/tools/marmalade/6.3/s3e/h/std;d:/tools/marmalade/6.3/s3e/h/std/c++;d:/tools/marmalade/6.3/s3e/h/ext_legacy;d:/tools/marmalade/6.3/s3e/h/legacy;.</AdditionalIncludeDirectories>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalOptions> /include:_IwMain /include:_raise /include:_DllEntryPoint@12/COMMENT:"s3e-custom-tool='d:/tools/marmalade/6.3/s3e/gcc/bin/arm-none-eabi-g++.exe' tooltype=gcc_linker -Wl,--gc-sections -Wl,--as-needed -mthumb-interwork -pie -Wl,--entry=_IwMain -Wl,--no-enum-size-warning -Wl,-Tlinker_script -lc -lm -Wl,-Map='$(OutDir)/HelloCPP.map' -Wl,--start-group -Wl,--whole-archive -liwutil_d -Wl,--no-whole-archive -ljpeg_d -lz_d -lpng_d -liwgl_d -ls3e_cpp_d -ls3e_d -ls3e_api -ls3e_api -Wl,--end-group --plink:--arch=armv5TE --plink:--vfp"</AdditionalOptions>
+      <AdditionalDependencies></AdditionalDependencies>
+      <AdditionalLibraryDirectories>d:/tools/marmalade/6.3/modules/third_party/libjpeg/lib/arm;d:/tools/marmalade/6.3/modules/third_party/zlib/lib/arm;d:/tools/marmalade/6.3/modules/third_party/libpng/lib/arm;d:/tools/marmalade/6.3/modules/iwutil/lib/arm;d:/tools/marmalade/6.3/modules/iwgl/lib/arm;d:/tools/marmalade/6.3/s3e/lib/arm</AdditionalLibraryDirectories>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <OptimizeReferences>false</OptimizeReferences>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <EntryPointSymbol></EntryPointSymbol>
+      <IgnoreSpecificDefaultLibraries>libcmt</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <Lib>
+      <AdditionalOptions> %(AdditionalOptions) </AdditionalOptions>
+    </Lib>
+      <PostBuildEvent>
+        <Command>echo D:\tools\Marmalade\6.3\s3e\python\python.exe .\process_map.py &quot;$(TargetPath)&quot;&#x0D;&#x0A;chdir /d &quot;d:\tools\marmalade\6.3\s3e\tools&quot;&#x0D;&#x0A;D:\tools\Marmalade\6.3\s3e\python\python.exe .\process_map.py &quot;$(TargetPath)&quot;&#x0D;&#x0A;</Command>
+      </PostBuildEvent>
+    </ItemDefinitionGroup>
+    <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='GCC ARM Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PreprocessorDefinitions></PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <AdditionalOptions>/S3Eproject /J /Fe"s3e-custom-tool='d:/tools/marmalade/6.3/s3e/gcc/bin/arm-none-eabi-gcc.exe' tooltype=gcc_compiler -funsigned-char -fno-strict-aliasing -fno-stack-protector -fno-short-enums -fshort-wchar -Wall -fomit-frame-pointer -fmessage-length=0 -Wno-unused -Wno-parentheses -save-temps -ffunction-sections -mstructure-size-boundary=8 -mfpu=vfp -mfloat-abi=softfp -mthumb-interwork -march=armv5te -mword-relocations -Wno-switch -Wno-psabi -fvisibility=hidden -nostdinc --cppflag=-Wno-reorder --cppflag=-fvisibility-inlines-hidden --cppflag=-fno-exceptions --cppflag=-nostdinc++ -O3" /FD  /FI"d:\tools\cocos2dx\samples\Cpp\HelloCpp-Box2D-CollisionTest-2.1.2\proj.marmalade\build_hellocpp_vc10x\temp_defines_release.h"</AdditionalOptions>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
+      <AdditionalIncludeDirectories>d:/tools/cocos2dx/samples/Cpp/HelloCpp-Box2D-CollisionTest-2.1.2/Classes;d:/tools/marmalade/6.3/modules/third_party/libjpeg/h;d:/tools/marmalade/6.3/modules/third_party/zlib/h;d:/tools/marmalade/6.3/modules/third_party/libpng/h;d:/tools/marmalade/6.3/modules/iwutil/h;d:/tools/marmalade/6.3/modules/iwgl/h;d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/h;d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/include;d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libtiff/headers;d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/webp;d:/tools/cocos2dx/cocos2dx/proj.marmalade;d:/tools/cocos2dx/cocos2dx;d:/tools/cocos2dx/cocos2dx/include;d:/tools/cocos2dx/cocos2dx/platform;d:/tools/cocos2dx/cocos2dx/platform/marmalade;d:/tools/cocos2dx/cocos2dx/actions;d:/tools/cocos2dx/cocos2dx/base_nodes;d:/tools/cocos2dx/cocos2dx/cocoa;d:/tools/cocos2dx/cocos2dx/draw_nodes;d:/tools/cocos2dx/cocos2dx/effects;d:/tools/cocos2dx/cocos2dx/kazmath/include;d:/tools/cocos2dx/cocos2dx/keypad_dispatcher;d:/tools/cocos2dx/cocos2dx/label_nodes;d:/tools/cocos2dx/cocos2dx/layers_scenes_transitions_nodes;d:/tools/cocos2dx/cocos2dx/menu_nodes;d:/tools/cocos2dx/cocos2dx/misc_nodes;d:/tools/cocos2dx/cocos2dx/particle_nodes;d:/tools/cocos2dx/cocos2dx/physics_nodes;d:/tools/cocos2dx/cocos2dx/shaders;d:/tools/cocos2dx/cocos2dx/script_support;d:/tools/cocos2dx/cocos2dx/sprite_nodes;d:/tools/cocos2dx/cocos2dx/support;d:/tools/cocos2dx/cocos2dx/support/tinyxml2;d:/tools/cocos2dx/cocos2dx/support/user_default;d:/tools/cocos2dx/cocos2dx/text_input_node;d:/tools/cocos2dx/cocos2dx/textures;d:/tools/cocos2dx/cocos2dx/tileMap_parallax_nodes;d:/tools/cocos2dx/cocos2dx/touch_dispatcher;d:/tools/cocos2dx/external;d:/tools/marmalade/6.3/s3e/h;d:/tools/marmalade/6.3/s3e/h/ext;d:/tools/marmalade/6.3/s3e/h/std;d:/tools/marmalade/6.3/s3e/h/std/c++;d:/tools/marmalade/6.3/s3e/h/ext_legacy;d:/tools/marmalade/6.3/s3e/h/legacy;.</AdditionalIncludeDirectories>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalOptions> /include:_IwMain /include:_raise /include:_DllEntryPoint@12/COMMENT:"s3e-custom-tool='d:/tools/marmalade/6.3/s3e/gcc/bin/arm-none-eabi-g++.exe' tooltype=gcc_linker -Wl,--gc-sections -Wl,--as-needed -mthumb-interwork -pie -Wl,--entry=_IwMain -Wl,--no-enum-size-warning -Wl,-Tlinker_script -lc -lm -Wl,-Map='$(OutDir)/HelloCPP.map' -Wl,--start-group -Wl,--whole-archive -liwutil -Wl,--no-whole-archive -ljpeg -lz -lpng -liwgl -ls3e_cpp -ls3e -ls3e_api -ls3e_api -Wl,--end-group --plink:--arch=armv5TE --plink:--vfp"</AdditionalOptions>
+      <AdditionalDependencies></AdditionalDependencies>
+      <AdditionalLibraryDirectories>d:/tools/marmalade/6.3/modules/third_party/libjpeg/lib/arm;d:/tools/marmalade/6.3/modules/third_party/zlib/lib/arm;d:/tools/marmalade/6.3/modules/third_party/libpng/lib/arm;d:/tools/marmalade/6.3/modules/iwutil/lib/arm;d:/tools/marmalade/6.3/modules/iwgl/lib/arm;d:/tools/marmalade/6.3/s3e/lib/arm</AdditionalLibraryDirectories>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <EntryPointSymbol></EntryPointSymbol>
+      <IgnoreSpecificDefaultLibraries>libcmt</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <Lib>
+      <AdditionalOptions> %(AdditionalOptions) </AdditionalOptions>
+    </Lib>
+      <PostBuildEvent>
+        <Command>echo D:\tools\Marmalade\6.3\s3e\python\python.exe .\process_map.py &quot;$(TargetPath)&quot;&#x0D;&#x0A;chdir /d &quot;d:\tools\marmalade\6.3\s3e\tools&quot;&#x0D;&#x0A;D:\tools\Marmalade\6.3\s3e\python\python.exe .\process_map.py &quot;$(TargetPath)&quot;&#x0D;&#x0A;</Command>
+      </PostBuildEvent>
+    </ItemDefinitionGroup>
+    <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='GCC MIPS Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PreprocessorDefinitions></PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <AdditionalOptions>/S3Eproject /J /Fe"s3e-custom-tool='d:/tools/marmalade/6.3/tools/gcc/mips/android_mips_windows/bin/mipsel-linux-android-gcc.exe' tooltype=gcc_mips_compiler -funsigned-char -fno-strict-aliasing -fno-stack-protector -fno-short-enums -fshort-wchar -Wall -fmessage-length=0 -Wno-unused -Wno-parentheses -save-temps -fPIC -EL -mips1 -mabi=32 -Wno-switch -fvisibility=hidden -nostdinc -fPIC --cppflag=-Wno-reorder --cppflag=-fvisibility-inlines-hidden --cppflag=-fno-exceptions --cppflag=-frtti --cppflag=-nostdinc++ -g -O0" /FD  /FI"d:\tools\cocos2dx\samples\Cpp\HelloCpp-Box2D-CollisionTest-2.1.2\proj.marmalade\build_hellocpp_vc10x\temp_defines_debug.h"</AdditionalOptions>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
+      <AdditionalIncludeDirectories>d:/tools/cocos2dx/samples/Cpp/HelloCpp-Box2D-CollisionTest-2.1.2/Classes;d:/tools/marmalade/6.3/modules/third_party/libjpeg/h;d:/tools/marmalade/6.3/modules/third_party/zlib/h;d:/tools/marmalade/6.3/modules/third_party/libpng/h;d:/tools/marmalade/6.3/modules/iwutil/h;d:/tools/marmalade/6.3/modules/iwgl/h;d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/h;d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/include;d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libtiff/headers;d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/webp;d:/tools/cocos2dx/cocos2dx/proj.marmalade;d:/tools/cocos2dx/cocos2dx;d:/tools/cocos2dx/cocos2dx/include;d:/tools/cocos2dx/cocos2dx/platform;d:/tools/cocos2dx/cocos2dx/platform/marmalade;d:/tools/cocos2dx/cocos2dx/actions;d:/tools/cocos2dx/cocos2dx/base_nodes;d:/tools/cocos2dx/cocos2dx/cocoa;d:/tools/cocos2dx/cocos2dx/draw_nodes;d:/tools/cocos2dx/cocos2dx/effects;d:/tools/cocos2dx/cocos2dx/kazmath/include;d:/tools/cocos2dx/cocos2dx/keypad_dispatcher;d:/tools/cocos2dx/cocos2dx/label_nodes;d:/tools/cocos2dx/cocos2dx/layers_scenes_transitions_nodes;d:/tools/cocos2dx/cocos2dx/menu_nodes;d:/tools/cocos2dx/cocos2dx/misc_nodes;d:/tools/cocos2dx/cocos2dx/particle_nodes;d:/tools/cocos2dx/cocos2dx/physics_nodes;d:/tools/cocos2dx/cocos2dx/shaders;d:/tools/cocos2dx/cocos2dx/script_support;d:/tools/cocos2dx/cocos2dx/sprite_nodes;d:/tools/cocos2dx/cocos2dx/support;d:/tools/cocos2dx/cocos2dx/support/tinyxml2;d:/tools/cocos2dx/cocos2dx/support/user_default;d:/tools/cocos2dx/cocos2dx/text_input_node;d:/tools/cocos2dx/cocos2dx/textures;d:/tools/cocos2dx/cocos2dx/tileMap_parallax_nodes;d:/tools/cocos2dx/cocos2dx/touch_dispatcher;d:/tools/cocos2dx/external;d:/tools/marmalade/6.3/s3e/h;d:/tools/marmalade/6.3/s3e/h/ext;d:/tools/marmalade/6.3/s3e/h/std;d:/tools/marmalade/6.3/s3e/h/std/c++;d:/tools/marmalade/6.3/s3e/h/ext_legacy;d:/tools/marmalade/6.3/s3e/h/legacy;.</AdditionalIncludeDirectories>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalOptions> /include:_IwMain /include:_raise /include:_DllEntryPoint@12/COMMENT:"s3e-custom-tool='d:/tools/marmalade/6.3/tools/gcc/mips/android_mips_windows/bin/mipsel-linux-android-g++.exe' tooltype=gcc_mips_linker -Wl,--as-needed --sysroot=d:/tools/marmalade/6.3/s3e\..\tools\gcc\mips\android_mips_windows/android-14/arch-mips -Wl,--no-undefined -shared -EL -mips1 -mabi=32 -static-libgcc -nodefaultlibs -Wl,--entry=_IwMain -frtti -Wl,-Tmips_linker_script -Wl,-init -Wl,iwcrt_mips_init -Wl,-fini -Wl,iwcrt_mips_fini -Wl,--no-undefined -Wl,-u_IwAppEntry -Wl,-u_IwAppVersionMajor -Wl,-u_IwAppVersionMinor -Wl,--entry=_IwAppEntry -shared -Wl,-Map='$(OutDir)/HelloCPP.map' -Wl,--start-group -ljpeg_d -lz_d -lpng_d -liwutil_d -liwgl_d -ls3e_cpp_d -ls3e_d -ls3e_api -lstdc++ -lc -lm -lgcc -Wl,--end-group --plink:-i"</AdditionalOptions>
+      <AdditionalDependencies></AdditionalDependencies>
+      <AdditionalLibraryDirectories>d:/tools/marmalade/6.3/modules/third_party/libjpeg/lib/mips/linux;d:/tools/marmalade/6.3/modules/third_party/zlib/lib/mips/linux;d:/tools/marmalade/6.3/modules/third_party/libpng/lib/mips/linux;d:/tools/marmalade/6.3/modules/iwutil/lib/mips/linux;d:/tools/marmalade/6.3/modules/iwgl/lib/mips/linux;d:/tools/marmalade/6.3/s3e/lib/mips/linux</AdditionalLibraryDirectories>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <OptimizeReferences>false</OptimizeReferences>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <EntryPointSymbol></EntryPointSymbol>
+      <IgnoreSpecificDefaultLibraries>libcmt</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <Lib>
+      <AdditionalOptions> %(AdditionalOptions) </AdditionalOptions>
+    </Lib>
+      <PostBuildEvent>
+        <Command>echo D:\tools\Marmalade\6.3\s3e\python\python.exe .\process_map.py &quot;$(TargetPath)&quot;&#x0D;&#x0A;chdir /d &quot;d:\tools\marmalade\6.3\s3e\tools&quot;&#x0D;&#x0A;D:\tools\Marmalade\6.3\s3e\python\python.exe .\process_map.py &quot;$(TargetPath)&quot;&#x0D;&#x0A;echo &quot;d:\tools\marmalade\6.3\s3e\bin\s3e_plink&quot; -l &quot;$(TargetPath)&quot; &#x0D;&#x0A;chdir /d &quot;d:\tools\marmalade\6.3\s3e&quot;&#x0D;&#x0A;&quot;d:\tools\marmalade\6.3\s3e\bin\s3e_plink&quot; -l &quot;$(TargetPath)&quot; &#x0D;&#x0A;</Command>
+      </PostBuildEvent>
+    </ItemDefinitionGroup>
+    <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='GCC MIPS Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PreprocessorDefinitions></PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <AdditionalOptions>/S3Eproject /J /Fe"s3e-custom-tool='d:/tools/marmalade/6.3/tools/gcc/mips/android_mips_windows/bin/mipsel-linux-android-gcc.exe' tooltype=gcc_mips_compiler -funsigned-char -fno-strict-aliasing -fno-stack-protector -fno-short-enums -fshort-wchar -Wall -fmessage-length=0 -Wno-unused -Wno-parentheses -save-temps -fPIC -EL -mips1 -mabi=32 -Wno-switch -fvisibility=hidden -nostdinc -fPIC --cppflag=-Wno-reorder --cppflag=-fvisibility-inlines-hidden --cppflag=-fno-exceptions --cppflag=-frtti --cppflag=-nostdinc++ -O3" /FD  /FI"d:\tools\cocos2dx\samples\Cpp\HelloCpp-Box2D-CollisionTest-2.1.2\proj.marmalade\build_hellocpp_vc10x\temp_defines_release.h"</AdditionalOptions>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
+      <AdditionalIncludeDirectories>d:/tools/cocos2dx/samples/Cpp/HelloCpp-Box2D-CollisionTest-2.1.2/Classes;d:/tools/marmalade/6.3/modules/third_party/libjpeg/h;d:/tools/marmalade/6.3/modules/third_party/zlib/h;d:/tools/marmalade/6.3/modules/third_party/libpng/h;d:/tools/marmalade/6.3/modules/iwutil/h;d:/tools/marmalade/6.3/modules/iwgl/h;d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/h;d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/include;d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libtiff/headers;d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/webp;d:/tools/cocos2dx/cocos2dx/proj.marmalade;d:/tools/cocos2dx/cocos2dx;d:/tools/cocos2dx/cocos2dx/include;d:/tools/cocos2dx/cocos2dx/platform;d:/tools/cocos2dx/cocos2dx/platform/marmalade;d:/tools/cocos2dx/cocos2dx/actions;d:/tools/cocos2dx/cocos2dx/base_nodes;d:/tools/cocos2dx/cocos2dx/cocoa;d:/tools/cocos2dx/cocos2dx/draw_nodes;d:/tools/cocos2dx/cocos2dx/effects;d:/tools/cocos2dx/cocos2dx/kazmath/include;d:/tools/cocos2dx/cocos2dx/keypad_dispatcher;d:/tools/cocos2dx/cocos2dx/label_nodes;d:/tools/cocos2dx/cocos2dx/layers_scenes_transitions_nodes;d:/tools/cocos2dx/cocos2dx/menu_nodes;d:/tools/cocos2dx/cocos2dx/misc_nodes;d:/tools/cocos2dx/cocos2dx/particle_nodes;d:/tools/cocos2dx/cocos2dx/physics_nodes;d:/tools/cocos2dx/cocos2dx/shaders;d:/tools/cocos2dx/cocos2dx/script_support;d:/tools/cocos2dx/cocos2dx/sprite_nodes;d:/tools/cocos2dx/cocos2dx/support;d:/tools/cocos2dx/cocos2dx/support/tinyxml2;d:/tools/cocos2dx/cocos2dx/support/user_default;d:/tools/cocos2dx/cocos2dx/text_input_node;d:/tools/cocos2dx/cocos2dx/textures;d:/tools/cocos2dx/cocos2dx/tileMap_parallax_nodes;d:/tools/cocos2dx/cocos2dx/touch_dispatcher;d:/tools/cocos2dx/external;d:/tools/marmalade/6.3/s3e/h;d:/tools/marmalade/6.3/s3e/h/ext;d:/tools/marmalade/6.3/s3e/h/std;d:/tools/marmalade/6.3/s3e/h/std/c++;d:/tools/marmalade/6.3/s3e/h/ext_legacy;d:/tools/marmalade/6.3/s3e/h/legacy;.</AdditionalIncludeDirectories>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalOptions> /include:_IwMain /include:_raise /include:_DllEntryPoint@12/COMMENT:"s3e-custom-tool='d:/tools/marmalade/6.3/tools/gcc/mips/android_mips_windows/bin/mipsel-linux-android-g++.exe' tooltype=gcc_mips_linker -Wl,--as-needed --sysroot=d:/tools/marmalade/6.3/s3e\..\tools\gcc\mips\android_mips_windows/android-14/arch-mips -Wl,--no-undefined -shared -EL -mips1 -mabi=32 -static-libgcc -nodefaultlibs -Wl,--entry=_IwMain -frtti -Wl,-Tmips_linker_script -Wl,-init -Wl,iwcrt_mips_init -Wl,-fini -Wl,iwcrt_mips_fini -Wl,--no-undefined -Wl,-u_IwAppEntry -Wl,-u_IwAppVersionMajor -Wl,-u_IwAppVersionMinor -Wl,--entry=_IwAppEntry -shared -Wl,-Map='$(OutDir)/HelloCPP.map' -Wl,--start-group -ljpeg -lz -lpng -liwutil -liwgl -ls3e_cpp -ls3e -ls3e_api -lstdc++ -lc -lm -lgcc -Wl,--end-group --plink:-i"</AdditionalOptions>
+      <AdditionalDependencies></AdditionalDependencies>
+      <AdditionalLibraryDirectories>d:/tools/marmalade/6.3/modules/third_party/libjpeg/lib/mips/linux;d:/tools/marmalade/6.3/modules/third_party/zlib/lib/mips/linux;d:/tools/marmalade/6.3/modules/third_party/libpng/lib/mips/linux;d:/tools/marmalade/6.3/modules/iwutil/lib/mips/linux;d:/tools/marmalade/6.3/modules/iwgl/lib/mips/linux;d:/tools/marmalade/6.3/s3e/lib/mips/linux</AdditionalLibraryDirectories>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <EntryPointSymbol></EntryPointSymbol>
+      <IgnoreSpecificDefaultLibraries>libcmt</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <Lib>
+      <AdditionalOptions> %(AdditionalOptions) </AdditionalOptions>
+    </Lib>
+      <PostBuildEvent>
+        <Command>echo D:\tools\Marmalade\6.3\s3e\python\python.exe .\process_map.py &quot;$(TargetPath)&quot;&#x0D;&#x0A;chdir /d &quot;d:\tools\marmalade\6.3\s3e\tools&quot;&#x0D;&#x0A;D:\tools\Marmalade\6.3\s3e\python\python.exe .\process_map.py &quot;$(TargetPath)&quot;&#x0D;&#x0A;echo &quot;d:\tools\marmalade\6.3\s3e\bin\s3e_plink&quot; -l &quot;$(TargetPath)&quot; &#x0D;&#x0A;chdir /d &quot;d:\tools\marmalade\6.3\s3e&quot;&#x0D;&#x0A;&quot;d:\tools\marmalade\6.3\s3e\bin\s3e_plink&quot; -l &quot;$(TargetPath)&quot; &#x0D;&#x0A;</Command>
+      </PostBuildEvent>
+    </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="d:/tools/marmalade/6.3/s3e/h/std/c++/algorithm" />
+    <None Include="d:/tools/cocos2dx/samples/Cpp/HelloCpp-Box2D-CollisionTest-2.1.2/Resources/app.icf" />
+    <None Include="d:/tools/marmalade/6.3/s3e/h/std/c++/bitset" />
+    <None Include="d:/tools/cocos2dx/external/box2d/proj.marmalade/box2d.mkf" />
+    <None Include="d:/tools/marmalade/6.3/s3e/h/std/c++/cassert" />
+    <None Include="d:/tools/marmalade/6.3/s3e/h/std/c++/cctype" />
+    <None Include="d:/tools/marmalade/6.3/s3e/h/std/c++/cerrno" />
+    <None Include="d:/tools/marmalade/6.3/s3e/h/std/c++/cfloat" />
+    <None Include="d:/tools/marmalade/6.3/s3e/h/std/c++/climits" />
+    <None Include="d:/tools/marmalade/6.3/s3e/h/std/c++/clocale" />
+    <None Include="d:/tools/marmalade/6.3/s3e/h/std/c++/cmath" />
+    <None Include="d:/tools/cocos2dx/cocos2dx/proj.marmalade/cocos2dx.mkf" />
+    <None Include="d:/tools/cocos2dx/cocos2dx/proj.marmalade/cocos2dx_public.defines.txt" />
+    <None Include="d:/tools/marmalade/6.3/s3e/h/std/c++/complex" />
+    <None Include="d:/tools/marmalade/6.3/s3e/h/std/c++/csetjmp" />
+    <None Include="d:/tools/marmalade/6.3/s3e/h/std/c++/csignal" />
+    <None Include="d:/tools/marmalade/6.3/s3e/h/std/c++/cstdarg" />
+    <None Include="d:/tools/marmalade/6.3/s3e/h/std/c++/cstddef" />
+    <None Include="d:/tools/marmalade/6.3/s3e/h/std/c++/cstdio" />
+    <None Include="d:/tools/marmalade/6.3/s3e/h/std/c++/cstdlib" />
+    <None Include="d:/tools/marmalade/6.3/s3e/h/std/c++/cstring" />
+    <None Include="d:/tools/marmalade/6.3/s3e/h/std/c++/ctime" />
+    <None Include="d:/tools/marmalade/6.3/s3e/h/std/c++/cwchar" />
+    <None Include="d:/tools/marmalade/6.3/s3e/h/std/c++/cwctype" />
+    <None Include="d:/tools/marmalade/6.3/s3e/h/std/c++/deque" />
+    <None Include="d:/tools/marmalade/6.3/s3e/h/std/c++/exception" />
+    <None Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype.mkf" />
+    <None Include="d:/tools/marmalade/6.3/s3e/h/std/c++/fstream" />
+    <None Include="d:/tools/marmalade/6.3/s3e/h/std/c++/functional" />
+    <None Include="d:/tools/marmalade/6.3/s3e/h/std/c++/hash_map" />
+    <None Include="d:/tools/marmalade/6.3/s3e/h/std/c++/hash_set" />
+    <None Include="d:/tools/marmalade/6.3/s3e/h/std/c++/iomanip" />
+    <None Include="d:/tools/marmalade/6.3/s3e/h/std/c++/ios" />
+    <None Include="d:/tools/marmalade/6.3/s3e/h/std/c++/iosfwd" />
+    <None Include="d:/tools/marmalade/6.3/s3e/h/std/c++/iostream" />
+    <None Include="d:/tools/marmalade/6.3/s3e/h/std/c++/istream" />
+    <None Include="d:/tools/marmalade/6.3/s3e/h/std/c++/iterator" />
+    <None Include="d:/tools/marmalade/6.3/modules/iwgl/docs/iwgl.config.txt" />
+    <None Include="d:/tools/marmalade/6.3/modules/iwgl/iwgl.mkf" />
+    <None Include="d:/tools/marmalade/6.3/modules/iwutil/docs/iwutil.config.txt" />
+    <None Include="d:/tools/marmalade/6.3/modules/iwutil/iwutil.mkf" />
+    <None Include="d:/tools/marmalade/6.3/modules/third_party/libjpeg/libjpeg.mkf" />
+    <None Include="d:/tools/marmalade/6.3/modules/third_party/libpng/libpng.mkf" />
+    <None Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libtiff.mkf" />
+    <None Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp.mkf" />
+    <None Include="d:/tools/marmalade/6.3/s3e/h/std/c++/limits" />
+    <None Include="d:/tools/marmalade/6.3/s3e/h/std/c++/list" />
+    <None Include="d:/tools/marmalade/6.3/s3e/h/std/c++/locale" />
+    <None Include="d:/tools/marmalade/6.3/s3e/h/std/c++/map" />
+    <None Include="d:/tools/marmalade/6.3/s3e/h/std/c++/memory" />
+    <None Include="d:/tools/marmalade/6.3/s3e/h/std/c++/new" />
+    <None Include="d:/tools/marmalade/6.3/s3e/h/std/c++/numeric" />
+    <None Include="d:/tools/marmalade/6.3/s3e/h/std/c++/ostream" />
+    <None Include="d:/tools/marmalade/6.3/s3e/h/std/c++/pthread_alloc" />
+    <None Include="d:/tools/marmalade/6.3/s3e/h/std/c++/queue" />
+    <None Include="d:/tools/marmalade/6.3/s3e/h/std/c++/rope" />
+    <None Include="d:/tools/marmalade/6.3/s3e/s3e.config.txt" />
+    <None Include="d:/tools/marmalade/6.3/s3e/s3e.icf" />
+    <None Include="d:/tools/marmalade/6.3/s3e/s3e.mkf" />
+    <None Include="d:/tools/marmalade/6.3/s3e/h/std/c++/set" />
+    <None Include="d:/tools/marmalade/6.3/s3e/h/std/c++/slist" />
+    <None Include="d:/tools/marmalade/6.3/s3e/h/std/c++/sstream" />
+    <None Include="d:/tools/marmalade/6.3/s3e/h/std/c++/stack" />
+    <None Include="d:/tools/marmalade/6.3/s3e/h/std/c++/stdexcept" />
+    <None Include="d:/tools/marmalade/6.3/s3e/h/std/c++/stdio_streambuf" />
+    <None Include="d:/tools/marmalade/6.3/s3e/h/std/c++/streambuf" />
+    <None Include="d:/tools/marmalade/6.3/s3e/h/std/c++/string" />
+    <None Include="d:/tools/marmalade/6.3/s3e/h/std/c++/strstream" />
+    <None Include="d:/tools/marmalade/6.3/s3e/h/std/c++/typeinfo" />
+    <None Include="d:/tools/marmalade/6.3/s3e/h/std/c++/utility" />
+    <None Include="d:/tools/marmalade/6.3/s3e/h/std/c++/valarray" />
+    <None Include="d:/tools/marmalade/6.3/s3e/h/std/c++/vector" />
+    <None Include="d:/tools/marmalade/6.3/modules/third_party/zlib/zlib.mkf" />
+    <CustomBuild Include="..\HelloCPP.mkb">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='x86 Debug|Win32'">"D:\tools\Marmalade\6.3\s3e\python\python.exe" "D:\tools\Marmalade\6.3\s3e\makefile_builder\mkb.py" "d:/tools/cocos2dx/samples/Cpp/HelloCpp-Box2D-CollisionTest-2.1.2/proj.marmalade/HelloCPP.mkb" "--default-buildenv=vc10x" --msvc-project</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='x86 Debug|Win32'">HelloCPP_vc10x.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='x86 Debug|Win32'">d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libtiff.mkf;d:/tools/marmalade/6.3/modules/iwutil/iwutil.mkf;d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype.mkf;d:/tools/marmalade/6.3/modules/third_party/zlib/zlib.mkf;d:/tools/marmalade/6.3/modules/third_party/libpng/libpng.mkf;d:/tools/marmalade/6.3/s3e/s3e.mkf;d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp.mkf;d:/tools/cocos2dx/external/box2d/proj.marmalade/box2d.mkf;d:/tools/marmalade/6.3/modules/iwgl/iwgl.mkf;d:/tools/marmalade/6.3/modules/third_party/libjpeg/libjpeg.mkf;d:/tools/cocos2dx/cocos2dx/proj.marmalade/cocos2dx.mkf</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='x86 Release|Win32'">"D:\tools\Marmalade\6.3\s3e\python\python.exe" "D:\tools\Marmalade\6.3\s3e\makefile_builder\mkb.py" "d:/tools/cocos2dx/samples/Cpp/HelloCpp-Box2D-CollisionTest-2.1.2/proj.marmalade/HelloCPP.mkb" "--default-buildenv=vc10x" --msvc-project</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='x86 Release|Win32'">HelloCPP_vc10x.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='x86 Release|Win32'">d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libtiff.mkf;d:/tools/marmalade/6.3/modules/iwutil/iwutil.mkf;d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype.mkf;d:/tools/marmalade/6.3/modules/third_party/zlib/zlib.mkf;d:/tools/marmalade/6.3/modules/third_party/libpng/libpng.mkf;d:/tools/marmalade/6.3/s3e/s3e.mkf;d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp.mkf;d:/tools/cocos2dx/external/box2d/proj.marmalade/box2d.mkf;d:/tools/marmalade/6.3/modules/iwgl/iwgl.mkf;d:/tools/marmalade/6.3/modules/third_party/libjpeg/libjpeg.mkf;d:/tools/cocos2dx/cocos2dx/proj.marmalade/cocos2dx.mkf</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='GCC X86 ANDROID Debug|Win32'">"D:\tools\Marmalade\6.3\s3e\python\python.exe" "D:\tools\Marmalade\6.3\s3e\makefile_builder\mkb.py" "d:/tools/cocos2dx/samples/Cpp/HelloCpp-Box2D-CollisionTest-2.1.2/proj.marmalade/HelloCPP.mkb" "--default-buildenv=vc10x" --msvc-project</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='GCC X86 ANDROID Debug|Win32'">HelloCPP_vc10x.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='GCC X86 ANDROID Debug|Win32'">d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libtiff.mkf;d:/tools/marmalade/6.3/modules/iwutil/iwutil.mkf;d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype.mkf;d:/tools/marmalade/6.3/modules/third_party/zlib/zlib.mkf;d:/tools/marmalade/6.3/modules/third_party/libpng/libpng.mkf;d:/tools/marmalade/6.3/s3e/s3e.mkf;d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp.mkf;d:/tools/cocos2dx/external/box2d/proj.marmalade/box2d.mkf;d:/tools/marmalade/6.3/modules/iwgl/iwgl.mkf;d:/tools/marmalade/6.3/modules/third_party/libjpeg/libjpeg.mkf;d:/tools/cocos2dx/cocos2dx/proj.marmalade/cocos2dx.mkf</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='GCC X86 ANDROID Release|Win32'">"D:\tools\Marmalade\6.3\s3e\python\python.exe" "D:\tools\Marmalade\6.3\s3e\makefile_builder\mkb.py" "d:/tools/cocos2dx/samples/Cpp/HelloCpp-Box2D-CollisionTest-2.1.2/proj.marmalade/HelloCPP.mkb" "--default-buildenv=vc10x" --msvc-project</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='GCC X86 ANDROID Release|Win32'">HelloCPP_vc10x.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='GCC X86 ANDROID Release|Win32'">d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libtiff.mkf;d:/tools/marmalade/6.3/modules/iwutil/iwutil.mkf;d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype.mkf;d:/tools/marmalade/6.3/modules/third_party/zlib/zlib.mkf;d:/tools/marmalade/6.3/modules/third_party/libpng/libpng.mkf;d:/tools/marmalade/6.3/s3e/s3e.mkf;d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp.mkf;d:/tools/cocos2dx/external/box2d/proj.marmalade/box2d.mkf;d:/tools/marmalade/6.3/modules/iwgl/iwgl.mkf;d:/tools/marmalade/6.3/modules/third_party/libjpeg/libjpeg.mkf;d:/tools/cocos2dx/cocos2dx/proj.marmalade/cocos2dx.mkf</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RVCT ARM Debug|Win32'">"D:\tools\Marmalade\6.3\s3e\python\python.exe" "D:\tools\Marmalade\6.3\s3e\makefile_builder\mkb.py" "d:/tools/cocos2dx/samples/Cpp/HelloCpp-Box2D-CollisionTest-2.1.2/proj.marmalade/HelloCPP.mkb" "--default-buildenv=vc10x" --msvc-project</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RVCT ARM Debug|Win32'">HelloCPP_vc10x.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RVCT ARM Debug|Win32'">d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libtiff.mkf;d:/tools/marmalade/6.3/modules/iwutil/iwutil.mkf;d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype.mkf;d:/tools/marmalade/6.3/modules/third_party/zlib/zlib.mkf;d:/tools/marmalade/6.3/modules/third_party/libpng/libpng.mkf;d:/tools/marmalade/6.3/s3e/s3e.mkf;d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp.mkf;d:/tools/cocos2dx/external/box2d/proj.marmalade/box2d.mkf;d:/tools/marmalade/6.3/modules/iwgl/iwgl.mkf;d:/tools/marmalade/6.3/modules/third_party/libjpeg/libjpeg.mkf;d:/tools/cocos2dx/cocos2dx/proj.marmalade/cocos2dx.mkf</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RVCT ARM Release|Win32'">"D:\tools\Marmalade\6.3\s3e\python\python.exe" "D:\tools\Marmalade\6.3\s3e\makefile_builder\mkb.py" "d:/tools/cocos2dx/samples/Cpp/HelloCpp-Box2D-CollisionTest-2.1.2/proj.marmalade/HelloCPP.mkb" "--default-buildenv=vc10x" --msvc-project</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RVCT ARM Release|Win32'">HelloCPP_vc10x.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RVCT ARM Release|Win32'">d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libtiff.mkf;d:/tools/marmalade/6.3/modules/iwutil/iwutil.mkf;d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype.mkf;d:/tools/marmalade/6.3/modules/third_party/zlib/zlib.mkf;d:/tools/marmalade/6.3/modules/third_party/libpng/libpng.mkf;d:/tools/marmalade/6.3/s3e/s3e.mkf;d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp.mkf;d:/tools/cocos2dx/external/box2d/proj.marmalade/box2d.mkf;d:/tools/marmalade/6.3/modules/iwgl/iwgl.mkf;d:/tools/marmalade/6.3/modules/third_party/libjpeg/libjpeg.mkf;d:/tools/cocos2dx/cocos2dx/proj.marmalade/cocos2dx.mkf</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='GCC ARM Debug|Win32'">"D:\tools\Marmalade\6.3\s3e\python\python.exe" "D:\tools\Marmalade\6.3\s3e\makefile_builder\mkb.py" "d:/tools/cocos2dx/samples/Cpp/HelloCpp-Box2D-CollisionTest-2.1.2/proj.marmalade/HelloCPP.mkb" "--default-buildenv=vc10x" --msvc-project</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='GCC ARM Debug|Win32'">HelloCPP_vc10x.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='GCC ARM Debug|Win32'">d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libtiff.mkf;d:/tools/marmalade/6.3/modules/iwutil/iwutil.mkf;d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype.mkf;d:/tools/marmalade/6.3/modules/third_party/zlib/zlib.mkf;d:/tools/marmalade/6.3/modules/third_party/libpng/libpng.mkf;d:/tools/marmalade/6.3/s3e/s3e.mkf;d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp.mkf;d:/tools/cocos2dx/external/box2d/proj.marmalade/box2d.mkf;d:/tools/marmalade/6.3/modules/iwgl/iwgl.mkf;d:/tools/marmalade/6.3/modules/third_party/libjpeg/libjpeg.mkf;d:/tools/cocos2dx/cocos2dx/proj.marmalade/cocos2dx.mkf</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='GCC ARM Release|Win32'">"D:\tools\Marmalade\6.3\s3e\python\python.exe" "D:\tools\Marmalade\6.3\s3e\makefile_builder\mkb.py" "d:/tools/cocos2dx/samples/Cpp/HelloCpp-Box2D-CollisionTest-2.1.2/proj.marmalade/HelloCPP.mkb" "--default-buildenv=vc10x" --msvc-project</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='GCC ARM Release|Win32'">HelloCPP_vc10x.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='GCC ARM Release|Win32'">d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libtiff.mkf;d:/tools/marmalade/6.3/modules/iwutil/iwutil.mkf;d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype.mkf;d:/tools/marmalade/6.3/modules/third_party/zlib/zlib.mkf;d:/tools/marmalade/6.3/modules/third_party/libpng/libpng.mkf;d:/tools/marmalade/6.3/s3e/s3e.mkf;d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp.mkf;d:/tools/cocos2dx/external/box2d/proj.marmalade/box2d.mkf;d:/tools/marmalade/6.3/modules/iwgl/iwgl.mkf;d:/tools/marmalade/6.3/modules/third_party/libjpeg/libjpeg.mkf;d:/tools/cocos2dx/cocos2dx/proj.marmalade/cocos2dx.mkf</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='GCC MIPS Debug|Win32'">"D:\tools\Marmalade\6.3\s3e\python\python.exe" "D:\tools\Marmalade\6.3\s3e\makefile_builder\mkb.py" "d:/tools/cocos2dx/samples/Cpp/HelloCpp-Box2D-CollisionTest-2.1.2/proj.marmalade/HelloCPP.mkb" "--default-buildenv=vc10x" --msvc-project</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='GCC MIPS Debug|Win32'">HelloCPP_vc10x.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='GCC MIPS Debug|Win32'">d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libtiff.mkf;d:/tools/marmalade/6.3/modules/iwutil/iwutil.mkf;d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype.mkf;d:/tools/marmalade/6.3/modules/third_party/zlib/zlib.mkf;d:/tools/marmalade/6.3/modules/third_party/libpng/libpng.mkf;d:/tools/marmalade/6.3/s3e/s3e.mkf;d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp.mkf;d:/tools/cocos2dx/external/box2d/proj.marmalade/box2d.mkf;d:/tools/marmalade/6.3/modules/iwgl/iwgl.mkf;d:/tools/marmalade/6.3/modules/third_party/libjpeg/libjpeg.mkf;d:/tools/cocos2dx/cocos2dx/proj.marmalade/cocos2dx.mkf</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='GCC MIPS Release|Win32'">"D:\tools\Marmalade\6.3\s3e\python\python.exe" "D:\tools\Marmalade\6.3\s3e\makefile_builder\mkb.py" "d:/tools/cocos2dx/samples/Cpp/HelloCpp-Box2D-CollisionTest-2.1.2/proj.marmalade/HelloCPP.mkb" "--default-buildenv=vc10x" --msvc-project</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='GCC MIPS Release|Win32'">HelloCPP_vc10x.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='GCC MIPS Release|Win32'">d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libtiff.mkf;d:/tools/marmalade/6.3/modules/iwutil/iwutil.mkf;d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype.mkf;d:/tools/marmalade/6.3/modules/third_party/zlib/zlib.mkf;d:/tools/marmalade/6.3/modules/third_party/libpng/libpng.mkf;d:/tools/marmalade/6.3/s3e/s3e.mkf;d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp.mkf;d:/tools/cocos2dx/external/box2d/proj.marmalade/box2d.mkf;d:/tools/marmalade/6.3/modules/iwgl/iwgl.mkf;d:/tools/marmalade/6.3/modules/third_party/libjpeg/libjpeg.mkf;d:/tools/cocos2dx/cocos2dx/proj.marmalade/cocos2dx.mkf</AdditionalInputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/AirplayVersion.h" />
+    <ClInclude Include="d:/tools/cocos2dx/samples/Cpp/HelloCpp-Box2D-CollisionTest-2.1.2/Classes/AppDelegate.h" />
+    <ClInclude Include="d:/tools/cocos2dx/samples/Cpp/HelloCpp-Box2D-CollisionTest-2.1.2/Classes/AppMacros.h" />
+    <ClInclude Include="d:/tools/cocos2dx/external/Box2D/Box2D.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/marmalade/CCAccelerometer.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/CCAccelerometerDelegate.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/actions/CCAction.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/actions/CCActionCamera.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/actions/CCActionCatmullRom.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/actions/CCActionEase.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/actions/CCActionGrid.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/actions/CCActionGrid3D.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/actions/CCActionInstant.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/actions/CCActionInterval.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/actions/CCActionManager.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/actions/CCActionPageTurn3D.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/actions/CCActionProgressTimer.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/actions/CCActionTiledGrid.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/actions/CCActionTween.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/cocoa/CCAffineTransform.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/sprite_nodes/CCAnimation.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/sprite_nodes/CCAnimationCache.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/marmalade/CCApplication.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/CCApplicationProtocol.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/cocoa/CCArray.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/base_nodes/CCAtlasNode.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/cocoa/CCAutoreleasePool.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/cocoa/CCBool.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/CCCamera.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/misc_nodes/CCClippingNode.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/CCCommon.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/CCConfiguration.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/CCDevice.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/cocoa/CCDictionary.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/CCDirector.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/cocoa/CCDouble.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/draw_nodes/CCDrawNode.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/draw_nodes/CCDrawingPrimitives.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/marmalade/CCEGLView.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/CCEGLViewProtocol.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/include/CCEventType.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/CCFileUtils.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/marmalade/CCFileUtilsMarmalade.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/cocoa/CCFloat.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/marmalade/CCGL.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/shaders/CCGLProgram.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/cocoa/CCGeometry.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/effects/CCGrabber.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/effects/CCGrid.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/text_input_node/CCIMEDelegate.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/text_input_node/CCIMEDispatcher.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/CCImage.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/CCImageCommon_cpp.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/cocoa/CCInteger.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/keypad_dispatcher/CCKeypadDelegate.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/keypad_dispatcher/CCKeypadDispatcher.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/label_nodes/CCLabelAtlas.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/label_nodes/CCLabelBMFont.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/label_nodes/CCLabelTTF.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/layers_scenes_transitions_nodes/CCLayer.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/menu_nodes/CCMenu.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/menu_nodes/CCMenuItem.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/misc_nodes/CCMotionStreak.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/cocoa/CCNS.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/base_nodes/CCNode.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/support/CCNotificationCenter.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/cocoa/CCObject.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/tileMap_parallax_nodes/CCParallaxNode.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/particle_nodes/CCParticleBatchNode.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/particle_nodes/CCParticleExamples.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/particle_nodes/CCParticleSystem.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/particle_nodes/CCParticleSystemQuad.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/CCPlatformConfig.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/marmalade/CCPlatformDefine.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/CCPlatformMacros.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/support/CCPointExtension.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/support/CCProfiling.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/misc_nodes/CCProgressTimer.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/include/CCProtocols.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/misc_nodes/CCRenderTexture.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/CCSAXParser.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/layers_scenes_transitions_nodes/CCScene.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/CCScheduler.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/script_support/CCScriptSupport.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/cocoa/CCSet.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/shaders/CCShaderCache.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/sprite_nodes/CCSprite.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/sprite_nodes/CCSpriteBatchNode.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/sprite_nodes/CCSpriteFrame.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/sprite_nodes/CCSpriteFrameCache.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/marmalade/CCStdC.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/cocoa/CCString.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/tileMap_parallax_nodes/CCTMXLayer.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/tileMap_parallax_nodes/CCTMXObjectGroup.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/tileMap_parallax_nodes/CCTMXTiledMap.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/tileMap_parallax_nodes/CCTMXXMLParser.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/text_input_node/CCTextFieldTTF.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/textures/CCTexture2D.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/textures/CCTextureAtlas.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/textures/CCTextureCache.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/textures/CCTexturePVR.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/CCThread.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/tileMap_parallax_nodes/CCTileMapAtlas.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/touch_dispatcher/CCTouch.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/touch_dispatcher/CCTouchDelegateProtocol.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/touch_dispatcher/CCTouchDispatcher.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/touch_dispatcher/CCTouchHandler.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/layers_scenes_transitions_nodes/CCTransition.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/layers_scenes_transitions_nodes/CCTransitionPageTurn.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/layers_scenes_transitions_nodes/CCTransitionProgress.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/support/user_default/CCUserDefault.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/support/CCVertex.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/cocoa/CCZone.h" />
+    <ClInclude Include="d:/tools/cocos2dx/samples/Cpp/HelloCpp-Box2D-CollisionTest-2.1.2/Classes/HelloWorldScene.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/modules/iwutil/h/IwAllocator.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/modules/iwutil/h/IwArray.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/modules/iwutil/h/IwAutoFile.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/modules/iwutil/h/IwBuffer.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/modules/iwutil/h/IwChar.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/modules/iwutil/h/IwClassFactory.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/modules/iwutil/h/IwCopyingPtr.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/modules/iwutil/h/IwCore.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/modules/iwutil/h/IwDebug.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/modules/iwutil/h/IwDivTable.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/modules/iwutil/h/IwDivide.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/modules/iwutil/h/IwEvent.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/modules/iwutil/h/IwFibre.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/modules/iwutil/h/IwFile.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/modules/iwgl/h/IwGL.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/modules/iwgl/h/IwGLExt.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/modules/iwutil/h/IwHashString.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/modules/iwutil/h/IwImage.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/modules/iwutil/h/IwImageHelper.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/modules/iwutil/h/IwKeymap.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/modules/iwutil/h/IwList.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/modules/iwutil/h/IwManaged.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/modules/iwutil/h/IwManagedList.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/modules/iwutil/h/IwMath.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/modules/iwutil/h/IwMemBucket.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/modules/iwutil/h/IwMemBucketHelpers.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/modules/iwutil/h/IwMemManagerDL.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/modules/iwutil/h/IwMemory.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/modules/iwutil/h/IwMenu.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/modules/iwutil/h/IwOptimiseARM.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/modules/iwutil/h/IwOptimiseSize.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/modules/iwutil/h/IwOptimiseSpeed.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/modules/iwutil/h/IwOptimiseThumb.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/modules/iwutil/h/IwPath.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/modules/iwutil/h/IwProfileMenu.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/modules/iwutil/h/IwRandom.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/modules/iwutil/h/IwResource.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/modules/iwutil/h/IwRuntime.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/modules/iwutil/h/IwSerialise.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/modules/iwutil/h/IwSingleton.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/modules/iwutil/h/IwString.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/modules/iwutil/h/IwTextParseable.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/modules/iwutil/h/IwTextParser.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/modules/iwutil/h/IwTextParserITX.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/modules/iwutil/h/IwTypes.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/modules/iwutil/h/IwUTF8.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/modules/iwutil/h/IwUncopyable.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/modules/iwutil/h/IwUtil.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/modules/iwutil/h/IwUtilInitTerm.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/modules/iwutil/h/IwVariableBitField.h" />
+    <ClInclude Include="d:/tools/cocos2dx/samples/Cpp/HelloCpp-Box2D-CollisionTest-2.1.2/proj.marmalade/src/Main.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/MarmaladeVersion.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/support/image_support/TGAlib.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/support/TransformUtils.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/support/zip_support/ZipUtils.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/kazmath/include/kazmath/aabb.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/alloca.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/assert.h" />
+    <ClInclude Include="d:/tools/cocos2dx/external/box2d/Common/b2BlockAllocator.h" />
+    <ClInclude Include="d:/tools/cocos2dx/external/box2d/Dynamics/b2Body.h" />
+    <ClInclude Include="d:/tools/cocos2dx/external/box2d/Collision/b2BroadPhase.h" />
+    <ClInclude Include="d:/tools/cocos2dx/external/box2d/Dynamics/Contacts/b2ChainAndCircleContact.h" />
+    <ClInclude Include="d:/tools/cocos2dx/external/box2d/Dynamics/Contacts/b2ChainAndPolygonContact.h" />
+    <ClInclude Include="d:/tools/cocos2dx/external/box2d/Collision/Shapes/b2ChainShape.h" />
+    <ClInclude Include="d:/tools/cocos2dx/external/box2d/Dynamics/Contacts/b2CircleContact.h" />
+    <ClInclude Include="d:/tools/cocos2dx/external/box2d/Collision/Shapes/b2CircleShape.h" />
+    <ClInclude Include="d:/tools/cocos2dx/external/box2d/Collision/b2Collision.h" />
+    <ClInclude Include="d:/tools/cocos2dx/external/box2d/Dynamics/Contacts/b2Contact.h" />
+    <ClInclude Include="d:/tools/cocos2dx/external/box2d/Dynamics/b2ContactManager.h" />
+    <ClInclude Include="d:/tools/cocos2dx/external/box2d/Dynamics/Contacts/b2ContactSolver.h" />
+    <ClInclude Include="d:/tools/cocos2dx/external/box2d/Collision/b2Distance.h" />
+    <ClInclude Include="d:/tools/cocos2dx/external/box2d/Dynamics/Joints/b2DistanceJoint.h" />
+    <ClInclude Include="d:/tools/cocos2dx/external/box2d/Common/b2Draw.h" />
+    <ClInclude Include="d:/tools/cocos2dx/external/box2d/Collision/b2DynamicTree.h" />
+    <ClInclude Include="d:/tools/cocos2dx/external/box2d/Dynamics/Contacts/b2EdgeAndCircleContact.h" />
+    <ClInclude Include="d:/tools/cocos2dx/external/box2d/Dynamics/Contacts/b2EdgeAndPolygonContact.h" />
+    <ClInclude Include="d:/tools/cocos2dx/external/box2d/Collision/Shapes/b2EdgeShape.h" />
+    <ClInclude Include="d:/tools/cocos2dx/external/box2d/Dynamics/b2Fixture.h" />
+    <ClInclude Include="d:/tools/cocos2dx/external/box2d/Dynamics/Joints/b2FrictionJoint.h" />
+    <ClInclude Include="d:/tools/cocos2dx/external/box2d/Dynamics/Joints/b2GearJoint.h" />
+    <ClInclude Include="d:/tools/cocos2dx/external/box2d/Common/b2GrowableStack.h" />
+    <ClInclude Include="d:/tools/cocos2dx/external/box2d/Dynamics/b2Island.h" />
+    <ClInclude Include="d:/tools/cocos2dx/external/box2d/Dynamics/Joints/b2Joint.h" />
+    <ClInclude Include="d:/tools/cocos2dx/external/box2d/Common/b2Math.h" />
+    <ClInclude Include="d:/tools/cocos2dx/external/box2d/Dynamics/Joints/b2MouseJoint.h" />
+    <ClInclude Include="d:/tools/cocos2dx/external/box2d/Dynamics/Contacts/b2PolygonAndCircleContact.h" />
+    <ClInclude Include="d:/tools/cocos2dx/external/box2d/Dynamics/Contacts/b2PolygonContact.h" />
+    <ClInclude Include="d:/tools/cocos2dx/external/box2d/Collision/Shapes/b2PolygonShape.h" />
+    <ClInclude Include="d:/tools/cocos2dx/external/box2d/Dynamics/Joints/b2PrismaticJoint.h" />
+    <ClInclude Include="d:/tools/cocos2dx/external/box2d/Dynamics/Joints/b2PulleyJoint.h" />
+    <ClInclude Include="d:/tools/cocos2dx/external/box2d/Dynamics/Joints/b2RevoluteJoint.h" />
+    <ClInclude Include="d:/tools/cocos2dx/external/box2d/Rope/b2Rope.h" />
+    <ClInclude Include="d:/tools/cocos2dx/external/box2d/Dynamics/Joints/b2RopeJoint.h" />
+    <ClInclude Include="d:/tools/cocos2dx/external/box2d/Common/b2Settings.h" />
+    <ClInclude Include="d:/tools/cocos2dx/external/box2d/Collision/Shapes/b2Shape.h" />
+    <ClInclude Include="d:/tools/cocos2dx/external/box2d/Common/b2StackAllocator.h" />
+    <ClInclude Include="d:/tools/cocos2dx/external/box2d/Collision/b2TimeOfImpact.h" />
+    <ClInclude Include="d:/tools/cocos2dx/external/box2d/Dynamics/b2TimeStep.h" />
+    <ClInclude Include="d:/tools/cocos2dx/external/box2d/Common/b2Timer.h" />
+    <ClInclude Include="d:/tools/cocos2dx/external/box2d/Dynamics/Joints/b2WeldJoint.h" />
+    <ClInclude Include="d:/tools/cocos2dx/external/box2d/Dynamics/Joints/b2WheelJoint.h" />
+    <ClInclude Include="d:/tools/cocos2dx/external/box2d/Dynamics/b2World.h" />
+    <ClInclude Include="d:/tools/cocos2dx/external/box2d/Dynamics/b2WorldCallbacks.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/enc/backward_references.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/support/base64.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/utils/bit_reader.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/utils/bit_writer.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/byteswap.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/support/data_support/ccCArray.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/include/ccConfig.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/ccFPSImages.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/shaders/ccGLStateCache.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/include/ccMacros.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/shaders/ccShaderEx_SwitchMask_frag.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/shaders/ccShader_PositionColorLengthTexture_frag.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/shaders/ccShader_PositionColorLengthTexture_vert.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/shaders/ccShader_PositionColor_frag.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/shaders/ccShader_PositionColor_vert.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/shaders/ccShader_PositionTextureA8Color_frag.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/shaders/ccShader_PositionTextureA8Color_vert.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/shaders/ccShader_PositionTextureColorAlphaTest_frag.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/shaders/ccShader_PositionTextureColor_frag.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/shaders/ccShader_PositionTextureColor_vert.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/shaders/ccShader_PositionTexture_frag.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/shaders/ccShader_PositionTexture_uColor_frag.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/shaders/ccShader_PositionTexture_uColor_vert.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/shaders/ccShader_PositionTexture_vert.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/shaders/ccShader_Position_uColor_frag.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/shaders/ccShader_Position_uColor_vert.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/shaders/ccShaders.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/include/ccTypeInfo.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/include/ccTypes.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/support/ccUTF8.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/support/ccUtils.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/modules/third_party/libjpeg/h/cderror.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/modules/third_party/libjpeg/h/cdjpeg.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/include/cocos2d.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/utils/color_cache.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/enc/cost.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/ctype.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/webp/decode.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/dec/decode_vp8.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/sys/dir.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/dirent.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/dlfcn.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/dsp/dsp.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/EGL/egl.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/GLES/egl.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/EGL/eglext.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/EGL/eglplatform.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/webp/encode.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/endian.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/errno.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/c++/exception.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/fcntl.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/sys/file.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/utils/filters.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/particle_nodes/firePngData.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/float.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/fnmatch.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/webp/format_constants.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/include/freetype/freetype.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/c++/fstream.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/include/ft2build.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/include/freetype/ftbbox.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/include/freetype/ftbdf.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/include/freetype/ftbitmap.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/include/freetype/ftcache.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/include/freetype/ftcid.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/include/freetype/config/ftconfig.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/include/freetype/fterrdef.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/include/freetype/fterrors.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/include/freetype/ftgasp.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/include/freetype/ftglyph.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/include/freetype/ftgxval.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/include/freetype/ftgzip.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/include/freetype/config/ftheader.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/include/freetype/ftimage.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/include/freetype/ftincrem.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/include/freetype/ftlcdfil.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/include/freetype/ftlist.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/include/freetype/ftlzw.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/include/freetype/ftmac.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/include/freetype/ftmm.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/include/freetype/ftmodapi.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/include/freetype/ftmoderr.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/include/freetype/config/ftmodule.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/include/freetype/config/ftoption.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/include/freetype/ftotval.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/include/freetype/ftoutln.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/include/freetype/ftpfr.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/include/freetype/ftrender.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/include/freetype/ftsizes.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/include/freetype/ftsnames.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/include/freetype/config/ftstdlib.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/include/freetype/ftstroke.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/include/freetype/ftsynth.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/include/freetype/ftsystem.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/include/freetype/fttrigon.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/include/freetype/fttypes.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/include/freetype/ftwinfnt.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/include/freetype/ftxf86.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/getopt.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/GLES/gl.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/GLES2/gl2.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/GLES2/gl2ext.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/GLES2/gl2extimg.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/GLES2/gl2platform.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/GLES/glext.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/glob.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/GLES/glplatform.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/grp.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/enc/histogram.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/utils/huffman.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/utils/huffman_encode.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/iconv.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/ifaddrs.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/inttypes.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/support/zip_support/ioapi.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/sys/ioctl.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/c++/iomanip.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/c++/ios.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/c++/iostream.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/sys/ipc.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/c++/istream.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/modules/third_party/libjpeg/h/jchuff.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/modules/third_party/libjpeg/h/jconfig.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/modules/third_party/libjpeg/h/jdct.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/modules/third_party/libjpeg/h/jdhuff.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/modules/third_party/libjpeg/h/jerror.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/modules/third_party/libjpeg/h/jinclude.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/modules/third_party/libjpeg/h/jmemsys.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/modules/third_party/libjpeg/h/jmorecfg.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/modules/third_party/libjpeg/h/jpegint.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/modules/third_party/libjpeg/h/jpeglib.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/modules/third_party/libjpeg/h/jversion.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/kazmath/include/kazmath/kazmath.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/langinfo.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/libgen.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/limits.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/locale.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/dsp/lossless.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/malloc.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/kazmath/include/kazmath/mat3.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/kazmath/include/kazmath/mat4.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/kazmath/include/kazmath/gl/mat4stack.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/math.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/math_gcc.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/math_rvct.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/kazmath/include/kazmath/gl/matrix.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/c++/mem.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/memory.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/sys/mman.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/c++/msl_string.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/webp/mux.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/mux/muxi.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/kazmath/include/kazmath/neon_matrix_impl.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/netdb.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/c++/new.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/c++/ostream.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/sys/param.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/kazmath/include/kazmath/plane.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/platform.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/modules/third_party/libpng/h/png.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/modules/third_party/libpng/h/pngconf.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/poll.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/sys/poll.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/sys/prctl.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/pthread.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/c++/pthread.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/pthread_types.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/pwd.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/utils/quant_levels.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/kazmath/include/kazmath/quaternion.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/kazmath/include/kazmath/ray2.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/utils/rescaler.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/sys/resource.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/c++/rlocks.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/s3e.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/s3eAccelerometer.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/ext/s3eAndroidJNI.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/s3eAudio.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/s3eCamera.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/ext/s3eCameraCapture.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/s3eClipboard.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/s3eCompass.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/s3eCompression.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/s3eConfig.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/s3eContacts.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/s3eCrypto.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/s3eDebug.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/s3eDevice.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/ext/s3eEMail.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/s3eExt.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/s3eFile.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/s3eGL.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/s3eHash.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/ext/s3eIOSBackgroundAudio.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/ext/s3eImagePicker.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/s3eKeyboard.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/ext/s3eLibrary.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/s3eLicense.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/s3eLocation.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/s3eMemory.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/ext/s3eMetrics.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/ext/s3eOSExec.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/ext/s3eOSReadString.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/s3ePointer.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/ext/s3eSMS.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/s3eSecureStorage.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/s3eSocket.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/s3eSound.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/s3eSoundRecord.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/s3eSurface.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/s3eThread.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/s3eTimer.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/s3eTypes.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/s3eVersion.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/s3eVibra.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/s3eVideo.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/ext/s3eWindow.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/ext/s3edebugHeap.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/sched.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/sys/select.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/sys/sem.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/semaphore.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/sys/sendfile.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/setjmp.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/setjmp_win32.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/sys/shm.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/sigcontext.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/signal.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/sys/signal.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/c++/signal.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/sys/socket.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/sys/stat.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/stdarg.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/stdbool.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/stddef.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/stdint.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/stdio.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/c++/stdiostream.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/stdlib.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/c++/stl_user_config.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/c++/streambuf.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/string.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/strings.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/c++/strstream.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/syslog.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/include/freetype/t1tables.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libtiff/headers/t4.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/termios.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/utils/thread.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libtiff/headers/tif_config.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libtiff/headers/tif_dir.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libtiff/headers/tif_fax3.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libtiff/headers/tif_predict.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libtiff/headers/tiff.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libtiff/headers/tiffconf.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libtiff/headers/tiffio.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libtiff/headers/tiffiop.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libtiff/headers/tiffvers.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/time.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/sys/time.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/sys/times.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/support/tinyxml2/tinyxml2.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/modules/third_party/libjpeg/h/transupp.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/include/freetype/ttnameid.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/include/freetype/tttables.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/include/freetype/tttags.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/include/freetype/ttunpat.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/c++/type_traits.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/c++/typeinfo.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/webp/types.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/sys/types.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/ucontext.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/sys/uio.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/sys/un.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/unistd.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/support/zip_support/unzip.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/support/data_support/uthash.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/kazmath/include/kazmath/utility.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/utils/utils.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/utime.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/support/data_support/utlist.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/sys/utsname.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libtiff/headers/uvcode.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/kazmath/include/kazmath/vec2.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/kazmath/include/kazmath/vec3.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/kazmath/include/kazmath/vec4.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/enc/vp8enci.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/dec/vp8i.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/dec/vp8li.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/enc/vp8li.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/sys/wait.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/wchar.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/s3e/h/std/wctype.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/dec/webpi.h" />
+    <ClInclude Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/dsp/yuv.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/modules/third_party/zlib/h/zconf.h" />
+    <ClInclude Include="d:/tools/marmalade/6.3/modules/third_party/zlib/h/zlib.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="d:/tools/cocos2dx/samples/Cpp/HelloCpp-Box2D-CollisionTest-2.1.2/Classes/AppDelegate.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/marmalade/CCAccelerometer.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/actions/CCAction.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/actions/CCActionCamera.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/actions/CCActionCatmullRom.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/actions/CCActionEase.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/actions/CCActionGrid.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/actions/CCActionGrid3D.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/actions/CCActionInstant.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/actions/CCActionInterval.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/actions/CCActionManager.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/actions/CCActionPageTurn3D.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/actions/CCActionProgressTimer.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/actions/CCActionTiledGrid.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/actions/CCActionTween.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/cocoa/CCAffineTransform.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/sprite_nodes/CCAnimation.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/sprite_nodes/CCAnimationCache.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/marmalade/CCApplication.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/cocoa/CCArray.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/base_nodes/CCAtlasNode.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/cocoa/CCAutoreleasePool.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/CCCamera.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/misc_nodes/CCClippingNode.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/marmalade/CCCommon.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/CCConfiguration.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/marmalade/CCDevice.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/cocoa/CCDictionary.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/CCDirector.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/draw_nodes/CCDrawNode.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/draw_nodes/CCDrawingPrimitives.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/marmalade/CCEGLView.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/CCEGLViewProtocol.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/CCFileUtils.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/marmalade/CCFileUtilsMarmalade.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/shaders/CCGLProgram.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/cocoa/CCGeometry.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/effects/CCGrabber.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/effects/CCGrid.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/text_input_node/CCIMEDispatcher.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/marmalade/CCImage.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/CCImageCommonWebp.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/keypad_dispatcher/CCKeypadDelegate.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/keypad_dispatcher/CCKeypadDispatcher.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/label_nodes/CCLabelAtlas.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/label_nodes/CCLabelBMFont.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/label_nodes/CCLabelTTF.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/layers_scenes_transitions_nodes/CCLayer.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/menu_nodes/CCMenu.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/menu_nodes/CCMenuItem.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/misc_nodes/CCMotionStreak.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/cocoa/CCNS.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/base_nodes/CCNode.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/support/CCNotificationCenter.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/cocoa/CCObject.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/tileMap_parallax_nodes/CCParallaxNode.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/particle_nodes/CCParticleBatchNode.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/particle_nodes/CCParticleExamples.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/particle_nodes/CCParticleSystem.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/particle_nodes/CCParticleSystemQuad.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/support/CCPointExtension.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/support/CCProfiling.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/misc_nodes/CCProgressTimer.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/misc_nodes/CCRenderTexture.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/CCSAXParser.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/layers_scenes_transitions_nodes/CCScene.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/CCScheduler.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/script_support/CCScriptSupport.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/cocoa/CCSet.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/shaders/CCShaderCache.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/sprite_nodes/CCSprite.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/sprite_nodes/CCSpriteBatchNode.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/sprite_nodes/CCSpriteFrame.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/sprite_nodes/CCSpriteFrameCache.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/cocoa/CCString.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/tileMap_parallax_nodes/CCTMXLayer.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/tileMap_parallax_nodes/CCTMXObjectGroup.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/tileMap_parallax_nodes/CCTMXTiledMap.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/tileMap_parallax_nodes/CCTMXXMLParser.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/text_input_node/CCTextFieldTTF.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/textures/CCTexture2D.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/textures/CCTextureAtlas.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/textures/CCTextureCache.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/textures/CCTexturePVR.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/CCThread.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/tileMap_parallax_nodes/CCTileMapAtlas.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/touch_dispatcher/CCTouch.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/touch_dispatcher/CCTouchDispatcher.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/touch_dispatcher/CCTouchHandler.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/layers_scenes_transitions_nodes/CCTransition.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/layers_scenes_transitions_nodes/CCTransitionPageTurn.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/layers_scenes_transitions_nodes/CCTransitionProgress.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/support/user_default/CCUserDefault.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/support/user_default/CCUserDefaultAndroid.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/support/CCVertex.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/cocoa/CCZone.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/samples/Cpp/HelloCpp-Box2D-CollisionTest-2.1.2/Classes/HelloWorldScene.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/samples/Cpp/HelloCpp-Box2D-CollisionTest-2.1.2/proj.marmalade/src/Main.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/support/image_support/TGAlib.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/support/TransformUtils.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/support/zip_support/ZipUtils.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/kazmath/src/aabb.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/dec/alpha.c" >
+      <ObjectFileName>$(IntDir)alpha_1.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/enc/alpha.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/enc/analysis.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/src/autofit/autofit.c" />
+    <ClCompile Include="d:/tools/cocos2dx/external/box2d/Common/b2BlockAllocator.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/external/box2d/Dynamics/b2Body.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/external/box2d/Collision/b2BroadPhase.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/external/box2d/Dynamics/Contacts/b2ChainAndCircleContact.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/external/box2d/Dynamics/Contacts/b2ChainAndPolygonContact.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/external/box2d/Collision/Shapes/b2ChainShape.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/external/box2d/Dynamics/Contacts/b2CircleContact.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/external/box2d/Collision/Shapes/b2CircleShape.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/external/box2d/Collision/b2CollideCircle.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/external/box2d/Collision/b2CollideEdge.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/external/box2d/Collision/b2CollidePolygon.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/external/box2d/Collision/b2Collision.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/external/box2d/Dynamics/Contacts/b2Contact.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/external/box2d/Dynamics/b2ContactManager.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/external/box2d/Dynamics/Contacts/b2ContactSolver.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/external/box2d/Collision/b2Distance.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/external/box2d/Dynamics/Joints/b2DistanceJoint.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/external/box2d/Common/b2Draw.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/external/box2d/Collision/b2DynamicTree.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/external/box2d/Dynamics/Contacts/b2EdgeAndCircleContact.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/external/box2d/Dynamics/Contacts/b2EdgeAndPolygonContact.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/external/box2d/Collision/Shapes/b2EdgeShape.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/external/box2d/Dynamics/b2Fixture.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/external/box2d/Dynamics/Joints/b2FrictionJoint.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/external/box2d/Dynamics/Joints/b2GearJoint.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/external/box2d/Dynamics/b2Island.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/external/box2d/Dynamics/Joints/b2Joint.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/external/box2d/Common/b2Math.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/external/box2d/Dynamics/Joints/b2MouseJoint.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/external/box2d/Dynamics/Contacts/b2PolygonAndCircleContact.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/external/box2d/Dynamics/Contacts/b2PolygonContact.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/external/box2d/Collision/Shapes/b2PolygonShape.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/external/box2d/Dynamics/Joints/b2PrismaticJoint.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/external/box2d/Dynamics/Joints/b2PulleyJoint.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/external/box2d/Dynamics/Joints/b2RevoluteJoint.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/external/box2d/Rope/b2Rope.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/external/box2d/Dynamics/Joints/b2RopeJoint.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/external/box2d/Common/b2Settings.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/external/box2d/Common/b2StackAllocator.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/external/box2d/Collision/b2TimeOfImpact.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/external/box2d/Common/b2Timer.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/external/box2d/Dynamics/Joints/b2WeldJoint.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/external/box2d/Dynamics/Joints/b2WheelJoint.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/external/box2d/Dynamics/b2World.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/external/box2d/Dynamics/b2WorldCallbacks.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/enc/backward_references.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/support/base64.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/src/bdf/bdf.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/utils/bit_reader.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/utils/bit_writer.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/dec/buffer.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/support/data_support/ccCArray.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/shaders/ccGLStateCache.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/shaders/ccShaders.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/support/ccUTF8.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/support/ccUtils.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/src/cff/cff.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/cocos2d.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/utils/color_cache.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/enc/config.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/enc/cost.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/dsp/cpu.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/dsp/dec.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/dsp/dec_neon.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/dsp/dec_sse2.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/mux/demux.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/dsp/enc.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/dsp/enc_sse2.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/enc/filter.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/utils/filters.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/dec/frame.c" >
+      <ObjectFileName>$(IntDir)frame_1.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/enc/frame.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/src/base/ftbase.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/src/base/ftbbox.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/src/base/ftbdf.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/src/base/ftbitmap.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/src/cache/ftcache.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/src/base/ftcid.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/src/base/ftfstype.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/src/base/ftgasp.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/src/base/ftglyph.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/src/base/ftgxval.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/src/gzip/ftgzip.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/src/base/ftinit.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/src/base/ftlcdfil.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/src/lzw/ftlzw.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/src/base/ftmm.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/src/base/ftotval.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/src/base/ftpatent.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/src/base/ftpfr.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/src/base/ftstroke.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/src/base/ftsynth.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/src/base/ftsystem.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/src/base/fttype1.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/src/base/ftwinfnt.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/enc/histogram.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/utils/huffman.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/utils/huffman_encode.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/dec/idec.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/dec/io.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/support/zip_support/ioapi.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/enc/iterator.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/dec/layer.c" >
+      <ObjectFileName>$(IntDir)layer_1.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/enc/layer.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/dsp/lossless.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/kazmath/src/mat3.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/kazmath/src/mat4.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/kazmath/src/gl/mat4stack.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/kazmath/src/gl/matrix.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/mux/muxedit.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/mux/muxinternal.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/mux/muxread.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/kazmath/src/neon_matrix_impl.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/src/pcf/pcf.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/src/pfr/pfr.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/enc/picture.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/kazmath/src/plane.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/platform.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/src/psaux/psaux.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/src/pshinter/pshinter.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/src/psnames/psmodule.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/dec/quant.c" >
+      <ObjectFileName>$(IntDir)quant_1.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/enc/quant.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/utils/quant_levels.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/kazmath/src/quaternion.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/src/raster/raster.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/kazmath/src/ray2.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/utils/rescaler.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/src/sfnt/sfnt.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/src/smooth/smooth.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/enc/syntax.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/utils/thread.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libtiff/source/tif_aux.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libtiff/source/tif_close.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libtiff/source/tif_codec.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libtiff/source/tif_color.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libtiff/source/tif_compress.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libtiff/source/tif_dir.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libtiff/source/tif_dirinfo.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libtiff/source/tif_dirread.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libtiff/source/tif_dirwrite.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libtiff/source/tif_dumpmode.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libtiff/source/tif_error.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libtiff/source/tif_extension.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libtiff/source/tif_fax3.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libtiff/source/tif_fax3sm.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libtiff/source/tif_flush.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libtiff/source/tif_getimage.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libtiff/source/tif_jbig.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libtiff/source/tif_jpeg.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libtiff/source/tif_luv.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libtiff/source/tif_lzw.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libtiff/source/tif_next.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libtiff/source/tif_ojpeg.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libtiff/source/tif_open.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libtiff/source/tif_packbits.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libtiff/source/tif_pixarlog.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libtiff/source/tif_predict.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libtiff/source/tif_print.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libtiff/source/tif_read.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libtiff/source/tif_strip.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libtiff/source/tif_swab.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libtiff/source/tif_thunder.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libtiff/source/tif_tile.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libtiff/source/tif_unix.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libtiff/source/tif_version.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libtiff/source/tif_warning.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libtiff/source/tif_write.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libtiff/source/tif_zip.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/support/tinyxml2/tinyxml2.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/dec/tree.c" >
+      <ObjectFileName>$(IntDir)tree_1.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/enc/tree.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/src/truetype/truetype.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/src/type1/type1.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/src/cid/type1cid.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/src/type42/type42.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/support/zip_support/unzip.cpp" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/dsp/upsampling.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/dsp/upsampling_sse2.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/kazmath/src/utility.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/utils/utils.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/kazmath/src/vec2.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/kazmath/src/vec3.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/kazmath/src/vec4.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/dec/vp8.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/dec/vp8l.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/enc/vp8l.c" >
+      <ObjectFileName>$(IntDir)vp8l_1.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/dec/webp.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/enc/webpenc.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/src/winfonts/winfnt.c" />
+    <ClCompile Include="d:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/dsp/yuv.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

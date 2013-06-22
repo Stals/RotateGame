@@ -1,0 +1,348 @@
+﻿Build started 22.06.2013 14:30:47.
+     1>Project "d:\tools\cocos2dx\samples\Cpp\HelloCpp-Box2D-CollisionTest-2.1.2\proj.marmalade\build_hellocpp_vc10x\HelloCPP_vc10x.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug_HelloCPP_vc10x_x86\HelloCPP_vc10x.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       CustomBuild:
+         All outputs are up-to-date.
+       ClCompile:
+         D:\tools\Marmalade\6.3\s3e\bin\CL.exe /c /I"d:/tools/cocos2dx/samples/Cpp/HelloCpp-Box2D-CollisionTest-2.1.2/Classes" /Id:/tools/marmalade/6.3/modules/third_party/libjpeg/h /Id:/tools/marmalade/6.3/modules/third_party/zlib/h /Id:/tools/marmalade/6.3/modules/third_party/libpng/h /Id:/tools/marmalade/6.3/modules/iwutil/h /Id:/tools/marmalade/6.3/modules/iwgl/h /Id:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/h /Id:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/freetype/include /Id:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libtiff/headers /Id:/tools/cocos2dx/cocos2dx/platform/third_party/marmalade/libwebp/webp /Id:/tools/cocos2dx/cocos2dx/proj.marmalade /Id:/tools/cocos2dx/cocos2dx /Id:/tools/cocos2dx/cocos2dx/include /Id:/tools/cocos2dx/cocos2dx/platform /Id:/tools/cocos2dx/cocos2dx/platform/marmalade /Id:/tools/cocos2dx/cocos2dx/actions /Id:/tools/cocos2dx/cocos2dx/base_nodes /Id:/tools/cocos2dx/cocos2dx/cocoa /Id:/tools/cocos2dx/cocos2dx/draw_nodes /Id:/tools/cocos2dx/cocos2dx/effects /Id:/tools/cocos2dx/cocos2dx/kazmath/include /Id:/tools/cocos2dx/cocos2dx/keypad_dispatcher /Id:/tools/cocos2dx/cocos2dx/label_nodes /Id:/tools/cocos2dx/cocos2dx/layers_scenes_transitions_nodes /Id:/tools/cocos2dx/cocos2dx/menu_nodes /Id:/tools/cocos2dx/cocos2dx/misc_nodes /Id:/tools/cocos2dx/cocos2dx/particle_nodes /Id:/tools/cocos2dx/cocos2dx/physics_nodes /Id:/tools/cocos2dx/cocos2dx/shaders /Id:/tools/cocos2dx/cocos2dx/script_support /Id:/tools/cocos2dx/cocos2dx/sprite_nodes /Id:/tools/cocos2dx/cocos2dx/support /Id:/tools/cocos2dx/cocos2dx/support/tinyxml2 /Id:/tools/cocos2dx/cocos2dx/support/user_default /Id:/tools/cocos2dx/cocos2dx/text_input_node /Id:/tools/cocos2dx/cocos2dx/textures /Id:/tools/cocos2dx/cocos2dx/tileMap_parallax_nodes /Id:/tools/cocos2dx/cocos2dx/touch_dispatcher /Id:/tools/cocos2dx/external /Id:/tools/marmalade/6.3/s3e/h /Id:/tools/marmalade/6.3/s3e/h/ext /Id:/tools/marmalade/6.3/s3e/h/std /Id:/tools/marmalade/6.3/s3e/h/std/c++ /Id:/tools/marmalade/6.3/s3e/h/ext_legacy /Id:/tools/marmalade/6.3/s3e/h/legacy /I. /ZI /nologo /W3 /WX- /Od /Oy- /X /Gm /EHsc /RTC1 /MTd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug_HelloCPP_vc10x_x86\\" /Fd"Debug_HelloCPP_vc10x_x86\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt "d:/tools/cocos2dx/samples/Cpp/HelloCpp-Box2D-CollisionTest-2.1.2/Classes/HelloWorldScene.cpp" /S3Eproject /J /FI"d:\tools\cocos2dx\samples\Cpp\HelloCpp-Box2D-CollisionTest-2.1.2\proj.marmalade\build_hellocpp_vc10x\temp_defines_debug.h"
+         HelloWorldScene.cpp
+     1>d:\tools\cocos2dx\samples\cpp\hellocpp-box2d-collisiontest-2.1.2\classes\helloworldscene.cpp(253): warning C4244: 'argument' : conversion from 'double' to 'float32', possible loss of data
+     1>d:\tools\cocos2dx\samples\cpp\hellocpp-box2d-collisiontest-2.1.2\classes\helloworldscene.cpp(253): warning C4244: 'argument' : conversion from 'double' to 'float32', possible loss of data
+     1>d:\tools\cocos2dx\samples\cpp\hellocpp-box2d-collisiontest-2.1.2\classes\helloworldscene.cpp(335): warning C4244: 'argument' : conversion from 'double' to 'float32', possible loss of data
+     1>d:\tools\cocos2dx\samples\cpp\hellocpp-box2d-collisiontest-2.1.2\classes\helloworldscene.cpp(335): warning C4244: 'argument' : conversion from 'double' to 'float32', possible loss of data
+     1>d:\tools\cocos2dx\samples\cpp\hellocpp-box2d-collisiontest-2.1.2\classes\helloworldscene.cpp(356): warning C4244: 'argument' : conversion from 'double' to 'float32', possible loss of data
+     1>d:\tools\cocos2dx\samples\cpp\hellocpp-box2d-collisiontest-2.1.2\classes\helloworldscene.cpp(356): warning C4244: 'argument' : conversion from 'double' to 'float32', possible loss of data
+     1>d:\tools\cocos2dx\samples\cpp\hellocpp-box2d-collisiontest-2.1.2\classes\helloworldscene.cpp(361): warning C4244: 'argument' : conversion from 'double' to 'float32', possible loss of data
+     1>d:\tools\cocos2dx\samples\cpp\hellocpp-box2d-collisiontest-2.1.2\classes\helloworldscene.cpp(361): warning C4244: 'argument' : conversion from 'double' to 'float32', possible loss of data
+     1>d:\tools\cocos2dx\samples\cpp\hellocpp-box2d-collisiontest-2.1.2\classes\helloworldscene.cpp(447): warning C4244: 'initializing' : conversion from 'const float' to 'int', possible loss of data
+     1>d:\tools\cocos2dx\samples\cpp\hellocpp-box2d-collisiontest-2.1.2\classes\helloworldscene.cpp(448): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+     1>d:\tools\cocos2dx\samples\cpp\hellocpp-box2d-collisiontest-2.1.2\classes\helloworldscene.cpp(452): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+     1>d:\tools\cocos2dx\samples\cpp\hellocpp-box2d-collisiontest-2.1.2\classes\helloworldscene.cpp(453): warning C4244: 'initializing' : conversion from 'const float' to 'int', possible loss of data
+         All outputs are up-to-date.
+         All outputs are up-to-date.
+         All outputs are up-to-date.
+         All outputs are up-to-date.
+         All outputs are up-to-date.
+         All outputs are up-to-date.
+         All outputs are up-to-date.
+       Link:
+         D:\tools\Marmalade\6.3\s3e\bin\link.exe /ERRORREPORT:PROMPT /OUT:"Debug_HelloCPP_vc10x_x86\HelloCPP.s86" /INCREMENTAL /NOLOGO /LIBPATH:d:/tools/marmalade/6.3/modules/third_party/libjpeg/lib/x86 /LIBPATH:d:/tools/marmalade/6.3/modules/third_party/zlib/lib/x86 /LIBPATH:d:/tools/marmalade/6.3/modules/third_party/libpng/lib/x86 /LIBPATH:d:/tools/marmalade/6.3/modules/iwutil/lib/x86 /LIBPATH:d:/tools/marmalade/6.3/modules/iwgl/lib/x86 /LIBPATH:d:/tools/marmalade/6.3/s3e/lib/x86 vc6_compat.lib jpeg_d.lib z_d.lib png_d.lib iwutil_d.lib iwgl_d.lib s3e_cpp_vc8_d.lib s3e_d.lib s3e_api.lib /NODEFAULTLIB:libcmt /MANIFEST:NO /DEBUG /PDB:"d:\tools\cocos2dx\samples\Cpp\HelloCpp-Box2D-CollisionTest-2.1.2\proj.marmalade\build_hellocpp_vc10x\Debug_HelloCPP_vc10x_x86\HelloCPP.pdb" /SUBSYSTEM:WINDOWS /OPT:NOREF /OPT:NOICF /TLBID:1 /ENTRY:"DllEntryPoint" /DYNAMICBASE /NXCOMPAT /IMPLIB:"Debug_HelloCPP_vc10x_x86\HelloCPP.lib" /MACHINE:X86 /DLL Debug_HelloCPP_vc10x_x86\AppDelegate.obj
+         Debug_HelloCPP_vc10x_x86\CCAccelerometer.obj
+         Debug_HelloCPP_vc10x_x86\CCAction.obj
+         Debug_HelloCPP_vc10x_x86\CCActionCamera.obj
+         Debug_HelloCPP_vc10x_x86\CCActionCatmullRom.obj
+         Debug_HelloCPP_vc10x_x86\CCActionEase.obj
+         Debug_HelloCPP_vc10x_x86\CCActionGrid.obj
+         Debug_HelloCPP_vc10x_x86\CCActionGrid3D.obj
+         Debug_HelloCPP_vc10x_x86\CCActionInstant.obj
+         Debug_HelloCPP_vc10x_x86\CCActionInterval.obj
+         Debug_HelloCPP_vc10x_x86\CCActionManager.obj
+         Debug_HelloCPP_vc10x_x86\CCActionPageTurn3D.obj
+         Debug_HelloCPP_vc10x_x86\CCActionProgressTimer.obj
+         Debug_HelloCPP_vc10x_x86\CCActionTiledGrid.obj
+         Debug_HelloCPP_vc10x_x86\CCActionTween.obj
+         Debug_HelloCPP_vc10x_x86\CCAffineTransform.obj
+         Debug_HelloCPP_vc10x_x86\CCAnimation.obj
+         Debug_HelloCPP_vc10x_x86\CCAnimationCache.obj
+         Debug_HelloCPP_vc10x_x86\CCApplication.obj
+         Debug_HelloCPP_vc10x_x86\CCArray.obj
+         Debug_HelloCPP_vc10x_x86\CCAtlasNode.obj
+         Debug_HelloCPP_vc10x_x86\CCAutoreleasePool.obj
+         Debug_HelloCPP_vc10x_x86\CCCamera.obj
+         Debug_HelloCPP_vc10x_x86\CCClippingNode.obj
+         Debug_HelloCPP_vc10x_x86\CCCommon.obj
+         Debug_HelloCPP_vc10x_x86\CCConfiguration.obj
+         Debug_HelloCPP_vc10x_x86\CCDevice.obj
+         Debug_HelloCPP_vc10x_x86\CCDictionary.obj
+         Debug_HelloCPP_vc10x_x86\CCDirector.obj
+         Debug_HelloCPP_vc10x_x86\CCDrawNode.obj
+         Debug_HelloCPP_vc10x_x86\CCDrawingPrimitives.obj
+         Debug_HelloCPP_vc10x_x86\CCEGLView.obj
+         Debug_HelloCPP_vc10x_x86\CCEGLViewProtocol.obj
+         Debug_HelloCPP_vc10x_x86\CCFileUtils.obj
+         Debug_HelloCPP_vc10x_x86\CCFileUtilsMarmalade.obj
+         Debug_HelloCPP_vc10x_x86\CCGLProgram.obj
+         Debug_HelloCPP_vc10x_x86\CCGeometry.obj
+         Debug_HelloCPP_vc10x_x86\CCGrabber.obj
+         Debug_HelloCPP_vc10x_x86\CCGrid.obj
+         Debug_HelloCPP_vc10x_x86\CCIMEDispatcher.obj
+         Debug_HelloCPP_vc10x_x86\CCImage.obj
+         Debug_HelloCPP_vc10x_x86\CCImageCommonWebp.obj
+         Debug_HelloCPP_vc10x_x86\CCKeypadDelegate.obj
+         Debug_HelloCPP_vc10x_x86\CCKeypadDispatcher.obj
+         Debug_HelloCPP_vc10x_x86\CCLabelAtlas.obj
+         Debug_HelloCPP_vc10x_x86\CCLabelBMFont.obj
+         Debug_HelloCPP_vc10x_x86\CCLabelTTF.obj
+         Debug_HelloCPP_vc10x_x86\CCLayer.obj
+         Debug_HelloCPP_vc10x_x86\CCMenu.obj
+         Debug_HelloCPP_vc10x_x86\CCMenuItem.obj
+         Debug_HelloCPP_vc10x_x86\CCMotionStreak.obj
+         Debug_HelloCPP_vc10x_x86\CCNS.obj
+         Debug_HelloCPP_vc10x_x86\CCNode.obj
+         Debug_HelloCPP_vc10x_x86\CCNotificationCenter.obj
+         Debug_HelloCPP_vc10x_x86\CCObject.obj
+         Debug_HelloCPP_vc10x_x86\CCParallaxNode.obj
+         Debug_HelloCPP_vc10x_x86\CCParticleBatchNode.obj
+         Debug_HelloCPP_vc10x_x86\CCParticleExamples.obj
+         Debug_HelloCPP_vc10x_x86\CCParticleSystem.obj
+         Debug_HelloCPP_vc10x_x86\CCParticleSystemQuad.obj
+         Debug_HelloCPP_vc10x_x86\CCPointExtension.obj
+         Debug_HelloCPP_vc10x_x86\CCProfiling.obj
+         Debug_HelloCPP_vc10x_x86\CCProgressTimer.obj
+         Debug_HelloCPP_vc10x_x86\CCRenderTexture.obj
+         Debug_HelloCPP_vc10x_x86\CCSAXParser.obj
+         Debug_HelloCPP_vc10x_x86\CCScene.obj
+         Debug_HelloCPP_vc10x_x86\CCScheduler.obj
+         Debug_HelloCPP_vc10x_x86\CCScriptSupport.obj
+         Debug_HelloCPP_vc10x_x86\CCSet.obj
+         Debug_HelloCPP_vc10x_x86\CCShaderCache.obj
+         Debug_HelloCPP_vc10x_x86\CCSprite.obj
+         Debug_HelloCPP_vc10x_x86\CCSpriteBatchNode.obj
+         Debug_HelloCPP_vc10x_x86\CCSpriteFrame.obj
+         Debug_HelloCPP_vc10x_x86\CCSpriteFrameCache.obj
+         Debug_HelloCPP_vc10x_x86\CCString.obj
+         Debug_HelloCPP_vc10x_x86\CCTMXLayer.obj
+         Debug_HelloCPP_vc10x_x86\CCTMXObjectGroup.obj
+         Debug_HelloCPP_vc10x_x86\CCTMXTiledMap.obj
+         Debug_HelloCPP_vc10x_x86\CCTMXXMLParser.obj
+         Debug_HelloCPP_vc10x_x86\CCTextFieldTTF.obj
+         Debug_HelloCPP_vc10x_x86\CCTexture2D.obj
+         Debug_HelloCPP_vc10x_x86\CCTextureAtlas.obj
+         Debug_HelloCPP_vc10x_x86\CCTextureCache.obj
+         Debug_HelloCPP_vc10x_x86\CCTexturePVR.obj
+         Debug_HelloCPP_vc10x_x86\CCThread.obj
+         Debug_HelloCPP_vc10x_x86\CCTileMapAtlas.obj
+         Debug_HelloCPP_vc10x_x86\CCTouch.obj
+         Debug_HelloCPP_vc10x_x86\CCTouchDispatcher.obj
+         Debug_HelloCPP_vc10x_x86\CCTouchHandler.obj
+         Debug_HelloCPP_vc10x_x86\CCTransition.obj
+         Debug_HelloCPP_vc10x_x86\CCTransitionPageTurn.obj
+         Debug_HelloCPP_vc10x_x86\CCTransitionProgress.obj
+         Debug_HelloCPP_vc10x_x86\CCUserDefault.obj
+         Debug_HelloCPP_vc10x_x86\CCUserDefaultAndroid.obj
+         Debug_HelloCPP_vc10x_x86\CCVertex.obj
+         Debug_HelloCPP_vc10x_x86\CCZone.obj
+         Debug_HelloCPP_vc10x_x86\ContactListener.obj
+         "Debug_HelloCPP_vc10x_x86\GLES-Render.obj"
+         Debug_HelloCPP_vc10x_x86\HelloWorldScene.obj
+         Debug_HelloCPP_vc10x_x86\Main.obj
+         Debug_HelloCPP_vc10x_x86\TGAlib.obj
+         Debug_HelloCPP_vc10x_x86\TransformUtils.obj
+         Debug_HelloCPP_vc10x_x86\ZipUtils.obj
+         Debug_HelloCPP_vc10x_x86\aabb.obj
+         Debug_HelloCPP_vc10x_x86\alpha.obj
+         Debug_HelloCPP_vc10x_x86\analysis.obj
+         Debug_HelloCPP_vc10x_x86\autofit.obj
+         Debug_HelloCPP_vc10x_x86\b2BlockAllocator.obj
+         Debug_HelloCPP_vc10x_x86\b2Body.obj
+         Debug_HelloCPP_vc10x_x86\b2BroadPhase.obj
+         Debug_HelloCPP_vc10x_x86\b2ChainAndCircleContact.obj
+         Debug_HelloCPP_vc10x_x86\b2ChainAndPolygonContact.obj
+         Debug_HelloCPP_vc10x_x86\b2ChainShape.obj
+         Debug_HelloCPP_vc10x_x86\b2CircleContact.obj
+         Debug_HelloCPP_vc10x_x86\b2CircleShape.obj
+         Debug_HelloCPP_vc10x_x86\b2CollideCircle.obj
+         Debug_HelloCPP_vc10x_x86\b2CollideEdge.obj
+         Debug_HelloCPP_vc10x_x86\b2CollidePolygon.obj
+         Debug_HelloCPP_vc10x_x86\b2Collision.obj
+         Debug_HelloCPP_vc10x_x86\b2Contact.obj
+         Debug_HelloCPP_vc10x_x86\b2ContactManager.obj
+         Debug_HelloCPP_vc10x_x86\b2ContactSolver.obj
+         Debug_HelloCPP_vc10x_x86\b2Distance.obj
+         Debug_HelloCPP_vc10x_x86\b2DistanceJoint.obj
+         Debug_HelloCPP_vc10x_x86\b2Draw.obj
+         Debug_HelloCPP_vc10x_x86\b2DynamicTree.obj
+         Debug_HelloCPP_vc10x_x86\b2EdgeAndCircleContact.obj
+         Debug_HelloCPP_vc10x_x86\b2EdgeAndPolygonContact.obj
+         Debug_HelloCPP_vc10x_x86\b2EdgeShape.obj
+         Debug_HelloCPP_vc10x_x86\b2Fixture.obj
+         Debug_HelloCPP_vc10x_x86\b2FrictionJoint.obj
+         Debug_HelloCPP_vc10x_x86\b2GearJoint.obj
+         Debug_HelloCPP_vc10x_x86\b2Island.obj
+         Debug_HelloCPP_vc10x_x86\b2Joint.obj
+         Debug_HelloCPP_vc10x_x86\b2Math.obj
+         Debug_HelloCPP_vc10x_x86\b2MouseJoint.obj
+         Debug_HelloCPP_vc10x_x86\b2PolygonAndCircleContact.obj
+         Debug_HelloCPP_vc10x_x86\b2PolygonContact.obj
+         Debug_HelloCPP_vc10x_x86\b2PolygonShape.obj
+         Debug_HelloCPP_vc10x_x86\b2PrismaticJoint.obj
+         Debug_HelloCPP_vc10x_x86\b2PulleyJoint.obj
+         Debug_HelloCPP_vc10x_x86\b2RevoluteJoint.obj
+         Debug_HelloCPP_vc10x_x86\b2Rope.obj
+         Debug_HelloCPP_vc10x_x86\b2RopeJoint.obj
+         Debug_HelloCPP_vc10x_x86\b2Settings.obj
+         Debug_HelloCPP_vc10x_x86\b2StackAllocator.obj
+         Debug_HelloCPP_vc10x_x86\b2TimeOfImpact.obj
+         Debug_HelloCPP_vc10x_x86\b2Timer.obj
+         Debug_HelloCPP_vc10x_x86\b2WeldJoint.obj
+         Debug_HelloCPP_vc10x_x86\b2WheelJoint.obj
+         Debug_HelloCPP_vc10x_x86\b2World.obj
+         Debug_HelloCPP_vc10x_x86\b2WorldCallbacks.obj
+         Debug_HelloCPP_vc10x_x86\backward_references.obj
+         Debug_HelloCPP_vc10x_x86\base64.obj
+         Debug_HelloCPP_vc10x_x86\bdf.obj
+         Debug_HelloCPP_vc10x_x86\bit_reader.obj
+         Debug_HelloCPP_vc10x_x86\bit_writer.obj
+         Debug_HelloCPP_vc10x_x86\buffer.obj
+         Debug_HelloCPP_vc10x_x86\ccCArray.obj
+         Debug_HelloCPP_vc10x_x86\ccGLStateCache.obj
+         Debug_HelloCPP_vc10x_x86\ccShaders.obj
+         Debug_HelloCPP_vc10x_x86\ccUTF8.obj
+         Debug_HelloCPP_vc10x_x86\ccUtils.obj
+         Debug_HelloCPP_vc10x_x86\cff.obj
+         Debug_HelloCPP_vc10x_x86\cocos2d.obj
+         Debug_HelloCPP_vc10x_x86\color_cache.obj
+         Debug_HelloCPP_vc10x_x86\config.obj
+         Debug_HelloCPP_vc10x_x86\cost.obj
+         Debug_HelloCPP_vc10x_x86\cpu.obj
+         Debug_HelloCPP_vc10x_x86\dec.obj
+         Debug_HelloCPP_vc10x_x86\dec_neon.obj
+         Debug_HelloCPP_vc10x_x86\dec_sse2.obj
+         Debug_HelloCPP_vc10x_x86\demux.obj
+         Debug_HelloCPP_vc10x_x86\enc.obj
+         Debug_HelloCPP_vc10x_x86\enc_sse2.obj
+         Debug_HelloCPP_vc10x_x86\filter.obj
+         Debug_HelloCPP_vc10x_x86\filters.obj
+         Debug_HelloCPP_vc10x_x86\frame.obj
+         Debug_HelloCPP_vc10x_x86\ftbase.obj
+         Debug_HelloCPP_vc10x_x86\ftbbox.obj
+         Debug_HelloCPP_vc10x_x86\ftbdf.obj
+         Debug_HelloCPP_vc10x_x86\ftbitmap.obj
+         Debug_HelloCPP_vc10x_x86\ftcache.obj
+         Debug_HelloCPP_vc10x_x86\ftcid.obj
+         Debug_HelloCPP_vc10x_x86\ftfstype.obj
+         Debug_HelloCPP_vc10x_x86\ftgasp.obj
+         Debug_HelloCPP_vc10x_x86\ftglyph.obj
+         Debug_HelloCPP_vc10x_x86\ftgxval.obj
+         Debug_HelloCPP_vc10x_x86\ftgzip.obj
+         Debug_HelloCPP_vc10x_x86\ftinit.obj
+         Debug_HelloCPP_vc10x_x86\ftlcdfil.obj
+         Debug_HelloCPP_vc10x_x86\ftlzw.obj
+         Debug_HelloCPP_vc10x_x86\ftmm.obj
+         Debug_HelloCPP_vc10x_x86\ftotval.obj
+         Debug_HelloCPP_vc10x_x86\ftpatent.obj
+         Debug_HelloCPP_vc10x_x86\ftpfr.obj
+         Debug_HelloCPP_vc10x_x86\ftstroke.obj
+         Debug_HelloCPP_vc10x_x86\ftsynth.obj
+         Debug_HelloCPP_vc10x_x86\ftsystem.obj
+         Debug_HelloCPP_vc10x_x86\fttype1.obj
+         Debug_HelloCPP_vc10x_x86\ftwinfnt.obj
+         Debug_HelloCPP_vc10x_x86\histogram.obj
+         Debug_HelloCPP_vc10x_x86\huffman.obj
+         Debug_HelloCPP_vc10x_x86\huffman_encode.obj
+         Debug_HelloCPP_vc10x_x86\idec.obj
+         Debug_HelloCPP_vc10x_x86\io.obj
+         Debug_HelloCPP_vc10x_x86\ioapi.obj
+         Debug_HelloCPP_vc10x_x86\iterator.obj
+         Debug_HelloCPP_vc10x_x86\layer.obj
+         Debug_HelloCPP_vc10x_x86\lossless.obj
+         Debug_HelloCPP_vc10x_x86\mat3.obj
+         Debug_HelloCPP_vc10x_x86\mat4.obj
+         Debug_HelloCPP_vc10x_x86\mat4stack.obj
+         Debug_HelloCPP_vc10x_x86\matrix.obj
+         Debug_HelloCPP_vc10x_x86\muxedit.obj
+         Debug_HelloCPP_vc10x_x86\muxinternal.obj
+         Debug_HelloCPP_vc10x_x86\muxread.obj
+         Debug_HelloCPP_vc10x_x86\neon_matrix_impl.obj
+         Debug_HelloCPP_vc10x_x86\pcf.obj
+         Debug_HelloCPP_vc10x_x86\pfr.obj
+         Debug_HelloCPP_vc10x_x86\picture.obj
+         Debug_HelloCPP_vc10x_x86\plane.obj
+         Debug_HelloCPP_vc10x_x86\platform.obj
+         Debug_HelloCPP_vc10x_x86\psaux.obj
+         Debug_HelloCPP_vc10x_x86\pshinter.obj
+         Debug_HelloCPP_vc10x_x86\psmodule.obj
+         Debug_HelloCPP_vc10x_x86\quant.obj
+         Debug_HelloCPP_vc10x_x86\quant_levels.obj
+         Debug_HelloCPP_vc10x_x86\quaternion.obj
+         Debug_HelloCPP_vc10x_x86\raster.obj
+         Debug_HelloCPP_vc10x_x86\ray2.obj
+         Debug_HelloCPP_vc10x_x86\rescaler.obj
+         Debug_HelloCPP_vc10x_x86\sfnt.obj
+         Debug_HelloCPP_vc10x_x86\smooth.obj
+         Debug_HelloCPP_vc10x_x86\syntax.obj
+         Debug_HelloCPP_vc10x_x86\thread.obj
+         Debug_HelloCPP_vc10x_x86\tif_aux.obj
+         Debug_HelloCPP_vc10x_x86\tif_close.obj
+         Debug_HelloCPP_vc10x_x86\tif_codec.obj
+         Debug_HelloCPP_vc10x_x86\tif_color.obj
+         Debug_HelloCPP_vc10x_x86\tif_compress.obj
+         Debug_HelloCPP_vc10x_x86\tif_dir.obj
+         Debug_HelloCPP_vc10x_x86\tif_dirinfo.obj
+         Debug_HelloCPP_vc10x_x86\tif_dirread.obj
+         Debug_HelloCPP_vc10x_x86\tif_dirwrite.obj
+         Debug_HelloCPP_vc10x_x86\tif_dumpmode.obj
+         Debug_HelloCPP_vc10x_x86\tif_error.obj
+         Debug_HelloCPP_vc10x_x86\tif_extension.obj
+         Debug_HelloCPP_vc10x_x86\tif_fax3.obj
+         Debug_HelloCPP_vc10x_x86\tif_fax3sm.obj
+         Debug_HelloCPP_vc10x_x86\tif_flush.obj
+         Debug_HelloCPP_vc10x_x86\tif_getimage.obj
+         Debug_HelloCPP_vc10x_x86\tif_jbig.obj
+         Debug_HelloCPP_vc10x_x86\tif_jpeg.obj
+         Debug_HelloCPP_vc10x_x86\tif_luv.obj
+         Debug_HelloCPP_vc10x_x86\tif_lzw.obj
+         Debug_HelloCPP_vc10x_x86\tif_next.obj
+         Debug_HelloCPP_vc10x_x86\tif_ojpeg.obj
+         Debug_HelloCPP_vc10x_x86\tif_open.obj
+         Debug_HelloCPP_vc10x_x86\tif_packbits.obj
+         Debug_HelloCPP_vc10x_x86\tif_pixarlog.obj
+         Debug_HelloCPP_vc10x_x86\tif_predict.obj
+         Debug_HelloCPP_vc10x_x86\tif_print.obj
+         Debug_HelloCPP_vc10x_x86\tif_read.obj
+         Debug_HelloCPP_vc10x_x86\tif_strip.obj
+         Debug_HelloCPP_vc10x_x86\tif_swab.obj
+         Debug_HelloCPP_vc10x_x86\tif_thunder.obj
+         Debug_HelloCPP_vc10x_x86\tif_tile.obj
+         Debug_HelloCPP_vc10x_x86\tif_unix.obj
+         Debug_HelloCPP_vc10x_x86\tif_version.obj
+         Debug_HelloCPP_vc10x_x86\tif_warning.obj
+         Debug_HelloCPP_vc10x_x86\tif_write.obj
+         Debug_HelloCPP_vc10x_x86\tif_zip.obj
+         Debug_HelloCPP_vc10x_x86\tinyxml2.obj
+         Debug_HelloCPP_vc10x_x86\tree.obj
+         Debug_HelloCPP_vc10x_x86\truetype.obj
+         Debug_HelloCPP_vc10x_x86\type1.obj
+         Debug_HelloCPP_vc10x_x86\type1cid.obj
+         Debug_HelloCPP_vc10x_x86\type42.obj
+         Debug_HelloCPP_vc10x_x86\unzip.obj
+         Debug_HelloCPP_vc10x_x86\upsampling.obj
+         Debug_HelloCPP_vc10x_x86\upsampling_sse2.obj
+         Debug_HelloCPP_vc10x_x86\utility.obj
+         Debug_HelloCPP_vc10x_x86\utils.obj
+         Debug_HelloCPP_vc10x_x86\vec2.obj
+         Debug_HelloCPP_vc10x_x86\vec3.obj
+         Debug_HelloCPP_vc10x_x86\vec4.obj
+         Debug_HelloCPP_vc10x_x86\vp8.obj
+         Debug_HelloCPP_vc10x_x86\vp8l.obj
+         Debug_HelloCPP_vc10x_x86\webp.obj
+         Debug_HelloCPP_vc10x_x86\webpenc.obj
+         Debug_HelloCPP_vc10x_x86\winfnt.obj
+         Debug_HelloCPP_vc10x_x86\yuv.obj
+         Debug_HelloCPP_vc10x_x86\alpha_1.obj
+         Debug_HelloCPP_vc10x_x86\frame_1.obj
+         Debug_HelloCPP_vc10x_x86\layer_1.obj
+         Debug_HelloCPP_vc10x_x86\quant_1.obj
+         Debug_HelloCPP_vc10x_x86\tree_1.obj
+         Debug_HelloCPP_vc10x_x86\vp8l_1.obj  /include:_IwMain /include:_raise /include:_DllEntryPoint@12
+         HelloCPP_vc10x.vcxproj -> d:\tools\cocos2dx\samples\Cpp\HelloCpp-Box2D-CollisionTest-2.1.2\proj.marmalade\build_hellocpp_vc10x\Debug_HelloCPP_vc10x_x86\HelloCPP.s86
+       PostBuildEvent:
+         echo D:\tools\Marmalade\6.3\s3e\python\python.exe .\process_map.py "d:\tools\cocos2dx\samples\Cpp\HelloCpp-Box2D-CollisionTest-2.1.2\proj.marmalade\build_hellocpp_vc10x\Debug_HelloCPP_vc10x_x86\HelloCPP.s86"
+         chdir /d "d:\tools\marmalade\6.3\s3e\tools"
+         D:\tools\Marmalade\6.3\s3e\python\python.exe .\process_map.py "d:\tools\cocos2dx\samples\Cpp\HelloCpp-Box2D-CollisionTest-2.1.2\proj.marmalade\build_hellocpp_vc10x\Debug_HelloCPP_vc10x_x86\HelloCPP.s86"
+         echo "d:\tools\marmalade\6.3\s3e\bin\s3e_plink" -l "d:\tools\cocos2dx\samples\Cpp\HelloCpp-Box2D-CollisionTest-2.1.2\proj.marmalade\build_hellocpp_vc10x\Debug_HelloCPP_vc10x_x86\HelloCPP.s86" 
+         chdir /d "d:\tools\marmalade\6.3\s3e"
+         "d:\tools\marmalade\6.3\s3e\bin\s3e_plink" -l "d:\tools\cocos2dx\samples\Cpp\HelloCpp-Box2D-CollisionTest-2.1.2\proj.marmalade\build_hellocpp_vc10x\Debug_HelloCPP_vc10x_x86\HelloCPP.s86" 
+         
+         :VCEnd
+         D:\tools\Marmalade\6.3\s3e\python\python.exe .\process_map.py "d:\tools\cocos2dx\samples\Cpp\HelloCpp-Box2D-CollisionTest-2.1.2\proj.marmalade\build_hellocpp_vc10x\Debug_HelloCPP_vc10x_x86\HelloCPP.s86"
+         "d:\tools\marmalade\6.3\s3e\bin\s3e_plink" -l "d:\tools\cocos2dx\samples\Cpp\HelloCpp-Box2D-CollisionTest-2.1.2\proj.marmalade\build_hellocpp_vc10x\Debug_HelloCPP_vc10x_x86\HelloCPP.s86" 
+       FinalizeBuildStatus:
+         Deleting file "Debug_HelloCPP_vc10x_x86\HelloCPP_vc10x.unsuccessfulbuild".
+         Touching "Debug_HelloCPP_vc10x_x86\HelloCPP_vc10x.lastbuildstate".
+     1>Done Building Project "d:\tools\cocos2dx\samples\Cpp\HelloCpp-Box2D-CollisionTest-2.1.2\proj.marmalade\build_hellocpp_vc10x\HelloCPP_vc10x.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.82
