@@ -37,7 +37,7 @@ bool HelloWorld::init()
     //    you may modify it.
 
     // add a "close" icon to exit the progress. it's an autorelease object
-    CCMenuItemImage *pCloseItem = CCMenuItemImage::create(
+   /* CCMenuItemImage *pCloseItem = CCMenuItemImage::create(
                                         "CloseNormal.png",
                                         "CloseSelected.png",
                                         this,
@@ -49,7 +49,7 @@ bool HelloWorld::init()
     // create menu, it's an autorelease object
     CCMenu* pMenu = CCMenu::create(pCloseItem, NULL);
     pMenu->setPosition(CCPointZero);
-    this->addChild(pMenu, 1);
+    this->addChild(pMenu, 1);*/
 
     /////////////////////////////
     // 3. add your codes below...
@@ -57,7 +57,7 @@ bool HelloWorld::init()
 
 	// add a label shows "Hello World"
 	// create and initialize a label
-	CCLabelTTF* pLabel = CCLabelTTF::create("Kitty Splatter", "Thonburi", 34);
+	/*CCLabelTTF* pLabel = CCLabelTTF::create("Kitty Splatter", "Thonburi", 34);
 
 	// ask director the window size
 	CCSize size = CCDirector::sharedDirector()->getWinSize();
@@ -76,12 +76,12 @@ bool HelloWorld::init()
 
 	// add the sprite as a child to this layer
 	this->addChild(pSprite, 0);
-	
+	*/
     
     ////////////////////////////////////////////////////
     // Load the sprite sheet and make a "batch node" for that sprite sheet. See http://www.cocos2d-iphone.org/api-ref/0.99.5/interface_c_c_sprite_batch_node.html
     // We have "HD" graphics and "SD" graphics.
-    CCSize realScreenSize = CCEGLView::sharedOpenGLView()->getFrameSize();
+   /* CCSize realScreenSize = CCEGLView::sharedOpenGLView()->getFrameSize();
     if (realScreenSize.height != 768 && realScreenSize.height != 320 )
     {
         CCSpriteFrameCache::sharedSpriteFrameCache()->addSpriteFramesWithFile("sprites-hd.plist");
@@ -93,7 +93,7 @@ bool HelloWorld::init()
         m_spriteSheet = CCSpriteBatchNode::create("sprites.png");
     }
     
-    addChild(m_spriteSheet, 0, 0);
+    addChild(m_spriteSheet, 0, 0);*/
     
     // Preload effect
     //CocosDenshion::SimpleAudioEngine::sharedEngine()->preloadEffect( "cat_ouch.wav" );
@@ -204,10 +204,10 @@ void HelloWorld::draw(void)
         glDisableClientState(GL_COLOR_ARRAY);               // so polys draw properly and plain colour
         glDisableClientState(GL_TEXTURE_COORD_ARRAY);       // doesnt seem to matter
         glEnableClientState(GL_VERTEX_ARRAY);             // vertices are drawn with this flag set
-        */
+        
         m_b2dWorld->DrawDebugData();
 
-        /*glDisableClientState(GL_VERTEX_ARRAY);   
+        *glDisableClientState(GL_VERTEX_ARRAY);   
         glEnableClientState(GL_TEXTURE_COORD_ARRAY);
         glEnableClientState(GL_COLOR_ARRAY);
         glEnable(GL_TEXTURE_2D);*/

@@ -28,7 +28,7 @@
 #define DESIGN_RESOLUTION_2048X1536  2
 
 /* If you want to switch design resolution, change next line */
-#define TARGET_DESIGN_RESOLUTION_SIZE  DESIGN_RESOLUTION_480X320
+#define TARGET_DESIGN_RESOLUTION_SIZE  DESIGN_RESOLUTION_1024X768
 
 typedef struct tagResource
 {
@@ -52,5 +52,10 @@ static cocos2d::CCSize designResolutionSize = cocos2d::CCSizeMake(2048, 1536);
 
 // The font size 24 is designed for small resolution, so we should change it to fit for current design resolution
 #define TITLE_FONT_SIZE  (cocos2d::CCEGLView::sharedOpenGLView()->getDesignResolutionSize().width / smallResource.size.width * 24)
+
+// дефайны дл€ всего  приложени€ которые пригод€тс€
+#define WINDOW_SIZE CCDirector::sharedDirector()->getWinSize();
+// pixel to meters
+#define PTM 32.0f
 
 #endif /* __APPMACROS_H__ */

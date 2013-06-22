@@ -14,8 +14,7 @@ using namespace cocos2d;
 
 #include "Box2D/Box2D.h"
 #include <vector>
-
-#define PTM_RATIO 32.0
+#include "GameObject.h"
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 struct ContactData {
@@ -30,7 +29,7 @@ struct ContactData {
 class CContactListener : public b2ContactListener {
 
 public:
-    std::vector<ContactData>_contacts;
+    //std::vector<ContactData>_contacts;
     
     CContactListener();
     ~CContactListener();

@@ -86,7 +86,7 @@ SoundSampleRate                = Type=int, Allowed="8192" "11025" "16000" "22050
 SoundStereo                    = Type=bool, Default="true", Value = "true"
 SoundVolumeDefault             = Type=int, Min=0.000000, Max=256.000000, Default="256", Value = "256"
 SurfaceDisableWhenGLIsActive   = Type=bool, Default="false", Value = "false"
-SurfaceDoubleBuffer            = Type=bool, Default="false", Value = "false"
+SurfaceDoubleBuffer            = Type=bool, Default="false", Value = "true"
 SurfaceHeight                  = Type=int, Min=128.000000, Max=4096.000000, Default="480", Value = "768"
 SurfacePitch                   = Type=int, Min=0.000000, Max=8192.000000, Default="0", Value = "0"
 SurfacePixelType               = Type=string, Allowed="RGB444" "RGB555" "RGB565" "RGB666" "RGB888" "BGR444" "BGR555" "BGR565" "BGR666" "BGR888", Default="RGB565", Value = "RGB565"

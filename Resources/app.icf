@@ -15,3 +15,7 @@
 #
 # Some conditional operations are also permitted, see the
 # S3E documentation for details.
+
+[S3E]
+MemSizeDebug=20485760
+MemSize=20485760

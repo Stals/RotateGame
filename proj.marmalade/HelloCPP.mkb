@@ -12,6 +12,7 @@ subprojects
 {
 	IwGL
 	cocos2dx
+	CocosDenshion
 	Box2D
 }
 
