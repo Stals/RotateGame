@@ -3,11 +3,15 @@
 
 #include "../external/Box2D/Box2D.h"
 
+#include "EntityType.h"
+
 // Любой объект у которого есть box2d body и как-то реагирует на колизии
 class GameObject : public cocos2d::CCSprite{
 public:
-	GameObject(b2World *world);
+	GameObject(b2World *world, EntityType type);
 	~GameObject();
+
+	EntityType getType();
 
 	//virtual bool init();
 
@@ -29,5 +33,5 @@ protected:
 	// Note: если наследуется то должен вызывать update родительского класса
 	virtual void update( float dt);
 
-	
+	EntityType type;
 };

@@ -3,7 +3,7 @@
 
 USING_NS_CC;
 
-GameObject::GameObject(b2World *world):world(world)
+GameObject::GameObject(b2World *world, EntityType type):world(world), type(type)
 {
 	CCSprite::init();
 	this->scheduleUpdate();
@@ -13,6 +13,10 @@ GameObject::~GameObject(){
 	if(body){
 		world->DestroyBody(body);
 	}
+}
+
+EntityType GameObject::getType(){
+	return type;
 }
 
 /*

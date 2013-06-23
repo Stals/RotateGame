@@ -32,11 +32,11 @@ void Enemy::AIMove(float dt){
 
 void Enemy::resolveCollision(GameObject* other){
 	if(dynamic_cast<Bullet*>(other) != 0){
-		//if(dynamic_cast<Bullet*>(other)->getT
-
-		this->hp -= dynamic_cast<Bullet*>(other)->getDamage();
-		this->updateHPLabel();
-	}
+		if(dynamic_cast<Bullet*>(other)->getType() != this->getType()){
+			this->hp -= dynamic_cast<Bullet*>(other)->getDamage();
+			this->updateHPLabel();
+		}
+	}	
 }
 
 void Enemy::setWeapon(Weapon *weapon){

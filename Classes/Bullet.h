@@ -5,7 +5,7 @@
 // В теории так как логика полу уходит в оружие - возможно это будет тупо спрайт определенный
 class Bullet: public GameObject{
 public:
-	Bullet(b2World *world, int damage);
+	Bullet(b2World *world,EntityType type, int damage);
 	~Bullet();
 	int getDamage();
 

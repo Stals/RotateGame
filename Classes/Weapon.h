@@ -1,6 +1,7 @@
 #pragma once
 #include "AppMacros.h"
 #include "../external/Box2D/Box2D.h"
+#include "EntityType.h"
 class GameLayer;
 
 // Отвечает за отправление пули в определенную точку с определенной скоростью
@@ -23,12 +24,14 @@ public:
 	// это точка на GameLayer
 	void shoot(cocos2d::CCPoint p);
 
-	// TODO - мне нужно пулю поворачивать тоже!
+	void setObjectType(EntityType type);
 
 private:
 	b2World *world;
 	GameLayer *gameLayer;
 	float cooldown;
+	EntityType type;
+
 	// returns angle in degrees
 	float getAngle(cocos2d::CCPoint p1,  cocos2d::CCPoint p2);
 };

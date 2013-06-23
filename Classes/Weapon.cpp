@@ -8,6 +8,7 @@ Weapon::Weapon(b2World *world, GameLayer *gameLayer, float cooldown):world(world
 	CCSprite::init();
 	this->gameLayer = gameLayer;
 	this->cooldown = cooldown;
+	this->type = EntityType::PlayerType;
 }
 
 	// Раз в какой промежуток может стрелять
@@ -21,7 +22,7 @@ Weapon::Weapon(b2World *world, GameLayer *gameLayer, float cooldown):world(world
 		// создает пулю и отправляет её в том направлении
 		// добавляет её на gameLayer
 
-		Bullet* bullet = new Bullet(world, 1);
+		Bullet* bullet = new Bullet(world, this->type, 1);
 		//cocos2d::CCSprite *bullet = CCSprite::create("bullet.png");
 		
 		gameLayer->addChild(bullet, BulletZOrder);
@@ -55,4 +56,9 @@ Weapon::Weapon(b2World *world, GameLayer *gameLayer, float cooldown):world(world
 		float deltaY = p2.y - p1.y;
 		float deltaX = p2.x - p1.x;
 		return atan2(deltaY, deltaX) * 180 / PI;
+	}
+
+
+	void Weapon::setObjectType(EntityType type){
+		this->type = type;
 	}

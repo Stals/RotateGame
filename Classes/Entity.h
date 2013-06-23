@@ -3,11 +3,7 @@
 #include "GameObject.h"
 #include "Weapon.h"
 
-enum EntityType{
-	PlayerType,
-	EnemyType
-	// NeutralType - их ничего не будет трогать?
-};
+
 
 // те объекты у которых есть HP
 class Entity : public GameObject
@@ -42,7 +38,7 @@ private:
 
 	Weapon* currentWeapon;
 
-	EntityType type;
+
 
 	cocos2d::CCLabelTTF* hpLabel;
 };

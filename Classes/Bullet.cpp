@@ -1,7 +1,7 @@
 #include "Bullet.h"
+#include "Entity.h"
 
-
-Bullet::Bullet(b2World *world, int damage):GameObject(world){
+Bullet::Bullet(b2World *world, EntityType type, int damage):GameObject(world, type){
 	GameObject::init();
 	this->damage = damage;
 
@@ -22,6 +22,11 @@ int Bullet::getDamage(){
 
 void Bullet::resolveCollision(GameObject* other){
 	//по другому - если встртил когото - и он Entity, при этом type != своему типу и у него не 0 хп - тогда дамажить и взрываться.
+	if(dynamic_cast<Entity*>(other) != 0){
+		if(dynamic_cast<Entity*>(other)->getType() != this->getType()){
+			this->removeFromParentAndCleanup(true);
+		}
+	}	
 }
 
 void Bullet::setupBody(){
@@ -45,6 +50,9 @@ void Bullet::setupBody(){
 void Bullet::update( float dt){
 	GameObject::update(dt);
 
+	// TODO возможно это не самая лучшая идея на каждом кадре проверять не стоит ли её удалить...
+
+	// TODO убирать пулю в Pool вместо удаления
 	cocos2d::CCSize winSize = cocos2d::CCDirector::sharedDirector()->getWinSize();
 
 	cocos2d::CCRect* rect = new cocos2d::CCRect;

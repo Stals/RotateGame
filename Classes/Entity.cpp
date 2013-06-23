@@ -2,7 +2,7 @@
 
 #include <sstream>
 
-Entity::Entity(b2World *world, EntityType type, int hp):GameObject(world){
+Entity::Entity(b2World *world, EntityType type, int hp):GameObject(world, type){
 	GameObject::init();
 	this->hp = hp;
 	this->type = type;
@@ -37,6 +37,7 @@ void Entity::setWeapon(Weapon *weapon){ // TODO if not null - destroy previous
 	}
 
 	currentWeapon = weapon;
+	currentWeapon->setObjectType(type);
 	this->addChild(currentWeapon);
 }
 
