@@ -16,11 +16,13 @@ public:
 	// Скорее всего он создает sheduler по кд его оружия
 
 	// Note: в теории может использовать rotate если на них будет щит для того чтобы компенсировать дамаг - это прям полных хард кор - он должен будет знать о том где летят пули и постоянно чекать...
+
+	virtual void setWeapon(Weapon *weapon);
 private:
 	Player* player;
 
 	// определяет положение игрока и стреляет туда чуть меняя координату чтобы чуть промазать
-	void AIShoot();
+	void AIShoot(float dt);
 	void AIMove();
 
 	virtual void resolveCollision(GameObject* other);

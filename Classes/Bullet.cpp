@@ -4,7 +4,7 @@
 Bullet::Bullet(int damage):GameObject(/*b2World*/){
 	this->damage = damage;
 
-	cocos2d::CCSprite *playerSprite = CCSprite::create("bullet.png");
+	cocos2d::CCSprite *playerSprite = CCSprite::create("bullet2.png");
 	this->addChild(playerSprite);
 }
 

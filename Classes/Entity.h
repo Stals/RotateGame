@@ -27,7 +27,7 @@ public:
 
 	// этот метод позволяет менять оружия на лету.
 	// а за счет Weapon.shoot можно сразу будет иметь несколько оружий
-	void setWeapon(Weapon *weapon); // TODO if not null - destroy previous
+	virtual void setWeapon(Weapon *weapon); // TODO if not null - destroy previous
 	void shoot(cocos2d::CCPoint p); // стреялет текущим оружием в указанную точку
 protected:
 	virtual void resolveCollision(GameObject* other) = 0;

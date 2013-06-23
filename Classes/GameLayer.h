@@ -9,6 +9,7 @@ using namespace cocos2d;
 #include "ContactListener.h"
 
 #include "Player.h"
+#include "Enemy.h"
 #include "Weapon.h"
 
 class GameLayer : public cocos2d::CCLayer
@@ -33,6 +34,7 @@ private:
 	void setupPlayer();
 	void setupBackground();
 	void setupWorld();
+	void addEnemy();
 
     // implement the "static node()" method manually
     CREATE_FUNC(GameLayer);

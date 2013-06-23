@@ -36,6 +36,12 @@ bool GameLayer::init()
 	setupBackground();
 	setupPlayer();
 	setupWorld();
+	addEnemy();
+	addEnemy();
+	addEnemy();
+	addEnemy();
+	addEnemy();
+	addEnemy();
    
 	setTouchEnabled(true);
     scheduleUpdate();
@@ -73,6 +79,25 @@ void GameLayer::setupWorld(){
     // Create contact listener
     m_contactListener = new CContactListener();
     m_b2dWorld->SetContactListener(m_contactListener);
+}
+
+void GameLayer::addEnemy(){
+	CCSize winSize = CCDirector::sharedDirector()->getWinSize();
+
+	Enemy *enemy = new Enemy(this->player, 10);
+
+	float posX = 0;
+	float posY = 0;
+
+	// TODO сделать проверку чтобы не спавнился нутри нас
+	posX = rand() % (int)winSize.width;
+	posY = rand() % (int)winSize.height;
+
+	enemy->setPosition(ccp(posX, posY));
+	addChild(enemy, ShipZOrder);
+
+	Weapon* enemyWeapon = new Weapon(this, 2.0f);
+	enemy->setWeapon(enemyWeapon);
 }
 
 
