@@ -23,7 +23,7 @@ private:
 
 	// определяет положение игрока и стреляет туда чуть меняя координату чтобы чуть промазать
 	void AIShoot(float dt);
-	void AIMove();
+	void AIMove(float dt);
 
 	virtual void resolveCollision(GameObject* other);
 	virtual void setupBody();

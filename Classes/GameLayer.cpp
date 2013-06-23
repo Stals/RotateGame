@@ -86,14 +86,18 @@ void GameLayer::addEnemy(){
 
 	Enemy *enemy = new Enemy(this->player, 10);
 
-	float posX = 0;
-	float posY = 0;
+	cocos2d::CCPoint pos;
 
+	CCRect* rect = new CCRect;
+	rect->setRect(player->getPositionX() - 274/2, player->getPositionY() - 265/2, 274, 265);
+
+	do{
 	// TODO сделать проверку чтобы не спавнился нутри нас
-	posX = rand() % (int)winSize.width;
-	posY = rand() % (int)winSize.height;
+	pos.x = rand() % (int)winSize.width;
+	pos.y = rand() % (int)winSize.height;
+	}while(rect->containsPoint(pos));
 
-	enemy->setPosition(ccp(posX, posY));
+	enemy->setPosition(pos);
 	addChild(enemy, ShipZOrder);
 
 	Weapon* enemyWeapon = new Weapon(this, 2.0f);
