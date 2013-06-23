@@ -8,6 +8,13 @@ GameObject::GameObject(b2World *world):world(world)
 	CCSprite::init();
 	this->scheduleUpdate();
 }
+
+GameObject::~GameObject(){
+	if(body){
+		world->DestroyBody(body);
+	}
+}
+
 /*
 bool GameObject::init(){
 	

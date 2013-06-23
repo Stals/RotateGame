@@ -14,7 +14,6 @@ Bullet::Bullet(b2World *world, int damage):GameObject(world){
 }
 
 Bullet::~Bullet(){
-	world->DestroyBody(body);
 }
 
 int Bullet::getDamage(){
@@ -22,7 +21,7 @@ int Bullet::getDamage(){
 }
 
 void Bullet::resolveCollision(GameObject* other){
-
+	//по другому - если встртил когото - и он Entity, при этом type != своему типу и у него не 0 хп - тогда дамажить и взрываться.
 }
 
 void Bullet::setupBody(){

@@ -11,6 +11,7 @@ Entity::Entity(b2World *world, EntityType type, int hp):GameObject(world){
 	this->setupHPLabel();
 }
 
+
 int Entity::getHP(){
 	return hp;
 }

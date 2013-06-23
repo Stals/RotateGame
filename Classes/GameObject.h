@@ -7,6 +7,7 @@
 class GameObject : public cocos2d::CCSprite{
 public:
 	GameObject(b2World *world);
+	~GameObject();
 
 	//virtual bool init();
 

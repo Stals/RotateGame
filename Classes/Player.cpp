@@ -1,5 +1,5 @@
 #include "Player.h"
-
+#include "Bullet.h"
 
 #define PLAYER_HP 50
 
@@ -12,12 +12,18 @@ Player::Player(b2World *world):Entity(world, EntityType::PlayerType, PLAYER_HP){
 }
 
 Player::~Player(){
-	int i = 0;
+	
 }
 
 void Player::resolveCollision(GameObject* other){
-	this->hp -= 1;
-	this->updateHPLabel();
+	if(dynamic_cast<Bullet*>(other) != 0){
+		//if(dynamic_cast<Bullet*>(other)->getT
+
+		this->hp -= dynamic_cast<Bullet*>(other)->getDamage();
+		this->updateHPLabel();
+	}
+
+	
 }
 
 void Player::setupBody(){
