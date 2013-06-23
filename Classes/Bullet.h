@@ -18,11 +18,14 @@ public:
 	// получается хп тогда будут снаружи. Вопрос в том показывать их или нет уже отдельное дело
 	//!!! по другому - если встртил когото - и он Entity, при этом type != своему типу и у него не 0 хп - тогда дамажить и взрываться.
 
+protected:
+	virtual void update( float dt);
+	virtual void resolveCollision(GameObject* other);
+	virtual void setupBody();
 private:
 	int damage;
 
-	virtual void resolveCollision(GameObject* other);
-	virtual void setupBody();
+
 };
 
 // TODO как я смогу говорить bullet MoveTo если он будет двигаться внутри спрайта? если я даже ему скажу world coords он не сможет, он будет относительно них двигаться то. бляя.

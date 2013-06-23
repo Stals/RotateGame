@@ -42,3 +42,16 @@ void Bullet::setupBody(){
     body->CreateFixture(&spriteShapeDef);
 }
 
+void Bullet::update( float dt){
+	GameObject::update(dt);
+
+	cocos2d::CCSize winSize = cocos2d::CCDirector::sharedDirector()->getWinSize();
+
+	cocos2d::CCRect* rect = new cocos2d::CCRect;
+	rect->setRect(0, 0, winSize.width, winSize.height);
+
+	if(!rect->containsPoint(this->getPosition())){
+		this->removeFromParentAndCleanup(true);
+	}
+	
+}

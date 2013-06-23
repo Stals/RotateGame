@@ -31,5 +31,4 @@ private:
 	float cooldown;
 	// returns angle in degrees
 	float getAngle(cocos2d::CCPoint p1,  cocos2d::CCPoint p2);
-	void bulletDone(CCNode* sender);
 };

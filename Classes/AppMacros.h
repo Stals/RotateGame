@@ -54,7 +54,7 @@ static cocos2d::CCSize designResolutionSize = cocos2d::CCSizeMake(2048, 1536);
 #define TITLE_FONT_SIZE  (cocos2d::CCEGLView::sharedOpenGLView()->getDesignResolutionSize().width / smallResource.size.width * 24)
 
 // дефайны дл€ всего  приложени€ которые пригод€тс€
-#define WINDOW_SIZE CCDirector::sharedDirector()->getWinSize();
+#define WINDOW_SIZE cocos2d::CCDirector::sharedDirector()->getWinSize()
 // pixel to meters
 #define PTM 32.0f
 #define PTM_RATIO PTM

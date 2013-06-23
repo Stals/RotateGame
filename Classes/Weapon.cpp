@@ -42,7 +42,6 @@ Weapon::Weapon(b2World *world, GameLayer *gameLayer, float cooldown):world(world
 		
 		bullet->runAction(CCSequence::create(
 			CCMoveBy::create(2, ccp(1024*cos(CC_DEGREES_TO_RADIANS(angle - 180)), 1024*sin(CC_DEGREES_TO_RADIANS(angle - 180)))),
-			CCCallFuncN::create(this, callfuncN_selector(Weapon::bulletDone)), // delete bullet
 			NULL));
 
 			// мне по этой точке нужно продлить линию до того чтобы вне экрана она была
@@ -55,11 +54,4 @@ Weapon::Weapon(b2World *world, GameLayer *gameLayer, float cooldown):world(world
 		float deltaY = p2.y - p1.y;
 		float deltaX = p2.x - p1.x;
 		return atan2(deltaY, deltaX) * 180 / PI;
-	}
-
-
-	void Weapon::bulletDone(CCNode* sender){
-		if(sender){
-			sender->removeFromParentAndCleanup(true);
-		}
 	}
