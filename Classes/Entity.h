@@ -32,12 +32,16 @@ public:
 protected:
 	virtual void resolveCollision(GameObject* other) = 0;
 	virtual void setupBody() = 0;
+	virtual void setupHPLabel();
+	void updateHPLabel();
 
 private:
 	int hp;
 	Weapon* currentWeapon;
 
 	EntityType type;
+
+	cocos2d::CCLabelTTF* hpLabel;
 };
 
 

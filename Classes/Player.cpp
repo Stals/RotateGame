@@ -1,7 +1,7 @@
 #include "Player.h"
 
 
-#define PLAYER_HP 10
+#define PLAYER_HP 50
 
 Player::Player():Entity(EntityType::PlayerType, PLAYER_HP){
 	  
