@@ -59,4 +59,11 @@ static cocos2d::CCSize designResolutionSize = cocos2d::CCSizeMake(2048, 1536);
 #define PTM 32.0f
 #define PTM_RATIO PTM
 
+enum ObjectZOrder{
+	BackgroundZOrder,
+	BulletZOrder,
+	ShipZOrder,
+	ArmorZOrder
+};
+
 #endif /* __APPMACROS_H__ */

@@ -50,7 +50,7 @@ void GameLayer::setupBackground(){
     
     CCSprite *bg = CCSprite::create("bg.png");
 	bg->setPosition(ccp(winSize.width/2, winSize.height/2));
-	addChild(bg);
+	addChild(bg, BackgroundZOrder);
 }
 
 void GameLayer::setupPlayer(){
@@ -59,7 +59,10 @@ void GameLayer::setupPlayer(){
 
 	player = new Player;   
 	player->setPosition(ccp(winSize.width/2, winSize.height/2));
-	addChild(player);
+	addChild(player, ShipZOrder);
+
+	Weapon* playerWeapon = new Weapon(this, 1.0f);
+	player->setWeapon(playerWeapon);
 }
 
 void GameLayer::setupWorld(){
@@ -75,7 +78,7 @@ void GameLayer::setupWorld(){
 
 void GameLayer::ccTouchesBegan(CCSet* touches, CCEvent* event)
 {
-
+	
 
 	// как отличить тач для выстрела от тача для поворота?
 		// пока можно если тачнули и отпутили - без moved то выстрел
@@ -91,6 +94,8 @@ void GameLayer::ccTouchesBegan(CCSet* touches, CCEvent* event)
     {
         touch = (CCTouch*)(*it);
         pt = touch->getLocationInView();
+
+		player->shoot(touch->getLocation());
         printf( "ccTouchesBegan id:%i %i,%i\n", touch->getID(), (int)pt.x, (int)pt.y );
         it++;
     }

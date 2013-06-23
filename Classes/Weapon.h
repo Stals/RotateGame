@@ -22,6 +22,12 @@ public:
 	// это точка на GameLayer
 	void shoot(cocos2d::CCPoint p);
 
+	// TODO - мне нужно пулю поворачивать тоже!
+
 private:
+	GameLayer *gameLayer;
 	float cooldown;
+	// returns angle in degrees
+	float getAngle(cocos2d::CCPoint p1,  cocos2d::CCPoint p2);
+	void bulletDone(CCNode* sender);
 };

@@ -1,8 +1,11 @@
 #include "Bullet.h"
 
 
-Bullet::Bullet(int damage){
+Bullet::Bullet(int damage):GameObject(/*b2World*/){
 	this->damage = damage;
+
+	cocos2d::CCSprite *playerSprite = CCSprite::create("bullet.png");
+	this->addChild(playerSprite);
 }
 
 int Bullet::getDamage(){

@@ -31,10 +31,13 @@ void Entity::setWeapon(Weapon *weapon){ // TODO if not null - destroy previous
 	}
 
 	currentWeapon = weapon;
+	this->addChild(currentWeapon);
 }
 
 void Entity::shoot(cocos2d::CCPoint p){ // стреялет текущим оружием в указанную точку
-	currentWeapon->shoot(p);
+	if(currentWeapon != NULL){
+		currentWeapon->shoot(p);
+	}
 }
 
 
