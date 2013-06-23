@@ -39,9 +39,10 @@ Weapon::Weapon(b2World *world, GameLayer *gameLayer, float cooldown):world(world
 		// TODO - нужно теперь получить угол куда летит относительно текущей точки
 
 		//bullet->runAction(cocos2d::CCMoveTo::create(1, p));
-		
+		const int length = 1053; // squared(1024 ^2 + 768 ^ 2)
+
 		bullet->runAction(CCSequence::create(
-			CCMoveBy::create(2, ccp(1024*cos(CC_DEGREES_TO_RADIANS(angle - 180)), 1024*sin(CC_DEGREES_TO_RADIANS(angle - 180)))),
+			CCMoveBy::create(2, ccp(1053*cos(CC_DEGREES_TO_RADIANS(angle - 180)), 1053*sin(CC_DEGREES_TO_RADIANS(angle - 180)))),
 			NULL));
 
 			// мне по этой точке нужно продлить линию до того чтобы вне экрана она была
