@@ -5,9 +5,8 @@ Bullet::Bullet(b2World *world, EntityType type, int damage):GameObject(world, ty
 	GameObject::init();
 	this->damage = damage;
 
-	cocos2d::CCSprite *playerSprite = CCSprite::create("bullet2.png");
-	this->setContentSize(playerSprite->getContentSize());
-	this->addChild(playerSprite);
+	sprite = CCSprite::create("bullet2.png");
+	this->addChild(sprite);
 	this->autorelease();
 
 	this->setupBody();
@@ -39,8 +38,8 @@ void Bullet::setupBody(){
     body = world->CreateBody(&spriteBodyDef);
  
     b2PolygonShape spriteShape;
-	spriteShape.SetAsBox(this->getContentSize().width/PTM_RATIO/2,
-                         this->getContentSize().height/PTM_RATIO/2);
+	spriteShape.SetAsBox(sprite->getContentSize().width/PTM_RATIO/2,
+                         sprite->getContentSize().height/PTM_RATIO/2);
     b2FixtureDef spriteShapeDef;
     spriteShapeDef.shape = &spriteShape;
     spriteShapeDef.density = 10.0;

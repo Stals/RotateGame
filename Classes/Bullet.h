@@ -24,6 +24,7 @@ protected:
 	virtual void setupBody();
 private:
 	int damage;
+	cocos2d::CCSprite *sprite;
 
 
 };
