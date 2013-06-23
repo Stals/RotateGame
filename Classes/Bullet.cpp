@@ -14,6 +14,7 @@ Bullet::Bullet(b2World *world, EntityType type, int damage):GameObject(world, ty
 }
 
 Bullet::~Bullet(){
+	int i = 0;
 }
 
 int Bullet::getDamage(){

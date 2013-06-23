@@ -9,6 +9,8 @@ Entity::Entity(b2World *world, EntityType type, int hp):GameObject(world, type){
 	this->currentWeapon = NULL;
 
 	this->setupHPLabel();
+
+	this->autorelease();
 }
 
 

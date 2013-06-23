@@ -7,6 +7,7 @@ GameObject::GameObject(b2World *world, EntityType type):world(world), type(type)
 {
 	CCSprite::init();
 	this->scheduleUpdate();
+
 }
 
 GameObject::~GameObject(){

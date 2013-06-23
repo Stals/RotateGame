@@ -18,7 +18,9 @@ Enemy::Enemy(b2World *world, Player* player, int hp):Entity(world, EntityType::E
 
 
 void Enemy::AIShoot(float dt){
-	this->shoot(player->getPosition());
+	if(player){
+		this->shoot(player->getPosition());
+	}
 }
 
 
