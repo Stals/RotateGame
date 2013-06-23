@@ -13,7 +13,7 @@ enum EntityType{
 class Entity : public GameObject
 {
 public:
-	Entity(EntityType type, int hp);
+	Entity(b2World *world, EntityType type, int hp);
 	int getHP();
 
 	// speed какую скорость придали для вращение - смысл в том что она постоянно уменьшается пока не будет = 0
@@ -35,8 +35,9 @@ protected:
 	virtual void setupHPLabel();
 	void updateHPLabel();
 
-private:
 	int hp;
+private:
+
 	Weapon* currentWeapon;
 
 	EntityType type;

@@ -7,7 +7,7 @@
 // TODO реагирует на collide только если хп != 0
 class Armor : public Entity{
 public:
-	Armor();
+	Armor(b2World *world);
 private:
 	virtual void resolveCollision(GameObject* other);
 	virtual void setupBody();

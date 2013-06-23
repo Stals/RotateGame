@@ -1,5 +1,6 @@
 #pragma once
 #include "AppMacros.h"
+#include "../external/Box2D/Box2D.h"
 class GameLayer;
 
 // Отвечает за отправление пули в определенную точку с определенной скоростью
@@ -13,7 +14,7 @@ public:
 	// а внутри update лазера постоянно менять его положения и засекать пересечения с противником
 
 	// cooldown - время в секундах через которое можно стрелять
-	Weapon(GameLayer *gameLayer, float cooldown);
+	Weapon(b2World *world, GameLayer *gameLayer, float cooldown);
 
 	// Раз в какой промежуток может стрелять
 	float getCooldown();
@@ -25,6 +26,7 @@ public:
 	// TODO - мне нужно пулю поворачивать тоже!
 
 private:
+	b2World *world;
 	GameLayer *gameLayer;
 	float cooldown;
 	// returns angle in degrees

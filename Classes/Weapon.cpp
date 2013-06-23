@@ -4,7 +4,7 @@
 #include <cmath>
 
 	// cooldown - время в секундах через которое можно стрелять
-Weapon::Weapon(GameLayer *gameLayer, float cooldown){
+Weapon::Weapon(b2World *world, GameLayer *gameLayer, float cooldown):world(world){
 	CCSprite::init();
 	this->gameLayer = gameLayer;
 	this->cooldown = cooldown;
@@ -21,7 +21,7 @@ Weapon::Weapon(GameLayer *gameLayer, float cooldown){
 		// создает пулю и отправляет её в том направлении
 		// добавляет её на gameLayer
 
-		Bullet* bullet = new Bullet(1);
+		Bullet* bullet = new Bullet(world, 1);
 		//cocos2d::CCSprite *bullet = CCSprite::create("bullet.png");
 		
 		gameLayer->addChild(bullet, BulletZOrder);

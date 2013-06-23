@@ -2,7 +2,8 @@
 
 #include <sstream>
 
-Entity::Entity(EntityType type, int hp):GameObject(/*b2world*/){
+Entity::Entity(b2World *world, EntityType type, int hp):GameObject(world){
+	GameObject::init();
 	this->hp = hp;
 	this->type = type;
 	this->currentWeapon = NULL;
@@ -45,7 +46,7 @@ void Entity::shoot(cocos2d::CCPoint p){ // стреялет текущим оружием в указанную 
 }
 
 void Entity::setupHPLabel(){
-	hpLabel = cocos2d::CCLabelTTF::create("100", "Thonburi", 34);
+	hpLabel = cocos2d::CCLabelTTF::create("100", "Thonburi", 24);
 	this->addChild(hpLabel, 100);
 	updateHPLabel();
 }
@@ -53,6 +54,5 @@ void Entity::setupHPLabel(){
 void Entity::updateHPLabel(){
 	std::stringstream sstream;
 	sstream << this->hp;
-
 	hpLabel->setString(sstream.str().c_str());
 }

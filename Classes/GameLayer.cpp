@@ -33,9 +33,11 @@ bool GameLayer::init()
     CCSize visibleSize = CCDirector::sharedDirector()->getVisibleSize();
     CCPoint origin = CCDirector::sharedDirector()->getVisibleOrigin();
 
+	setupWorld();
+
 	setupBackground();
 	setupPlayer();
-	setupWorld();
+
 	addEnemy();
 	addEnemy();
 	addEnemy();
@@ -63,11 +65,11 @@ void GameLayer::setupPlayer(){
 	CCSize winSize = CCDirector::sharedDirector()->getWinSize();
     
 
-	player = new Player;   
+	player = new Player(m_b2dWorld);   
 	player->setPosition(ccp(winSize.width/2, winSize.height/2));
 	addChild(player, ShipZOrder);
 
-	Weapon* playerWeapon = new Weapon(this, 1.0f);
+	Weapon* playerWeapon = new Weapon(m_b2dWorld, this, 1.0f);
 	player->setWeapon(playerWeapon);
 }
 
@@ -75,6 +77,7 @@ void GameLayer::setupWorld(){
 	// Create b2 world
     b2Vec2 gravity = b2Vec2(0.0f, 0.0f); // Gravity is zero as we aren't using it, zero turns it off so no processor time wasted.
     m_b2dWorld = new b2World(gravity);
+	m_b2dWorld->SetAllowSleeping(false);
     
     // Create contact listener
     m_contactListener = new CContactListener();
@@ -84,7 +87,7 @@ void GameLayer::setupWorld(){
 void GameLayer::addEnemy(){
 	CCSize winSize = CCDirector::sharedDirector()->getWinSize();
 
-	Enemy *enemy = new Enemy(this->player, 10);
+	Enemy *enemy = new Enemy(m_b2dWorld, this->player, 10);
 
 	cocos2d::CCPoint pos;
 
@@ -92,7 +95,7 @@ void GameLayer::addEnemy(){
 	rect->setRect(player->getPositionX() - 274/2, player->getPositionY() - 265/2, 274, 265);
 
 	do{
-	// TODO сделать проверку чтобы не спавнился нутри нас
+	// делает проверку чтобы не спавнился нутри нас
 	pos.x = rand() % (int)winSize.width;
 	pos.y = rand() % (int)winSize.height;
 	}while(rect->containsPoint(pos));
@@ -100,7 +103,7 @@ void GameLayer::addEnemy(){
 	enemy->setPosition(pos);
 	addChild(enemy, ShipZOrder);
 
-	Weapon* enemyWeapon = new Weapon(this, 2.0f);
+	Weapon* enemyWeapon = new Weapon(m_b2dWorld, this, 2.0f);
 	enemy->setWeapon(enemyWeapon);
 }
 
@@ -164,10 +167,11 @@ void GameLayer::ccTouchesEnded(CCSet* touches, CCEvent* event)
 
 
 void GameLayer::update(float delta )
-{/*
+{
    // Updates the physics simulation for 10 iterations for velocity/position
     m_b2dWorld->Step(delta, 10, 10);
 
+	/*
     // Loop through all of the Box2D bodies in our Box2D world..
     for(b2Body *b = m_b2dWorld->GetBodyList(); b; b=b->GetNext()) 
     {
@@ -188,10 +192,10 @@ void GameLayer::update(float delta )
             // Update the Box2D position/rotation to match the Cocos2D position/rotation
             b->SetTransform(b2Position, b2Angle);
         }
-    }
+    }*/
     
     // Loop through all of the box2d bodies that are currently colliding, that we have
-    // gathered with our custom contact listener...
+    /*// gathered with our custom contact listener...
     std::vector<b2Body *>toDestroy; 
     std::vector<ContactData>::iterator pos;
     for(pos = m_contactListener->_contacts.begin(); pos != m_contactListener->_contacts.end(); ++pos) 
@@ -203,8 +207,11 @@ void GameLayer::update(float delta )
         b2Body *bodyB = contact.fixtureB->GetBody();
         if (bodyA->GetUserData() != NULL && bodyB->GetUserData() != NULL) 
         {
-            CCSprite *spriteA = (CCSprite *) bodyA->GetUserData();
-            CCSprite *spriteB = (CCSprite *) bodyB->GetUserData();
+            GameObject *spriteA = (GameObject *) bodyA->GetUserData();
+            GameObject *spriteB = (GameObject *) bodyB->GetUserData();
+			spriteA->resolveCollision(spriteB);
+			spriteB->resolveCollision(spriteA);
+
             int iTagA = spriteA->getTag();
             int iTagB = spriteB->getTag();
             

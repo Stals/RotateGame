@@ -29,7 +29,7 @@ struct ContactData {
 class CContactListener : public b2ContactListener {
 
 public:
-    //std::vector<ContactData>_contacts;
+    std::vector<ContactData>_contacts;
     
     CContactListener();
     ~CContactListener();
