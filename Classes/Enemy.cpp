@@ -8,7 +8,6 @@ USING_NS_CC;
 Enemy::Enemy(b2World *world, Player* player, int hp):Entity(world, EntityType::EnemyType, hp){
 	this->player = player;
 	sprite = CCSprite::create("enemy.png");
-	this->setContentSize(sprite->getContentSize());
 
 	this->addChild(sprite);
 	schedule(schedule_selector(Enemy::AIMove), 2.0f + RANDOM_DELAY*2);
@@ -58,8 +57,8 @@ void Enemy::setupBody(){
     body = world->CreateBody(&spriteBodyDef);
  
     b2PolygonShape spriteShape;
-	spriteShape.SetAsBox(this->getContentSize().width/PTM_RATIO/2,
-                         this->getContentSize().height/PTM_RATIO/2);
+	spriteShape.SetAsBox(sprite->getContentSize().width/PTM_RATIO/2,
+                         sprite->getContentSize().height/PTM_RATIO/2);
     b2FixtureDef spriteShapeDef;
     spriteShapeDef.shape = &spriteShape;
     spriteShapeDef.density = 10.0;
