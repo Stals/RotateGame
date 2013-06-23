@@ -1,4 +1,5 @@
 #include "Enemy.h"
+#include "Bullet.h"
 
 USING_NS_CC;
 
@@ -30,8 +31,12 @@ void Enemy::AIMove(float dt){
 }
 
 void Enemy::resolveCollision(GameObject* other){
-	this->hp -= 1;
-	this->updateHPLabel();
+	if(dynamic_cast<Bullet*>(other) != 0){
+		//if(dynamic_cast<Bullet*>(other)->getT
+
+		this->hp -= dynamic_cast<Bullet*>(other)->getDamage();
+		this->updateHPLabel();
+	}
 }
 
 void Enemy::setWeapon(Weapon *weapon){

@@ -57,3 +57,10 @@ void Entity::updateHPLabel(){
 	sstream << this->hp;
 	hpLabel->setString(sstream.str().c_str());
 }
+
+void Entity::update( float dt){
+	GameObject::update(dt);
+	if(hp <= 0){
+		this->removeFromParentAndCleanup(true);
+	}
+}

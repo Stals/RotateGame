@@ -35,6 +35,8 @@ protected:
 	virtual void setupHPLabel();
 	void updateHPLabel();
 
+	virtual void update( float dt);
+
 	int hp;
 private:
 
