@@ -25,11 +25,13 @@ void Enemy::AIShoot(float dt){
 
 
 void Enemy::AIMove(float dt){
-	CCPoint delta;
-	delta.x = (rand() % 64) - 32;
-	delta.y = (rand() % 64) - 32;
+	if(this){
+		CCPoint delta;
+		delta.x = (rand() % 64) - 32;
+		delta.y = (rand() % 64) - 32;
 
-	this->runAction(cocos2d::CCMoveBy::create(1.0f, delta)); 
+		this->runAction(cocos2d::CCMoveBy::create(1.0f, delta)); 
+	}
 }
 
 void Enemy::resolveCollision(GameObject* other){
