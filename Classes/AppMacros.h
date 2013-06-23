@@ -57,5 +57,6 @@ static cocos2d::CCSize designResolutionSize = cocos2d::CCSizeMake(2048, 1536);
 #define WINDOW_SIZE CCDirector::sharedDirector()->getWinSize();
 // pixel to meters
 #define PTM 32.0f
+#define PTM_RATIO PTM
 
 #endif /* __APPMACROS_H__ */

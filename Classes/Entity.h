@@ -1,14 +1,12 @@
 #pragma once
-
-#pragma once
 #include "AppMacros.h"
 #include "GameObject.h"
 #include "Weapon.h"
 
 enum EntityType{
-	Player,
-	Enemy
-	// Neutral - их ничего не будет трогать?
+	PlayerType,
+	EnemyType
+	// NeutralType - их ничего не будет трогать?
 };
 
 // те объекты у которых есть HP
@@ -31,10 +29,15 @@ public:
 	// а за счет Weapon.shoot можно сразу будет иметь несколько оружий
 	void setWeapon(Weapon *weapon); // TODO if not null - destroy previous
 	void shoot(cocos2d::CCPoint p); // стреялет текущим оружием в указанную точку
+protected:
+	virtual void resolveCollision(GameObject* other) = 0;
+	virtual void setupBody() = 0;
 
 private:
 	int hp;
 	Weapon* currentWeapon;
+
+	EntityType type;
 };
 
 

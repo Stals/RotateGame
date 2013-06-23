@@ -1,5 +1,6 @@
 #include "GameLayer.h"
 #include "AppMacros.h"
+
 //#include "SimpleAudioEngine.h"
 USING_NS_CC;
 
@@ -55,7 +56,8 @@ void GameLayer::setupBackground(){
 void GameLayer::setupPlayer(){
 	CCSize winSize = CCDirector::sharedDirector()->getWinSize();
     
-    CCSprite *player = CCSprite::create("player.png");
+
+	player = new Player;   
 	player->setPosition(ccp(winSize.width/2, winSize.height/2));
 	addChild(player);
 }

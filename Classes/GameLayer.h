@@ -8,6 +8,8 @@ using namespace cocos2d;
 #include "../external/Box2D/Box2D.h"
 #include "ContactListener.h"
 
+#include "Player.h"
+
 class GameLayer : public cocos2d::CCLayer
 {
 public:
@@ -25,6 +27,7 @@ public:
 private:
 	b2World *m_b2dWorld;
     CContactListener *m_contactListener;
+	Player* player;
 	
 	void setupPlayer();
 	void setupBackground();

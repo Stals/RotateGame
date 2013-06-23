@@ -262,7 +262,7 @@ void HelloWorld::tick( float delta )
     // gathered with our custom contact listener...
     std::vector<b2Body *>toDestroy; 
     std::vector<ContactData>::iterator pos;
-    for(pos = m_contactListener->_contacts.begin(); pos != m_contactListener->_contacts.end(); ++pos) 
+    /*for(pos = m_contactListener->_contacts.begin(); pos != m_contactListener->_contacts.end(); ++pos) 
     {
         ContactData contact = *pos;
         
@@ -284,7 +284,7 @@ void HelloWorld::tick( float delta )
                 toDestroy.push_back(bodyB);
              
         }        
-    }
+    }*/
 
     // Loop through all of the box2d bodies we wnat to destroy...
     std::vector<b2Body *>::iterator pos2;

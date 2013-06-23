@@ -9,7 +9,7 @@ class Enemy : public Entity
 public:
 	// TODO player скорее всего не будет нужен так как он будет static - и к нему можно будет и так обратиться
 	// А нужен он для того чтобы знать куда стрелять
-	Enemy(Player* player);
+	Enemy(Player* player, int hp);
 
 
 	// TODO внутри update иногда решает что ему нужно выстрелить и стреляет с определенной задержкой
@@ -17,7 +17,12 @@ public:
 
 	// Note: в теории может использовать rotate если на них будет щит для того чтобы компенсировать дамаг - это прям полных хард кор - он должен будет знать о том где летят пули и постоянно чекать...
 private:
+	Player* player;
+
 	// определяет положение игрока и стреляет туда чуть меняя координату чтобы чуть промазать
 	void AIShoot();
 	void AIMove();
-}
+
+	virtual void resolveCollision(GameObject* other);
+	virtual void setupBody();
+};
