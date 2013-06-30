@@ -34,13 +34,9 @@ protected:
 	virtual void update( float dt);
 
 	int hp;
-private:
-
-	Weapon* currentWeapon;
-
-
-
 	cocos2d::CCLabelTTF* hpLabel;
+private:
+	Weapon* currentWeapon;
 };
 
 

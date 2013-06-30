@@ -11,6 +11,7 @@ using namespace cocos2d;
 #include "Player.h"
 #include "Enemy.h"
 #include "Weapon.h"
+#include "Armor.h"
 
 class GameLayer : public cocos2d::CCLayer
 {
@@ -32,6 +33,7 @@ private:
 	Player* player;
 	
 	void setupPlayer();
+	void addPlayerArmor();
 	void setupBackground();
 	void setupWorld();
 	void addEnemy();

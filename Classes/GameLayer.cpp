@@ -37,6 +37,7 @@ bool GameLayer::init()
 
 	setupBackground();
 	setupPlayer();
+	this->addPlayerArmor();
 
 	addEnemy();
 	addEnemy();
@@ -72,6 +73,42 @@ void GameLayer::setupPlayer(){
 	Weapon* playerWeapon = new Weapon(m_b2dWorld, this, 1.0f);
 	player->setWeapon(playerWeapon);
 }
+
+void GameLayer::addPlayerArmor(){
+	for(int i = 0; i < 4; ++i){
+		Armor *armor = new Armor(m_b2dWorld);
+		this->addChild(armor, 1000);
+
+		CCPoint pos;
+		float rotationAngle = 0;
+
+		switch(i){
+		case 0: // право верх
+			pos.x = player->getPositionX() + armor->getWidth()/2;
+			pos.y = player->getPositionY() + armor->getHeight()/2;
+			break;
+		case 1: // лево верх
+			pos.x = player->getPositionX() - armor->getWidth()/2;
+			pos.y = player->getPositionY() + armor->getHeight()/2;
+			rotationAngle = - 90;
+			break;
+		case 2: // лево низ
+			pos.x = player->getPositionX() - armor->getWidth()/2;
+			pos.y = player->getPositionY() - armor->getHeight()/2;
+			rotationAngle = - 180;
+			break;
+		case 3: // право низ
+			pos.x = player->getPositionX() + armor->getWidth()/2;
+			pos.y = player->getPositionY() - armor->getHeight()/2;
+			rotationAngle = - 270;
+			break;
+		}
+
+		armor->setPosition(pos);
+		armor->rotate(rotationAngle);
+	}
+}
+
 
 void GameLayer::setupWorld(){
 	// Create b2 world

@@ -8,7 +8,19 @@
 class Armor : public Entity{
 public:
 	Armor(b2World *world);
+
+	// эти 3 функции перенести в entity! #importend
+	// get наверное вообе  объект
+	virtual float getWidth();
+	virtual float getHeight();
+
+	void rotate(float degrees);
+
 private:
+	cocos2d::CCSprite *sprite;
+
 	virtual void resolveCollision(GameObject* other);
 	virtual void setupBody();
+	
+	void Regen(float dt);
 };
