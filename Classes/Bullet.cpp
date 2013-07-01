@@ -24,7 +24,9 @@ void Bullet::resolveCollision(GameObject* other){
 	//по другому - если встртил когото - и он Entity, при этом type != своему типу и у него не 0 хп - тогда дамажить и взрываться.
 	if(dynamic_cast<Entity*>(other) != 0){
 		if(dynamic_cast<Entity*>(other)->getType() != this->getType()){
-			this->removeFromParentAndCleanup(true);
+			if(dynamic_cast<Entity*>(other)->getHP() > 0){
+				this->removeFromParentAndCleanup(true);
+			}
 		}
 	}	
 }

@@ -16,6 +16,9 @@ public:
 
 	void rotate(float degrees);
 
+protected:
+	virtual void update( float dt);
+
 private:
 	cocos2d::CCSprite *sprite;
 
