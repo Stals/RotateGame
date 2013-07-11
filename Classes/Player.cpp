@@ -32,9 +32,13 @@ void Player::setupBody(){
     spriteBodyDef.userData = this;
     body = world->CreateBody(&spriteBodyDef);
  
-    b2PolygonShape spriteShape;
+    /*b2PolygonShape spriteShape;
 	spriteShape.SetAsBox(playerSprite->getContentSize().width/PTM_RATIO/2,
-                         playerSprite->getContentSize().height/PTM_RATIO/2);
+                         playerSprite->getContentSize().height/PTM_RATIO/2);*/
+		b2CircleShape spriteShape;
+	spriteShape.m_radius = 133.004/PTM_RATIO;
+
+
     b2FixtureDef spriteShapeDef;
     spriteShapeDef.shape = &spriteShape;
     spriteShapeDef.density = 10.0;
