@@ -3,6 +3,10 @@
 
 //#include "SimpleAudioEngine.h"
 USING_NS_CC;
+#define DEBUG_BOX2D
+#ifdef DEBUG_BOX2D
+#include "B2DebugDraw/B2DebugDrawLayer.h"
+#endif
 
 
 CCScene* GameLayer::scene()
@@ -119,6 +123,11 @@ void GameLayer::setupWorld(){
     // Create contact listener
     m_contactListener = new CContactListener();
     m_b2dWorld->SetContactListener(m_contactListener);
+
+
+#ifdef DEBUG_BOX2D
+	addChild(B2DebugDrawLayer::create(m_b2dWorld, PTM_RATIO), 9999);
+#endif
 }
 
 void GameLayer::addEnemy(){

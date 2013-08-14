@@ -38,6 +38,9 @@ files
 	"*.h"
 	"*.cpp"
 
+	(../Classes/B2DebugDraw)
+	"*.h"
+	"*.cpp"
 
 }
 
