@@ -15,6 +15,7 @@ public:
 	virtual float getHeight();
 
 	void rotate(float degrees);
+	virtual const cocos2d::CCSize& getContentSize();
 
 protected:
 	virtual void update( float dt);

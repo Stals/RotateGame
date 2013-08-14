@@ -33,7 +33,7 @@ bool GameObject::init(){
 // обновляет положение этого спрайта внутри box2d мира
 // Note: если наследуется то должен вызывать update родительского класса
 void GameObject::update( float dt){
-	CCPoint Pos = this->getPosition(); //CCDirector::sharedDirector()->convertToUI();
+	CCPoint Pos = this->getPosition(); //CCDirector::sharedDirector()->convertToUI(this->getPosition());
     b2Vec2 b2Position = b2Vec2(Pos.x/PTM_RATIO,
                                 Pos.y/PTM_RATIO);
     float32 b2Angle = -1 * CC_DEGREES_TO_RADIANS(this->getRotation());

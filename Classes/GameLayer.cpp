@@ -81,7 +81,10 @@ void GameLayer::setupPlayer(){
 void GameLayer::addPlayerArmor(){
 	for(int i = 0; i < 4; ++i){
 		Armor *armor = new Armor(m_b2dWorld);
+		
 		this->addChild(armor, 1000);
+		armor->setAnchorPoint(ccp(0,0));
+		armor->getContentSize();
 
 		CCPoint pos;
 		float rotationAngle = 0;
@@ -107,7 +110,7 @@ void GameLayer::addPlayerArmor(){
 			rotationAngle = - 270;
 			break;
 		}
-
+		
 		armor->setPosition(pos);
 		armor->rotate(rotationAngle);
 	}

@@ -16,6 +16,7 @@ Armor::Armor(b2World *world):Entity(world, EntityType::PlayerType, ARMOR_HP){
 
 	this->setupBody();
 	this->hpLabel->setPosition(ccp(25,25));
+	this->setContentSize(sprite->getContentSize());
 }
 
 void Armor::resolveCollision(GameObject* other){
@@ -70,6 +71,10 @@ void Armor::rotate(float degrees){
 	// TODO тут в теории нужно всеравно себя будет делать rotate но label - нет
 	this->setRotation(degrees);
 	this->hpLabel->setRotation(-degrees);
+}
+
+const cocos2d::CCSize& Armor::getContentSize(){
+	return sprite->getContentSize();
 }
 
 
