@@ -71,6 +71,7 @@ void GameLayer::setupPlayer(){
     
 
 	player = new Player(m_b2dWorld);   
+	//player->setAnchorPoint(ccp(0,0));
 	player->setPosition(ccp(winSize.width/2, winSize.height/2));
 	addChild(player, ShipZOrder);
 
@@ -89,6 +90,7 @@ void GameLayer::addPlayerArmor(){
 		CCPoint pos;
 		float rotationAngle = 0;
 
+		// TODO player cnchor point должен быть 05 05 чтобы от getPosition тупо ставить!!!
 		switch(i){
 		case 0: // право верх
 			pos.x = player->getPositionX() + armor->getWidth()/2;

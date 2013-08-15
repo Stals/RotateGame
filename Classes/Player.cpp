@@ -7,8 +7,10 @@ Player::Player(b2World *world):Entity(world, EntityType::PlayerType, PLAYER_HP){
 	  
 	playerSprite = CCSprite::create("player.png");
 	this->addChild(playerSprite);
+	this->setContentSize(playerSprite->getContentSize());
 
 	this->setupBody();
+
 }
 
 Player::~Player(){
