@@ -7,14 +7,18 @@
 // TODO реагирует на collide только если хп != 0
 class Armor : public Entity{
 public:
-	Armor(b2World *world);
+	// rotation degrees
+	Armor(b2World *world, float degrees);
 
 	// эти 3 функции перенести в entity! #importend
 	// get наверное вообе  объект
 	virtual float getWidth();
 	virtual float getHeight();
 
-	void rotate(float degrees);
+	virtual void setRotation(float fRotation);
+	virtual void setRotationX(float fRotationX);
+    virtual void setRotationY(float fRotationY);
+
 	virtual const cocos2d::CCSize& getContentSize();
 
 protected:

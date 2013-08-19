@@ -3,7 +3,7 @@
 
 //#include "SimpleAudioEngine.h"
 USING_NS_CC;
-#define DEBUG_BOX2D
+//#define DEBUG_BOX2D
 #ifdef DEBUG_BOX2D
 #include "B2DebugDraw/B2DebugDrawLayer.h"
 #endif
@@ -81,11 +81,8 @@ void GameLayer::setupPlayer(){
 
 void GameLayer::addPlayerArmor(){
 	for(int i = 0; i < 4; ++i){
-		Armor *armor = new Armor(m_b2dWorld);
+		Armor *armor; 
 		
-		this->addChild(armor, 1000);
-		armor->setAnchorPoint(ccp(0,0));
-		armor->getContentSize();
 
 		CCPoint pos;
 		float rotationAngle = 0;
@@ -93,28 +90,30 @@ void GameLayer::addPlayerArmor(){
 		// TODO player cnchor point должен быть 05 05 чтобы от getPosition тупо ставить!!!
 		switch(i){
 		case 0: // право верх
-			pos.x = player->getPositionX() + armor->getWidth()/2;
-			pos.y = player->getPositionY() + armor->getHeight()/2;
+			armor = new Armor(m_b2dWorld, 0);		
+			armor->setAnchorPoint(ccp(-0.5,-0.5));
 			break;
 		case 1: // лево верх
-			pos.x = player->getPositionX() - armor->getWidth()/2;
-			pos.y = player->getPositionY() + armor->getHeight()/2;
-			rotationAngle = - 90;
+			armor = new Armor(m_b2dWorld, -90);	
+			armor->setAnchorPoint(ccp(0.5,-0.5));
 			break;
 		case 2: // лево низ
-			pos.x = player->getPositionX() - armor->getWidth()/2;
-			pos.y = player->getPositionY() - armor->getHeight()/2;
-			rotationAngle = - 180;
+
+			armor = new Armor(m_b2dWorld, -180);	
+			armor->setAnchorPoint(ccp(0.5,0.5));
 			break;
 		case 3: // право низ
-			pos.x = player->getPositionX() + armor->getWidth()/2;
-			pos.y = player->getPositionY() - armor->getHeight()/2;
-			rotationAngle = - 270;
+
+			armor = new Armor(m_b2dWorld, -270);	
+			armor->setAnchorPoint(ccp(-0.5,0.5));
 			break;
 		}
 		
-		armor->setPosition(pos);
-		armor->rotate(rotationAngle);
+		this->addChild(armor, 1000);
+		armor->setPositionX(player->getPositionX());
+		armor->setPositionY(player->getPositionY());
+
+		armor->runAction(cocos2d::CCRepeatForever::create(cocos2d::CCRotateBy::create(10, 360)));
 	}
 }
 

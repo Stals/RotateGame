@@ -7,15 +7,17 @@ USING_NS_CC;
 #define HEAL_CD 2.0f
 #define OFF_OPACITY 100.0f
 
-Armor::Armor(b2World *world):Entity(world, EntityType::PlayerType, ARMOR_HP){
+Armor::Armor(b2World *world, float degrees):Entity(world, EntityType::PlayerType, ARMOR_HP){
 
 	sprite = CCSprite::create("player_armor.png");
+	sprite->setRotation(degrees);
+	//this->hpLabel->setRotation(-degrees);
 
 	this->addChild(sprite);
 	schedule(schedule_selector(Armor::Regen), HEAL_CD);
 
 	this->setupBody();
-	this->hpLabel->setPosition(ccp(25,25));
+	//this->hpLabel->setPosition(ccp(25,25));
 	this->setContentSize(sprite->getContentSize());
 }
 
@@ -67,10 +69,19 @@ float Armor::getHeight(){
 
 
 
-void Armor::rotate(float degrees){
-	// TODO тут в теории нужно всеравно себя будет делать rotate но label - нет
-	this->setRotation(degrees);
-	this->hpLabel->setRotation(-degrees);
+void Armor::setRotation(float fRotation){
+	Entity::setRotationX(fRotation);
+	this->hpLabel->setRotation(-fRotation);
+}
+
+void Armor::setRotationX(float fRotationX){
+	Entity::setRotationX(fRotationX);
+	this->hpLabel->setRotationX(-fRotationX);
+}
+
+void Armor::setRotationY(float fRotationY){
+	Entity::setRotationY(fRotationY);
+	this->hpLabel->setRotationY(-fRotationY);
 }
 
 const cocos2d::CCSize& Armor::getContentSize(){
